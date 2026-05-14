@@ -98,13 +98,7 @@ En esta etapa se aplican procesos de limpieza, filtrado y normalización básica
 Representa el nivel más alto de refinamiento. Los datos se organizan siguiendo modelos dimensionales (Kimball) o estructuras agregadas específicas para casos de uso de negocio, como cuadros de mando integrales o modelos de aprendizaje automático.
 
 
-\section{Optimización de Procesos: Ciclo ELT y Datos en Tiempo Real}
 
-Para garantizar la integridad de los reportes financieros y la eficiencia operativa, resulta necesario migrar del ciclo ETL (Extraer-Transformar-Cargar) tradicional hacia un modelo ELT (Extraer-Cargar-Transformar). En el modelo ELT, los datos se encuentran disponibles inmediatamente después de la carga, eliminando los cuellos de botella del procesamiento previo.
-
-\subsection{Arquitectura Lambda}
-
-Para resolver el problema crónico de falta de stock en entornos de comercio minorista, se implementa una Arquitectura Lambda. La \textbf{Capa de Lote} (\textit{Batch Layer}) procesa volúmenes masivos de transacciones para identificar tendencias de consumo a largo plazo. Simultáneamente, la \textbf{Capa de Velocidad} (\textit{Speed Layer}) procesa los pedidos del momento, permitiendo que la operativa en tienda reserve productos de forma inmediata. Este equilibrio transforma la infraestructura en una ventaja competitiva real.
 
 
 \section{Ingeniería de Pipelines y Orquestación con Apache Airflow}
@@ -139,6 +133,8 @@ En este contexto, SQLMesh emerge como una solución fundamental que integra conc
     \item \textbf{Auditoría Integrada:} Permite el seguimiento detallado de las modificaciones en la estructura de los datos.
 \end{itemize}
 
+\newpage
+
 
 \section{Gobierno de Datos: Marco Estratégico}
 
@@ -164,9 +160,9 @@ Además, la gobernanza se apoya en roles fundamentales:
 \section{Sistemas ERP y el Ecosistema Odoo}
 
 Los sistemas de \textbf{Planificación de Recursos Empresariales (ERP)} actúan como la columna vertebral operativa de una organización, integrando procesos que anteriormente residen en silos aislados. Odoo destaca por su arquitectura modular basada en una pila tecnológica moderna (Python y PostgreSQL), lo que permite una integración entre módulos clave como:
-
+\newpage
 \begin{itemize}
-    \item \textbf{Fabricación (MRP):} Control de órdenes de producción.
+    \item \textbf{Ventas y CRM:} Control de ventas y relación con clientes.
     \item \textbf{Gestión de Inventarios:} Seguimiento en tiempo real.
     \item \textbf{Finanzas y Contabilidad:} Automatización de asientos contables.
 \end{itemize}

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.28 (MiKTeX 25.12) (preloaded format=pdflatex 2026.5.14)  14 MAY 2026 14:10
+This is pdfTeX, Version 3.141592653-2.6-1.40.28 (MiKTeX 25.12) (preloaded format=pdflatex 2026.5.14)  14 MAY 2026 16:38
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -933,7 +933,7 @@ Package: lscape 2020/05/28 v3.02 Landscape Pages (DPC)
 )
 Package pdflscape Info: Auto-detected driver: pdftex on input line 81.
 )) (capitulos/portada.tex
-<figuras/logo_itv.png, id=203, 1.00375pt x 1.00375pt>
+<figuras/logo_itv.png, id=195, 1.00375pt x 1.00375pt>
 File: figuras/logo_itv.png Graphic file (type png)
 <use figuras/logo_itv.png>
 Package pdftex.def Info: figuras/logo_itv.png  used on input line 7.
@@ -1150,23 +1150,23 @@ LaTeX2e <2025-11-01>
 L3 programming layer <2025-12-24>
  ***********
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 917BAD130ECF94E08A2DDD3A2E8E9F6D;12499.
+(rerunfilecheck)             Checksum: 61503F9A94007199C47824767AABF8FA;11963.
 Package logreq Info: Writing requests to 'main.run.xml'.
 \openout1 = `main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 30285 strings out of 467871
- 579365 string characters out of 5411080
+ 30281 strings out of 467871
+ 579305 string characters out of 5411080
  1621184 words of memory out of 5000000
- 58442 multiletter control sequences out of 15000+600000
+ 58440 multiletter control sequences out of 15000+600000
  668866 words of font info for 92 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  73i,10n,80p,911b,3147s stack positions out of 10000i,1000n,20000p,200000b,200000s
  <C:\Users\ANGEL JFLORES ACOSTA\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ectt1200.pk><C:/Users/ANGEL JFLORES ACOSTA/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/ANGEL JFLORES ACOSTA/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/ANGEL JFLORES ACOSTA/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmb8a.pfb><C:/Users/ANGEL JFLORES ACOSTA/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmr8a.pfb><C:/Users/ANGEL JFLORES ACOSTA/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmri8a.pfb>
-Output written on main.pdf (47 pages, 265960 bytes).
+Output written on main.pdf (47 pages, 263279 bytes).
 PDF statistics:
- 905 PDF objects out of 1000 (max. 8388607)
- 332 named destinations out of 1000 (max. 500000)
- 406 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 894 PDF objects out of 1000 (max. 8388607)
+ 330 named destinations out of 1000 (max. 500000)
+ 390 words of extra memory for PDF output out of 10000 (max. 10000000)
 
