@@ -1,13 +1,15 @@
 \babel@toc {spanish}{}\relax 
+\vspace {1em}\noindent \textbf {Generalidades del Proyecto}\par \vspace {0.3em}
 \contentsline {chapter}{\numberline {1}Introducción}{1}{chapter.1}%
 \contentsline {chapter}{\numberline {2}Descripción de la empresa u organización y del puesto o área de trabajo del estudiante}{2}{chapter.2}%
 \contentsline {section}{\numberline {2.1}Generalidades de la empresa}{2}{section.2.1}%
 \contentsline {section}{\numberline {2.2}Descripción del área de trabajo}{2}{section.2.2}%
-\contentsline {chapter}{\numberline {3}Problemas a resolver, priorizándolos}{3}{chapter.3}%
+\contentsline {chapter}{\numberline {3}Problemas a resolver}{3}{chapter.3}%
 \contentsline {chapter}{\numberline {4}Objetivos}{4}{chapter.4}%
 \contentsline {section}{\numberline {4.1}Objetivo General}{4}{section.4.1}%
 \contentsline {section}{\numberline {4.2}Objetivos Específicos}{4}{section.4.2}%
 \contentsline {chapter}{\numberline {5}Justificación}{5}{chapter.5}%
+\vspace {1em}\noindent \textbf {Marco Teórico}\par \vspace {0.3em}
 \contentsline {chapter}{\numberline {6}Marco Teórico}{6}{chapter.6}%
 \contentsline {section}{\numberline {6.1}Antecedentes}{6}{section.6.1}%
 \contentsline {section}{\numberline {6.2}Modelado Dimensional: La Fundación de la Analítica}{7}{section.6.2}%
@@ -24,6 +26,7 @@
 \contentsline {section}{\numberline {6.7}Pipelines Declarativos y el Rol de SQLMesh}{11}{section.6.7}%
 \contentsline {section}{\numberline {6.8}Gobierno de Datos: Marco Estratégico}{12}{section.6.8}%
 \contentsline {section}{\numberline {6.9}Sistemas ERP y el Ecosistema Odoo}{12}{section.6.9}%
+\vspace {1em}\noindent \textbf {Desarrollo}\par \vspace {0.3em}
 \contentsline {chapter}{\numberline {7}Procedimiento y descripción de las actividades realizadas}{14}{chapter.7}%
 \contentsline {section}{\numberline {7.1}Levantamiento de requerimientos del área de Finanzas}{14}{section.7.1}%
 \contentsline {subsection}{\numberline {7.1.1}Requerimientos de Información Financiera y Contable}{14}{subsection.7.1.1}%
@@ -33,13 +36,13 @@
 \contentsline {subsection}{\numberline {7.3.1}Creación de EC2}{15}{subsection.7.3.1}%
 \contentsline {subsection}{\numberline {7.3.2}Configuración de entorno Cloud (Linux)}{17}{subsection.7.3.2}%
 \contentsline {section}{\numberline {7.4}Creación de scripts ETL de datos con Airflow}{22}{section.7.4}%
-\contentsline {subsection}{\numberline {7.4.1}Scripts de Extracción a Bronce}{23}{subsection.7.4.1}%
+\contentsline {subsection}{\numberline {7.4.1}Scripts de Extracción a Bronce}{22}{subsection.7.4.1}%
 \contentsline {subsubsection}{Inicio de la instancia de ingesta en Airflow}{23}{subsubsection*.23}%
 \contentsline {subsubsection}{Definición de la ventana de extracción}{23}{subsubsection*.24}%
-\contentsline {subsubsection}{Lectura del SQL de extracción}{24}{subsubsection*.25}%
+\contentsline {subsubsection}{Lectura del SQL de extracción}{23}{subsubsection*.25}%
 \contentsline {subsubsection}{Conexión a la base de datos fuente}{24}{subsubsection*.26}%
 \contentsline {subsubsection}{Extracción de datos a CSV}{24}{subsubsection*.27}%
-\contentsline {subsubsection}{Validación de la extracción}{25}{subsubsection*.28}%
+\contentsline {subsubsection}{Validación de la extracción}{24}{subsubsection*.28}%
 \contentsline {subsubsection}{Conversión de CSV a Parquet con DuckDB}{25}{subsubsection*.29}%
 \contentsline {subsubsection}{Preparación de la carga hacia el Data Warehouse}{25}{subsubsection*.30}%
 \contentsline {subsubsection}{Conexión de DuckDB al Data Warehouse}{26}{subsubsection*.31}%
@@ -50,21 +53,24 @@
 \contentsline {subsubsection}{Ejecución del plan de SQLMesh desde Airflow}{27}{subsubsection*.35}%
 \contentsline {subsubsection}{Configuración de conexión de SQLMesh}{28}{subsubsection*.36}%
 \contentsline {subsubsection}{Descubrimiento y estructura de los modelos Plata}{28}{subsubsection*.37}%
-\contentsline {subsubsection}{Transformaciones aplicadas en la Capa Plata}{29}{subsubsection*.38}%
-\contentsline {subsubsection}{Materialización y disponibilidad para la Capa Oro}{30}{subsubsection*.39}%
+\contentsline {subsubsection}{Transformaciones aplicadas en la Capa Plata}{28}{subsubsection*.38}%
+\contentsline {subsubsection}{Materialización y disponibilidad para la Capa Oro}{29}{subsubsection*.39}%
 \contentsline {subsection}{\numberline {7.4.3}Construcción de Modelo dimensional y tablas de hechos}{30}{subsection.7.4.3}%
 \contentsline {subsubsection}{Tabla de hechos: \texttt {oro.fact\_gastos\_distribucion}}{30}{subsubsection*.40}%
 \contentsline {subsubsection}{Flujo de construcción del modelo}{31}{subsubsection*.41}%
 \contentsline {subsubsection}{Tablas de dimensiones}{32}{subsubsection*.42}%
-\contentsline {subsubsection}{Esquema estrella resultante}{33}{subsubsection*.43}%
+\contentsline {subsubsection}{Esquema estrella resultante}{32}{subsubsection*.43}%
 \contentsline {section}{\numberline {7.5}Configuración de EC2 para exponer datos a Power BI}{33}{section.7.5}%
 \contentsline {subsection}{\numberline {7.5.1}Configuración de Ec2 para exposición de datos}{33}{subsection.7.5.1}%
 \contentsline {subsection}{\numberline {7.5.2}Configuración de Power BI service}{33}{subsection.7.5.2}%
+\vspace {1em}\noindent \textbf {Resultados}\par \vspace {0.3em}
 \contentsline {chapter}{\numberline {8}Resultados}{35}{chapter.8}%
 \contentsline {section}{\numberline {8.1}Dashboards de Inteligencia de Negocios}{35}{section.8.1}%
-\contentsline {chapter}{\numberline {9}Actividades Sociales realizadas en la empresa u organización}{36}{chapter.9}%
-\contentsline {chapter}{\numberline {10}Conclusiones, recomendaciones y experiencia profesional adquirida}{37}{chapter.10}%
-\contentsline {chapter}{\numberline {11}Competencias desarrolladas y/o aplicadas}{38}{chapter.11}%
-\contentsline {chapter}{\numberline {A}Anexos}{39}{appendix.Alph1}%
-\contentsline {section}{\numberline {A.1}Carta de autorización de la empresa}{39}{section.Alph1.1}%
-\contentsline {chapter}{\numberline {B}Registros de Productos}{40}{appendix.Alph2}%
+\vspace {1em}\noindent \textbf {Conclusiones}\par \vspace {0.3em}
+\contentsline {chapter}{\numberline {9}Conclusiones, recomendaciones y experiencia profesional adquirida}{36}{chapter.9}%
+\vspace {1em}\noindent \textbf {Competencias Desarrolladas}\par \vspace {0.3em}
+\contentsline {chapter}{\numberline {10}Competencias desarrolladas y/o aplicadas}{37}{chapter.10}%
+\vspace {1em}\noindent \textbf {Fuentes de Información}\par \vspace {0.3em}
+\vspace {1em}\noindent \textbf {Anexos}\par \vspace {0.3em}
+\contentsline {chapter}{\numberline {A}Anexos}{38}{appendix.Alph1}%
+\contentsline {section}{\numberline {A.1}Carta de autorización de la empresa}{38}{section.Alph1.1}%

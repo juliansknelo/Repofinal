@@ -1,11 +1,11 @@
 # Fdb version 4
-["biber main"] 1778777137.21935 "main.bcf" "main.bbl" "main" 1778798314.62484 0
-  "main.bcf" 1778798314 133351 08ba25774df3888e04087046f6427584 "pdflatex"
+["biber main"] 1778777137.21935 "main.bcf" "main.bbl" "main" 1778801668.1732 0
+  "main.bcf" 1778801667 133351 08ba25774df3888e04087046f6427584 "pdflatex"
   (generated)
   "main.bbl"
   "main.blg"
   (rewritten before read)
-["pdflatex"] 1778798312.40074 "c:/Users/ANGEL JFLORES ACOSTA/ReporteResis/main.tex" "main.pdf" "main" 1778798314.62548 0
+["pdflatex"] 1778801665.91874 "c:/Users/ANGEL JFLORES ACOSTA/ReporteResis/main.tex" "main.pdf" "main" 1778801668.17394 0
   "C:/Users/ANGEL" 1756310582 19003 a3dbcc2a3e23d61c9b83fee38426a5e8 ""
   "C:/Users/ANGEL JFLORES ACOSTA/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map" 1778773785 82507 a9eef8696c92627b87e9975edea03b2a ""
   "C:/Users/ANGEL JFLORES ACOSTA/AppData/Local/MiKTeX/fonts/pk/ljfour/jknappen/ec/dpi600/ectt1200.pk" 1778776841 24152 a36a2b9bc6443f75baa1384a7cdbdd8e ""
@@ -157,13 +157,12 @@
   "C:/Users/ANGEL JFLORES ACOSTA/AppData/Local/Programs/MiKTeX/tex/latex/url/url.sty" 1388490452 12796 8edb7d69a20b857904dd0ea757c14ec9 ""
   "C:/Users/ANGEL JFLORES ACOSTA/AppData/Local/Programs/MiKTeX/tex/latex/xcolor/xcolor.sty" 1729265222 55384 b454dec21c2d9f45ec0b793f0995b992 ""
   "c:/Users/ANGEL" 1756310582 19003 a3dbcc2a3e23d61c9b83fee38426a5e8 ""
-  "c:/Users/ANGEL JFLORES ACOSTA/ReporteResis/main.tex" 1778773833 3986 c659f0d808a1d647d73d95f006e8c51e ""
-  "capitulos/actividades_sociales.tex" 1778770168 83 f69262167ef2f29d12a902f6ed479342 ""
+  "c:/Users/ANGEL JFLORES ACOSTA/ReporteResis/main.tex" 1778799894 6178 dfaf6898673540eca5cd377cfc3b5a23 ""
   "capitulos/agradecimientos.tex" 1778770113 44 7ad6e63be12d52f1ee8a2a6a4b8b407c ""
   "capitulos/anexos.tex" 1778770183 103 d1cc2c0f091c6cd2502c30229a3e54d1 ""
   "capitulos/competencias.tex" 1778774240 816 a1d1e8d6fbc433836508ebca57164f1d ""
   "capitulos/conclusiones.tex" 1778770174 525 a8bf69ccc89d74452e9ae985ba8b11fa ""
-  "capitulos/desarrollo.tex" 1778789576 42180 3bdbc1b5530e3291c0ca7bff32d29ff0 ""
+  "capitulos/desarrollo.tex" 1778801665 42159 e9e7f010990003817286023a48741829 ""
   "capitulos/descripcion_empresa.tex" 1778770128 1227 24a5b54ab9dca0a5c09f6b40f6351dc8 ""
   "capitulos/introduccion.tex" 1778770123 1018 43a0f531458fec1a1380109dc0d24837 ""
   "capitulos/justificacion.tex" 1778770144 764 66cbb9b51a768b322bc992857e0714fd ""
@@ -171,18 +170,17 @@
   "capitulos/objetivos.tex" 1778770139 1159 0d6a50853bc402a1d7519249adece37e ""
   "capitulos/portada.tex" 1778770108 864 d51369d80ec3aef4baeb009e6ec230e9 ""
   "capitulos/problemas.tex" 1778770134 803 a906862b68fdb229771d420ee3cdb6af ""
-  "capitulos/registros_productos.tex" 1778770188 79 93d19c03027314e2c6a36f7f5138cf7f ""
   "capitulos/resultados.tex" 1778770163 1380 72920fee12c3d3efe9f358d1ec6fe5e8 ""
   "capitulos/resumen.tex" 1778770118 100 9d12b20cd6943eebf96b3df346e2af26 ""
   "figuras/logo_itv.png" 1778774285 70 06d940104c0c428e61add74ff160f991 ""
-  "main.aux" 1778798314 17502 4c17b970943f06c548f11550928ea0bc "pdflatex"
+  "main.aux" 1778801667 17774 c8dfa59456129462ac8dd30ee49a1616 "pdflatex"
   "main.bbl" 1778777149 486 76d65a242ec496c9b4361af646ff12cb "biber main"
-  "main.lof" 1778798314 2973 5e397dbdbf1fffc6744c268cf7488f21 "pdflatex"
-  "main.lot" 1778798314 538 517a9dff22210ac32468897e126419e2 "pdflatex"
-  "main.out" 1778798314 11963 61503f9a94007199c47824767aabf8fa "pdflatex"
-  "main.run.xml" 1778798314 2360 e823dede0fdb354f7eff64774b1cfad0 "pdflatex"
-  "main.tex" 1778773833 3986 c659f0d808a1d647d73d95f006e8c51e ""
-  "main.toc" 1778798314 6790 8793d58d4f7326fd764455fc3ae65398 "pdflatex"
+  "main.lof" 1778801667 2933 de50e74330b2c5d8aca406b48144c798 "pdflatex"
+  "main.lot" 1778801667 498 0f04b4cb9805a9d63d98d2952bb19b58 "pdflatex"
+  "main.out" 1778801667 11343 8f9989779ba024d9b1609139d1760744 "pdflatex"
+  "main.run.xml" 1778801667 2360 e823dede0fdb354f7eff64774b1cfad0 "pdflatex"
+  "main.tex" 1778799894 6178 dfaf6898673540eca5cd377cfc3b5a23 ""
+  "main.toc" 1778801667 7128 8d670638c82901c560db1073bb73d082 "pdflatex"
   (generated)
   "main.aux"
   "main.bcf"

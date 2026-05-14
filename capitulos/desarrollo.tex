@@ -21,13 +21,7 @@ Se diseña la arquitectura tecnológica del sistema con el objetivo de establece
 
 \subsection{Diseño de arquitectura Data Lakehouse}
 
-El diseño se estructura bajo un modelo de Data Lakehouse fundamentado en tres pilares: robustez, flexibilidad y confiabilidad. Se utilizan los siguientes componentes:
-
-\begin{itemize}
-    \item \textbf{Cómputo Elástico (Amazon EC2):} Se utilizan instancias para el procesamiento de datos.
-    \item \textbf{Almacenamiento Híbrido (EBS y S3):} Se provisionan volúmenes EBS para el Data Warehouse y Amazon S3 para el Data Lake.
-    \item \textbf{Seguridad y Gestión de Accesos (IAM):} Se asignan Roles IAM y Grupos de Seguridad para el control del tráfico y permisos.
-\end{itemize}
+El diseño se estructura bajo un modelo de Data Lakehouse fundamentado en tres pilares: robustez, flexibilidad y confiabilidad. Para el procesamiento de datos, se emplea Cómputo Elástico mediante instancias de Amazon EC2. Asimismo, se implementa un esquema de Almacenamiento Híbrido en el cual se provisionan volúmenes EBS para el Data Warehouse y Amazon S3 para el Data Lake. Finalmente, para garantizar la Seguridad y Gestión de Accesos (IAM), se asignan Roles IAM y Grupos de Seguridad que permiten el control del tráfico y los permisos correspondientes.
 
 \section{Creación y configuración de instancia EC2 en AWS}
 
@@ -606,7 +600,7 @@ El modelo se construye mediante una serie de CTEs (\textit{Common Table Expressi
 
     \item \textbf{Expansión de la distribución analítica:} La CTE \texttt{distribucion\_expandida} toma el campo JSONB \texttt{analytic\_distribution} y lo convierte en pares clave-valor mediante \texttt{CROSS JOIN LATERAL jsonb\_each\_text(...)}. Se contempla un caso especial donde el JSONB puede llegar como tipo \textit{string} envuelto, el cual se desempaqueta automáticamente. Solo se incluyen movimientos con estado publicado (\texttt{parent\_state = 'posted'}).
 
-    \item \textbf{Separación de claves compuestas:} La CTE \texttt{distribucion\_individual} maneja las claves analíticas compuestas de Odoo (por ejemplo, ``10,25'') separándolas mediante \texttt{unnest(string\_to\_array(...))} y convirtiendo el porcentaje analítico a tipo numérico.
+    \item \textbf{Separación de claves compuestas:} La CTE \texttt{distribucion\_individual} maneja las claves analíticas compuestas de Odoo (por ejemplo, ``10,25'') separándolas mediante \texttt{unnest\\(string\_to\_array(...))} y convirtiendo el porcentaje analítico a tipo numérico.
 
     \item \textbf{Conservación de líneas sin analítica:} La CTE \texttt{sin\_analitica} captura las líneas contables publicadas que no poseen distribución analítica, asignando valores nulos a los campos correspondientes. Esto permite analizar gastos incluso cuando carecen de clasificación analítica.
 

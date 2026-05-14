@@ -100,13 +100,18 @@
 \clearpage
 \pagenumbering{arabic}
 
+% ═══════════════════════════════════════════
+% GENERALIDADES DEL PROYECTO
+% ═══════════════════════════════════════════
+\addtocontents{toc}{\vspace{1em}\noindent\textbf{Generalidades del Proyecto}\par\vspace{0.3em}}
+
 \chapter{Introducción}
 \input{capitulos/introduccion}
 
 \chapter{Descripción de la empresa u organización y del puesto o área de trabajo del estudiante}
 \input{capitulos/descripcion_empresa}
 
-\chapter{Problemas a resolver, priorizándolos}
+\chapter{Problemas a resolver}
 \input{capitulos/problemas}
 
 \chapter{Objetivos}
@@ -115,33 +120,54 @@
 \chapter{Justificación}
 \input{capitulos/justificacion}
 
+% ═══════════════════════════════════════════
+% MARCO TEÓRICO
+% ═══════════════════════════════════════════
+\addtocontents{toc}{\vspace{1em}\noindent\textbf{Marco Teórico}\par\vspace{0.3em}}
+
 \chapter{Marco Teórico}
 \input{capitulos/marco_teorico}
+
+% ═══════════════════════════════════════════
+% DESARROLLO
+% ═══════════════════════════════════════════
+\addtocontents{toc}{\vspace{1em}\noindent\textbf{Desarrollo}\par\vspace{0.3em}}
 
 \chapter{Procedimiento y descripción de las actividades realizadas}
 \input{capitulos/desarrollo}
 
+% ═══════════════════════════════════════════
+% RESULTADOS
+% ═══════════════════════════════════════════
+\addtocontents{toc}{\vspace{1em}\noindent\textbf{Resultados}\par\vspace{0.3em}}
+
 \chapter{Resultados}
 \input{capitulos/resultados}
 
-\chapter{Actividades Sociales realizadas en la empresa u organización}
-\input{capitulos/actividades_sociales}
+% ═══════════════════════════════════════════
+% CONCLUSIONES
+% ═══════════════════════════════════════════
+\addtocontents{toc}{\vspace{1em}\noindent\textbf{Conclusiones}\par\vspace{0.3em}}
 
 \chapter{Conclusiones, recomendaciones y experiencia profesional adquirida}
 \input{capitulos/conclusiones}
+
+% ═══════════════════════════════════════════
+% COMPETENCIAS DESARROLLADAS
+% ═══════════════════════════════════════════
+\addtocontents{toc}{\vspace{1em}\noindent\textbf{Competencias Desarrolladas}\par\vspace{0.3em}}
 
 \chapter{Competencias desarrolladas y/o aplicadas}
 \input{capitulos/competencias}
 
 % --- Fuentes de información ---
+\addtocontents{toc}{\vspace{1em}\noindent\textbf{Fuentes de Información}\par\vspace{0.3em}}
 \printbibliography[title={Fuentes de información}]
 
 % --- Anexos ---
+\addtocontents{toc}{\vspace{1em}\noindent\textbf{Anexos}\par\vspace{0.3em}}
 \appendix
 \chapter{Anexos}
 \input{capitulos/anexos}
-
-\chapter{Registros de Productos}
-\input{capitulos/registros_productos}
 
 \end{document}

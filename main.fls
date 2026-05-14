@@ -397,16 +397,16 @@ INPUT C:\Users\ANGEL JFLORES ACOSTA\AppData\Local\Programs\MiKTeX\tex\latex\list
 INPUT C:\Users\ANGEL JFLORES ACOSTA\AppData\Local\Programs\MiKTeX\tex\latex\listings\lstlang1.sty
 INPUT C:\Users\ANGEL JFLORES ACOSTA\AppData\Local\Programs\MiKTeX\tex\latex\listings\lstlang1.sty
 INPUT C:\Users\ANGEL JFLORES ACOSTA\AppData\Local\Programs\MiKTeX\tex\latex\listings\lstlang1.sty
+INPUT C:\Users\ANGEL JFLORES ACOSTA\AppData\Local\Programs\MiKTeX\tex\latex\psnfss\ts1ptm.fd
+INPUT C:\Users\ANGEL JFLORES ACOSTA\AppData\Local\Programs\MiKTeX\tex\latex\psnfss\ts1ptm.fd
+INPUT C:\Users\ANGEL JFLORES ACOSTA\AppData\Local\Programs\MiKTeX\tex\latex\psnfss\ts1ptm.fd
+INPUT C:\Users\ANGEL JFLORES ACOSTA\AppData\Local\Programs\MiKTeX\fonts\tfm\adobe\times\ptmr8c.tfm
 INPUT C:\Users\ANGEL JFLORES ACOSTA\AppData\Local\Programs\MiKTeX\fonts\vf\adobe\times\zptmcm7t.vf
 INPUT C:\Users\ANGEL JFLORES ACOSTA\AppData\Local\Programs\MiKTeX\fonts\tfm\adobe\symbol\psyr.tfm
 INPUT C:\Users\ANGEL JFLORES ACOSTA\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmr10.tfm
 INPUT C:\Users\ANGEL JFLORES ACOSTA\AppData\Local\Programs\MiKTeX\fonts\vf\adobe\times\zptmcm7m.vf
 INPUT C:\Users\ANGEL JFLORES ACOSTA\AppData\Local\Programs\MiKTeX\fonts\tfm\adobe\times\psyro.tfm
 INPUT C:\Users\ANGEL JFLORES ACOSTA\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmmi10.tfm
-INPUT C:\Users\ANGEL JFLORES ACOSTA\AppData\Local\Programs\MiKTeX\tex\latex\psnfss\ts1ptm.fd
-INPUT C:\Users\ANGEL JFLORES ACOSTA\AppData\Local\Programs\MiKTeX\tex\latex\psnfss\ts1ptm.fd
-INPUT C:\Users\ANGEL JFLORES ACOSTA\AppData\Local\Programs\MiKTeX\tex\latex\psnfss\ts1ptm.fd
-INPUT C:\Users\ANGEL JFLORES ACOSTA\AppData\Local\Programs\MiKTeX\fonts\tfm\adobe\times\ptmr8c.tfm
 INPUT C:\Users\ANGEL JFLORES ACOSTA\AppData\Local\Programs\MiKTeX\fonts\vf\adobe\times\ptmr8c.vf
 INPUT C:\Users\ANGEL JFLORES ACOSTA\AppData\Local\Programs\MiKTeX\fonts\vf\adobe\times\zptmcm7y.vf
 INPUT C:\Users\ANGEL JFLORES ACOSTA\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmsy10.tfm
@@ -422,11 +422,6 @@ INPUT .\capitulos\resultados.tex
 INPUT .\capitulos\resultados.tex
 INPUT .\capitulos\resultados.tex
 INPUT capitulos\resultados.tex
-INPUT .\capitulos\actividades_sociales.tex
-INPUT .\capitulos\actividades_sociales.tex
-INPUT .\capitulos\actividades_sociales.tex
-INPUT .\capitulos\actividades_sociales.tex
-INPUT capitulos\actividades_sociales.tex
 INPUT .\capitulos\conclusiones.tex
 INPUT .\capitulos\conclusiones.tex
 INPUT .\capitulos\conclusiones.tex
@@ -442,11 +437,6 @@ INPUT .\capitulos\anexos.tex
 INPUT .\capitulos\anexos.tex
 INPUT .\capitulos\anexos.tex
 INPUT capitulos\anexos.tex
-INPUT .\capitulos\registros_productos.tex
-INPUT .\capitulos\registros_productos.tex
-INPUT .\capitulos\registros_productos.tex
-INPUT .\capitulos\registros_productos.tex
-INPUT capitulos\registros_productos.tex
 INPUT main.aux
 INPUT .\main.out
 INPUT .\main.out
