@@ -31,11 +31,556 @@ El diseño se estructura bajo un modelo de Data Lakehouse fundamentado en tres p
 
 \section{Creación y configuración de instancia EC2 en AWS}
 
-Se crea y configura una instancia EC2 en AWS que funciona como servidor principal para la ejecución de los procesos ETL. Se realiza la instalación de Python y las librerías necesarias, así como la configuración de Apache Airflow.
+\subsection{Creación de EC2}
+
+Se crea una instancia de Amazon EC2 en la plataforma de AWS, la cual funciona como servidor principal para alojar el motor de base de datos y orquestar los procesos de extracción, transformación y carga (ETL). Durante esta creación, se asignan los recursos de cómputo y memoria adecuados (4 vCPUs y 32 GB de RAM) para asegurar el correcto procesamiento y almacenamiento de la información financiera.
+
+Para iniciar este proceso, se accede a la consola de administración mediante una cuenta de AWS, ya sea en la capa gratuita o de pago (ver figura \ref{fig:aws_login}).
+
+\begin{figure}[H]
+    \centering
+    % \includegraphics[width=0.8\textwidth]{figuras/aws_login.png}
+    \caption{Inicio de sesión en la consola de AWS.}
+    \label{fig:aws_login}
+\end{figure}
+
+Posteriormente, en la barra de búsqueda principal se ingresa el término ``EC2'' y se selecciona el servicio correspondiente (ver figura \ref{fig:aws_ec2_search}).
+
+\begin{figure}[H]
+    \centering
+    % \includegraphics[width=0.8\textwidth]{figuras/aws_ec2_search.png}
+    \caption{Búsqueda del servicio EC2 en la consola de AWS.}
+    \label{fig:aws_ec2_search}
+\end{figure}
+
+En el panel principal del servicio, se ubica y selecciona la opción \textit{Lanzar instancia} para comenzar con la configuración (ver figura \ref{fig:aws_launch_instance}).
+
+\begin{figure}[H]
+    \centering
+    % \includegraphics[width=0.8\textwidth]{figuras/aws_launch_instance.png}
+    \caption{Opción para lanzar una nueva instancia.}
+    \label{fig:aws_launch_instance}
+\end{figure}
+
+Se despliega un formulario para definir los parámetros de lanzamiento. En primer lugar, se asigna un nombre identificativo a la instancia (ver figura \ref{fig:aws_name}).
+
+\begin{figure}[H]
+    \centering
+    % \includegraphics[width=0.8\textwidth]{figuras/aws_name.png}
+    \caption{Asignación de nombre a la instancia EC2.}
+    \label{fig:aws_name}
+\end{figure}
+
+En la sección de Imágenes de Aplicaciones y Sistemas Operativos (AMI), se elige la distribución \textit{Ubuntu} (ver figura \ref{fig:aws_ami_selection}), seleccionando específicamente la versión \textit{Ubuntu Server 24.04 LTS} (ver figura \ref{fig:aws_ami_version}).
+
+\begin{figure}[H]
+    \centering
+    % \includegraphics[width=0.8\textwidth]{figuras/aws_ami_selection.png}
+    \caption{Selección de la imagen del sistema operativo Ubuntu.}
+    \label{fig:aws_ami_selection}
+\end{figure}
+
+\begin{figure}[H]
+    \centering
+    % \includegraphics[width=0.8\textwidth]{figuras/aws_ami_version.png}
+    \caption{Selección de la versión Ubuntu Server 24.04.}
+    \label{fig:aws_ami_version}
+\end{figure}
+
+Para el tipo de instancia, se decide por la familia \texttt{r7.xlarge} tras un análisis de costo-beneficio. Esta familia de instancias se encuentra optimizada para cargas de trabajo con requerimientos intensivos de memoria, alineándose con las necesidades de almacenamiento y procesamiento del motor de base de datos del proyecto (ver figura \ref{fig:aws_instance_type_selection}).
+
+\begin{figure}[H]
+    \centering
+    % \includegraphics[width=0.8\textwidth]{figuras/aws_instance_type_selection.png}
+    \caption{Selección del tipo de instancia optimizada para memoria.}
+    \label{fig:aws_instance_type_selection}
+\end{figure}
+
+A continuación, se genera un nuevo par de claves de seguridad, el cual resulta fundamental para establecer futuras conexiones seguras mediante el protocolo SSH (ver figura \ref{fig:aws_key_pair_creation}).
+
+\begin{figure}[H]
+    \centering
+    % \includegraphics[width=0.8\textwidth]{figuras/aws_key_pair_creation.png}
+    \caption{Creación del par de claves para conexión SSH.}
+    \label{fig:aws_key_pair_creation}
+\end{figure}
+
+En el apartado de \textit{Configuraciones de red}, se despliegan las opciones avanzadas (ver figura \ref{fig:aws_edit_network_info}). Se selecciona la misma VPC (\textit{Virtual Private Cloud}) y subred donde operan las instancias de producción actuales. Esta estrategia evita los costos por transferencia externa de datos. Asimismo, se habilita la asignación automática de una dirección IP pública para permitir la posterior instalación de dependencias desde internet y se indica la creación de un nuevo grupo de seguridad que será editado más adelante (ver figura \ref{fig:aws_edit_advance_network}).
+
+\begin{figure}[H]
+    \centering
+    % \includegraphics[width=0.8\textwidth]{figuras/aws_edit_network_info.png}
+    \caption{Edición de las configuraciones de red.}
+    \label{fig:aws_edit_network_info}
+\end{figure}
+
+\begin{figure}[H]
+    \centering
+    % \includegraphics[width=0.8\textwidth]{figuras/aws_edit_advance_network.png}
+    \caption{Configuración avanzada de red (VPC, subred e IP pública).}
+    \label{fig:aws_edit_advance_network}
+\end{figure}
+
+Finalmente, se configura el almacenamiento seleccionando la opción avanzada (ver figura \ref{fig:aws_storage}). Se establece un volumen de tipo \texttt{gp3} con una capacidad de \SI{300}{GB}, configurado con \num{7000} IOPS y un rendimiento de \SI{300}{MB/s}. Se especifica que el volumen no se elimine al terminar la instancia y se deshabilita el cifrado para esta capa de almacenamiento.
+
+\begin{figure}[H]
+    \centering
+    % \includegraphics[width=0.8\textwidth]{figuras/aws_storage.png}
+    \caption{Configuración avanzada del volumen de almacenamiento EBS.}
+    \label{fig:aws_storage}
+\end{figure}
+
+\subsection{Configuración de entorno Cloud (Linux)}
+
+Tras el despliegue de la instancia, se ejecuta de manera automática un script de inicialización (\textit{User Data}) que prepara y configura el entorno operativo Linux. A continuación, se detalla el procedimiento ejecutado a través de los diversos comandos del script:
+
+En primer lugar, se establece una variable de entorno para evitar interrupciones por diálogos interactivos durante la instalación, asegurando una ejecución desatendida. Seguidamente, se actualizan los repositorios y paquetes del sistema:
+
+\begin{lstlisting}[language=bash, breaklines=true]
+export DEBIAN_FRONTEND=noninteractive
+echo "==> Iniciando User Data Script para DWH & Airflow (TEST VER)..."
+apt update
+apt upgrade -y
+\end{lstlisting}
+
+Posteriormente, se instalan las dependencias principales del sistema, que incluyen el sistema gestor de bases de datos PostgreSQL y las herramientas de desarrollo para Python necesarias para compilar librerías y configurar Apache Airflow:
+
+\begin{lstlisting}[language=bash, breaklines=true]
+apt install -y postgresql postgresql-contrib \
+python3-pip python3-venv python3-dev \
+libpq-dev build-essential libssl-dev libffi-dev
+\end{lstlisting}
+
+En la siguiente etapa, se configura PostgreSQL. Se modifica el archivo \texttt{pg\_hba.conf} para permitir conexiones remotas y se insertan parámetros ajustados de rendimiento en el archivo \texttt{postgresql.conf}. Dichos parámetros optimizan el uso de memoria caché, memoria de trabajo, configuraciones de paralelismo y el comportamiento del \textit{autovacuum} para la arquitectura de la instancia. Al finalizar, se reinicia el servicio:
+
+\begin{lstlisting}[language=bash, breaklines=true]
+PG_VERSION=$(ls /etc/postgresql | sort -V | tail -n 1)
+echo "host all all 0.0.0.0/0 md5" >> /etc/postgresql/${PG_VERSION}/main/pg_hba.conf
+
+cat >> /etc/postgresql/$PG_VERSION/main/postgresql.conf 
+Parametros optimizados para 2 vCPU y 8GB RAM
+listen_addresses = '*'
+shared_buffers = 2GB
+work_mem = 32MB
+max_worker_processes = 2
+max_connections = 50
+# (Entre otras configuraciones detalladas en el script original)
+EOF_PG
+
+systemctl restart postgresql
+\end{lstlisting}
+
+A continuación, se generan las bases de datos y los roles requeridos. Se crea la base de datos \texttt{airflow} junto con un usuario administrador específico, y se establece la base de datos \texttt{dlh\_19} habilitando la extensión \texttt{pg\_stat\_statements} para monitoreo de consultas:
+
+\begin{lstlisting}[language=bash, breaklines=true]
+sudo -u postgres psql <<'EOF_SQL'
+CREATE DATABASE airflow;
+CREATE USER airflow_user WITH PASSWORD 'airflow';
+ALTER ROLE airflow_user SET client_encoding TO 'utf8';
+ALTER ROLE airflow_user SET default_transaction_isolation TO 'read committed';
+ALTER ROLE airflow_user SET timezone TO 'UTC';
+GRANT ALL PRIVILEGES ON DATABASE airflow TO airflow_user;
+\c airflow
+GRANT ALL ON SCHEMA public TO airflow_user;
+ALTER SCHEMA public OWNER TO airflow_user;
+EOF_SQL
+
+sudo -u postgres psql -c "CREATE DATABASE dlh_19;" || true
+sudo -u postgres psql -d dlh_19 -c "CREATE EXTENSION IF NOT EXISTS pg_stat_statements;"
+\end{lstlisting}
+
+Para gestionar la ejecución de Apache Airflow, se crea un usuario de sistema denominado \texttt{airflow}. A través de este usuario, se configura un entorno virtual de Python y se instalan las librerías requeridas, así como la versión específica de Apache Airflow. También se definen las variables de entorno principales para la conexión a la base de datos:
+
+\begin{lstlisting}[language=bash, breaklines=true]
+id -u airflow &>/dev/null || useradd -m -s /bin/bash airflow
+
+sudo -u airflow bash <<'EOF_AIRFLOW'
+set -e
+mkdir -p ~/airflow
+cd ~/airflow
+python3 -m venv venv-airflow
+source venv-airflow/bin/activate
+pip install --upgrade pip setuptools wheel
+pip install psycopg2-binary asyncpg duckdb "sqlmesh[postgres]"
+
+AIRFLOW_VERSION="3.0.1"
+PYTHON_VERSION=$(python3 --version | cut -d " " -f 2 | cut -d "." -f 1-2)
+pip install "apache-airflow==${AIRFLOW_VERSION}" \
+--constraint "https://raw.githubusercontent.com/apache/airflow/constraints-${AIRFLOW_VERSION}/constraints-${PYTHON_VERSION}.txt"
+
+echo 'export AIRFLOW_HOME=~/airflow' >> ~/.bashrc
+echo 'export AIRFLOW__DATABASE__SQL_ALCHEMY_CONN="postgresql+psycopg2://airflow_user:airflow@localhost:5432/airflow"' >> ~/.bashrc
+EOF_AIRFLOW
+\end{lstlisting}
+
+Una vez instalado, se inicializa la base de datos interna de Airflow mediante un comando de migración y se crea el usuario administrador para el acceso a la interfaz de usuario web:
+
+\begin{lstlisting}[language=bash, breaklines=true]
+sudo -u airflow bash <<'EOF_DB'
+set -e
+cd ~/airflow
+source venv-airflow/bin/activate
+export AIRFLOW_HOME=~/airflow
+export AIRFLOW__DATABASE__SQL_ALCHEMY_CONN="postgresql+psycopg2://airflow_user:airflow@localhost:5432/airflow"
+export AIRFLOW__CORE__EXECUTOR=LocalExecutor
+airflow db migrate
+airflow users create --username admin --firstname Admin --lastname Admin --role Admin --email admin@example.com --password admin || true
+EOF_DB
+\end{lstlisting}
+
+Finalmente, para asegurar que los componentes de Apache Airflow se ejecuten de forma continua y se reinicien automáticamente en caso de falla o reinicio del servidor, se configuran tres servicios de \texttt{systemd} correspondientes a los procesos \textit{Scheduler}, \textit{DAG Processor} y \textit{API Server}. Se habilitan y se inician para completar el despliegue del entorno:
+
+\begin{lstlisting}[language=bash, breaklines=true]
+# Creacion de archivos .service en /etc/systemd/system/
+systemctl daemon-reload
+systemctl enable airflow-scheduler airflow-dag-processor airflow-api-server
+systemctl start airflow-scheduler airflow-dag-processor airflow-api-server
+\end{lstlisting}
+
+Una vez instaladas las herramientas y dependencias, se accede mediante un navegador web a la dirección IP del servidor en el puerto 8080 (\texttt{http://[ip\_del\_servidor]:8080}), donde se despliega el menú de inicio de sesión de Apache Airflow (ver figura \ref{fig:airflow_login}).
+
+\begin{figure}[H]
+    \centering
+    % \includegraphics[width=0.8\textwidth]{figuras/airflow_login.png}
+    \caption{Pantalla de inicio de sesión de Apache Airflow.}
+    \label{fig:airflow_login}
+\end{figure}
+
+Por defecto, el sistema crea un usuario administrador cuya contraseña autogenerada se encuentra alojada en el archivo \texttt{\textasciitilde/airflow/simple\_auth\_manager\_passwords.json.generated}. Se extrae dicha credencial y se introduce en el formulario de acceso, lo cual permite ingresar a la consola principal de administración (ver figura \ref{fig:airflow_main_menu}).
+
+\begin{figure}[H]
+    \centering
+    % \includegraphics[width=0.8\textwidth]{figuras/airflow_main_menu.png}
+    \caption{Menú principal de la consola de administración de Apache Airflow.}
+    \label{fig:airflow_main_menu}
+\end{figure}
+
+Dentro de las configuraciones de administrador, se ubica el apartado de conexiones. Para la operación del presente proyecto se requiere establecer dos conexiones principales:
+\begin{itemize}
+    \item Airflow $\rightarrow$ PostgreSQL (Data Lakehouse).
+    \item Airflow $\rightarrow$ Base de datos de Producción.
+\end{itemize}
+
+Se procede a agregar cada una al seleccionar la opción \textit{Add Connection}, lo que despliega el formulario correspondiente (ver figura \ref{fig:airflow_add_conection}).
+
+\begin{figure}[H]
+    \centering
+    % \includegraphics[width=0.8\textwidth]{figuras/airflow_add_conection_menu.png}
+    \caption{Menú para agregar una nueva conexión en Apache Airflow.}
+    \label{fig:airflow_add_conection}
+\end{figure}
+
+En dicho formulario se ingresan los siguientes datos solicitados y se guardan los cambios:
+\begin{itemize}
+    \item \textbf{Host:} Dirección IP de la base de datos.
+    \item \textbf{Login:} Usuario de la base de datos.
+    \item \textbf{Password:} Contraseña de acceso.
+    \item \textbf{Port:} Puerto de conexión.
+    \item \textbf{Schema:} Nombre de la base de datos a la cual se accederá.
+\end{itemize}
+
+Para la visualización y control de los flujos de trabajo (DAGs), se ubica una pestaña denominada \textit{DAGs} en la barra lateral de la interfaz. En esta sección se enlista la información correspondiente a cada uno de los procesos configurados (ver figura \ref{fig:multiple_dags}).
+
+\begin{figure}[H]
+    \centering
+    % \includegraphics[width=0.8\textwidth]{figuras/multiple_dags.png}
+    \caption{Vista general de los DAGs disponibles en el sistema.}
+    \label{fig:multiple_dags}
+\end{figure}
+
+Al ingresar a la información específica de un DAG, se observan principalmente dos elementos (ver figura \ref{fig:dag_general_info}):
+\begin{enumerate}
+    \item Las tareas que componen el DAG y su estatus actual.
+    \item La información general y las métricas de las ejecuciones del DAG.
+\end{enumerate}
+
+\begin{figure}[H]
+    \centering
+    % \includegraphics[width=0.8\textwidth]{figuras/dag_general_info.png}
+    \caption{Información general y tareas de un DAG específico.}
+    \label{fig:dag_general_info}
+\end{figure}
+
+Asimismo, la plataforma permite visualizar el historial de las instancias de ejecución (DAG Runs) junto con su estado final, indicando si concluyeron de manera exitosa o fallida (ver figura \ref{fig:dag_run_info}).
+
+\begin{figure}[H]
+    \centering
+    % \includegraphics[width=0.8\textwidth]{figuras/dag_run_info.png}
+    \caption{Historial e información de las instancias de ejecución del DAG.}
+    \label{fig:dag_run_info}
+\end{figure}
+
+Por último, se cuenta con una vista de calendario que facilita el monitoreo de las ejecuciones pasadas, su estado correspondiente y, en el caso de flujos programados recurrentemente, las ejecuciones planificadas a futuro (ver figura \ref{fig:dag_calendar_info}).
+
+\begin{figure}[H]
+    \centering
+    % \includegraphics[width=0.8\textwidth]{figuras/dag_calendar_info.png}
+    \caption{Vista de calendario con ejecuciones pasadas y futuras del DAG.}
+    \label{fig:dag_calendar_info}
+\end{figure}
 
 \section{Creación de scripts ETL de datos con Airflow}
 
 Se desarrollan scripts en Python para implementar los procesos de extracción, transformación y carga de datos. Se utiliza Apache Airflow para definir flujos de ejecución mediante DAGs (\textit{Directed Acyclic Graphs}).
+
+\subsection{Scripts de Extracción a Bronce}
+
+La Capa Bronce constituye la primera capa del Data Warehouse. Su objetivo consiste en almacenar una copia de los datos lo más cercana posible a la fuente original, sin aplicar transformaciones de negocio significativas. El flujo general de ingesta sigue tres etapas: extracción SQL a CSV, conversión de CSV a Parquet mediante DuckDB y carga masiva desde Parquet hacia el Data Warehouse en PostgreSQL.
+
+A continuación se describe el proceso utilizando como ejemplo la ingesta de la tabla \texttt{account\_move}, que corresponde a los movimientos contables y facturas del sistema ERP Odoo.
+
+\subsubsection{Inicio de la instancia de ingesta en Airflow}
+
+La ingesta se modela como un DAG de Apache Airflow. Para la tabla \texttt{account\_move}, el DAG se identifica como \texttt{bronce\_account\_move\_etl\_v19-2}. Se configura sin calendario automático (\texttt{schedule=None}), con \texttt{catchup=False} y \texttt{max\_active\_runs=1}, lo que indica una ejecución controlada que evita múltiples corridas simultáneas del mismo DAG.
+
+Dentro de la configuración, se generan ventanas mensuales que abarcan desde el año 2022 hasta marzo de 2026. Cada ventana contiene una fecha inicial y una fecha final, como se muestra a continuación:
+
+\begin{lstlisting}[language=Python, breaklines=true]
+{"start": "2025-01-01", "end": "2025-01-31"}
+\end{lstlisting}
+
+Esta estrategia de ventanas permite dividir la extracción en lotes manejables, evitando problemas de memoria o cargas excesivamente grandes.
+
+\subsubsection{Definición de la ventana de extracción}
+
+Cada instancia de ingesta recibe una ventana con los parámetros \texttt{start\_date} y \texttt{end\_date}. A partir de estos valores, se construyen las rutas temporales para almacenar los archivos intermedios del mes procesado:
+
+\begin{lstlisting}[language=Python, breaklines=true]
+start_date = window["start"]
+end_date   = window["end"]
+csv_path     = "/tmp/account_move_YYYY_MM.csv"
+parquet_path = "/tmp/account_move_YYYY_MM.parquet"
+\end{lstlisting}
+
+Esta lógica se ejecuta dentro de la tarea \texttt{extract\_to\_parquet}.
+
+\subsubsection{Lectura del SQL de extracción}
+
+La consulta de extracción se encuentra almacenada en el directorio \texttt{sql/bronce/account\_move.sql}. El DAG lee este archivo como una plantilla SQL y reemplaza los parámetros \texttt{\{\{ start\_date \}\}} y \texttt{\{\{ end\_date \}\}} por las fechas reales de la ventana correspondiente.
+
+La consulta filtra los registros por rango de fechas, procesando únicamente los movimientos del periodo asignado:
+
+\begin{lstlisting}[language=SQL, breaklines=true]
+FROM account_move
+WHERE "date" >= '{{ start_date }}'::date
+  AND "date" <  '{{ end_date }}'::date
+ORDER BY "date" ASC, id ASC;
+\end{lstlisting}
+
+\subsubsection{Conexión a la base de datos fuente}
+
+La conexión hacia la base de datos de producción de Odoo se obtiene desde Apache Airflow mediante la función:
+
+\begin{lstlisting}[language=Python, breaklines=true]
+BaseHook.get_connection("potranca19_prod")
+\end{lstlisting}
+
+Dicha conexión contiene los parámetros de \textit{host}, puerto, usuario, contraseña y nombre de la base de datos del origen PostgreSQL.
+
+\subsubsection{Extracción de datos a CSV}
+
+La extracción se realiza mediante el comando \texttt{psql} utilizando la directiva \texttt{\textbackslash copy}, la cual envía el resultado de la consulta directamente hacia un archivo CSV local:
+
+\begin{lstlisting}[language=bash, breaklines=true]
+\copy ({query}) TO STDOUT WITH CSV HEADER
+\end{lstlisting}
+
+El DAG escribe el resultado directamente en disco (\texttt{stdout=csv\_file}), lo cual resulta fundamental porque evita cargar la totalidad del resultado en memoria. Para tablas de gran volumen como \texttt{account\_move}, este enfoque de transmisión directa (\textit{streaming}) reduce significativamente el riesgo de saturar la memoria RAM.
+
+\subsubsection{Validación de la extracción}
+
+Tras generar el archivo CSV, el DAG verifica si este contiene registros. Se calcula el número de filas restando la línea de encabezado:
+
+\begin{lstlisting}[language=Python, breaklines=true]
+row_count = sum(1 for _ in f) - 1
+\end{lstlisting}
+
+Si el mes no contiene datos, se elimina el archivo CSV y se devuelve un \textit{payload} con \texttt{parquet\_path: None}, indicando a la tarea siguiente que no debe realizar ninguna carga para esa ventana.
+
+\subsubsection{Conversión de CSV a Parquet con DuckDB}
+
+Cuando el CSV contiene registros válidos, DuckDB lo convierte al formato Parquet:
+
+\begin{lstlisting}[language=SQL, breaklines=true]
+COPY (
+    SELECT *
+    FROM read_csv_auto(...)
+)
+TO '{parquet_path}'
+(FORMAT PARQUET, COMPRESSION 'ZSTD', ROW_GROUP_SIZE 100000);
+\end{lstlisting}
+
+En esta ingesta, el DAG fuerza todos los campos a \texttt{VARCHAR} para evitar conflictos de tipos durante la carga histórica. La resolución de tipos reales se delega a las capas posteriores, principalmente la Capa Plata. Esta decisión refuerza un principio clave de la Capa Bronce: no limpiar ni interpretar el dato en esta etapa, priorizando su recepción y conservación íntegra.
+
+Una vez completada la conversión, se elimina el archivo CSV temporal para reducir el uso de almacenamiento:
+
+\begin{lstlisting}[language=Python, breaklines=true]
+if os.path.exists(csv_path):
+    os.remove(csv_path)
+\end{lstlisting}
+
+La tarea devuelve un diccionario con las fechas de la ventana y la ruta del archivo Parquet generado, el cual se transfiere como \textit{payload} a la tarea de carga.
+
+\subsubsection{Preparación de la carga hacia el Data Warehouse}
+
+La siguiente tarea, denominada \texttt{load\_parquet\_to\_dw}, recibe el \textit{payload} anterior. Si el valor de \texttt{parquet\_path} es \texttt{None}, la tarea concluye sin ejecutar la carga.
+
+En caso contrario, se obtiene la conexión al Data Warehouse mediante:
+
+\begin{lstlisting}[language=Python, breaklines=true]
+BaseHook.get_connection("potranca19_DLH")
+\end{lstlisting}
+
+Con los parámetros obtenidos se construye un DSN (\textit{Data Source Name}) de PostgreSQL.
+
+\subsubsection{Conexión de DuckDB al Data Warehouse}
+
+Los scripts de carga utilizan la extensión \texttt{postgres} de DuckDB para conectarse directamente al Data Warehouse:
+
+\begin{lstlisting}[language=SQL, breaklines=true]
+INSTALL postgres;
+LOAD postgres;
+ATTACH '{{ pg_dsn }}'
+AS pg_dw (TYPE POSTGRES);
+\end{lstlisting}
+
+Esta configuración permite que DuckDB lea el archivo Parquet local y escriba directamente en PostgreSQL sin intermediarios adicionales.
+
+\subsubsection{Creación del esquema y tabla destino}
+
+Antes de ejecutar la carga, el script crea el esquema Bronce si este no existe:
+
+\begin{lstlisting}[language=SQL, breaklines=true]
+CREATE SCHEMA IF NOT EXISTS pg_dw.bronce;
+\end{lstlisting}
+
+Asimismo, se crea la tabla destino utilizando la estructura del archivo Parquet, sin insertar filas inicialmente:
+
+\begin{lstlisting}[language=SQL, breaklines=true]
+CREATE TABLE IF NOT EXISTS pg_dw.bronce.account_move AS
+SELECT * FROM read_parquet('{{ parquet_path }}')
+WHERE 1=0;
+\end{lstlisting}
+
+\subsubsection{Aplicación de idempotencia y carga de datos}
+
+Para garantizar que la ingesta pueda repetirse sin generar duplicados, se aplica una lógica de refresco que elimina previamente los registros del rango a recargar:
+
+\begin{lstlisting}[language=SQL, breaklines=true]
+DELETE FROM pg_dw.bronce.account_move
+WHERE "date" >= '{{ start_date }}'
+  AND "date" <  '{{ end_date }}';
+\end{lstlisting}
+
+Este paso resulta clave: si una instancia falla o se requiere reprocesar un mes, se eliminan primero los registros del rango correspondiente y luego se vuelven a insertar.
+
+Finalmente, DuckDB carga el contenido del Parquet hacia PostgreSQL:
+
+\begin{lstlisting}[language=SQL, breaklines=true]
+INSERT INTO pg_dw.bronce.account_move
+SELECT * FROM read_parquet('{{ parquet_path }}');
+\end{lstlisting}
+
+\subsubsection{Limpieza de archivos temporales}
+
+Tras ejecutar la carga, el DAG cierra la conexión de DuckDB y elimina el archivo Parquet temporal:
+
+\begin{lstlisting}[language=Python, breaklines=true]
+if os.path.exists(parquet_path):
+    os.remove(parquet_path)
+\end{lstlisting}
+
+Esto deja la instancia en un estado limpio y evita la acumulación de archivos en el directorio temporal.
+
+
+\subsection{Ingesta de datos del Modelo de datos Bronce a Plata con SQLmesh}
+
+A diferencia de la Capa Bronce, donde se extrae información directamente desde el sistema origen, la Capa Plata se construye a partir de los datos ya existentes en las tablas \texttt{bronce.*} dentro de PostgreSQL. Para esta transformación se utiliza SQLMesh, un marco de trabajo que permite definir modelos SQL declarativos con control de versiones y materialización automatizada.
+
+El flujo general se resume de la siguiente manera: SQLMesh lee las tablas crudas del esquema \texttt{bronce}, aplica transformaciones de estandarización y materializa los resultados en el esquema \texttt{plata}.
+
+\subsubsection{Ejecución del plan de SQLMesh desde Airflow}
+
+El DAG encargado de iniciar el proceso se denomina \texttt{sqlmesh\_plan}. Dentro de este, un \texttt{BashOperator} activa el entorno virtual de Python, se posiciona en el directorio \texttt{sql/} y ejecuta el siguiente comando:
+
+\begin{lstlisting}[language=bash, breaklines=true]
+sqlmesh plan prod --auto-apply
+\end{lstlisting}
+
+Este comando indica a SQLMesh que debe calcular el plan de cambios pendientes y aplicarlo automáticamente en el ambiente de producción (\texttt{prod}). El DAG inyecta las credenciales del Data Warehouse mediante variables de entorno (\texttt{PG\_HOST}, \texttt{PG\_USER}, \texttt{PG\_PASSWORD}, \texttt{PG\_DATABASE} y \texttt{PG\_PORT}), las cuales se obtienen de la conexión de Airflow \texttt{potranca19\_DLH}.
+
+\subsubsection{Configuración de conexión de SQLMesh}
+
+La configuración de SQLMesh se encuentra en el archivo \texttt{sql/config.py}, donde se define el \textit{gateway} principal denominado \texttt{potranca19\_DLH} y la conexión PostgreSQL que utiliza las variables de entorno previamente inyectadas. También se establece que el dialecto por defecto de los modelos es PostgreSQL, lo que significa que todas las transformaciones se compilan y ejecutan como sentencias SQL nativas del motor del Data Warehouse.
+
+\subsubsection{Descubrimiento y estructura de los modelos Plata}
+
+Los modelos de la Capa Plata se ubican en el directorio \texttt{sql/models/plata/} y siguen la convención de nomenclatura \texttt{plata\_\_<entidad>.sql}. Cada archivo inicia con un bloque \texttt{MODEL} que declara las propiedades del modelo. Por ejemplo, para la tabla \texttt{account\_move}:
+
+\begin{lstlisting}[language=SQL, breaklines=true]
+MODEL (
+    name plata.account_move,
+    kind FULL,
+    grain (id),
+    description 'Carga bronce.account_move -> plata.account_move 
+                 con casteos y valores NOT NULL'
+);
+\end{lstlisting}
+
+La propiedad \texttt{kind FULL} indica que el modelo se reconstruye por completo en cada ejecución, generando una regeneración integral de la tabla Plata con base en el estado actual de Bronce. La propiedad \texttt{grain} define la granularidad esperada del modelo, es decir, un registro por identificador.
+
+\subsubsection{Transformaciones aplicadas en la Capa Plata}
+
+Después del bloque \texttt{MODEL}, cada archivo contiene la sentencia \texttt{SELECT} que define la transformación. La fuente de datos siempre es una tabla del esquema \texttt{bronce}. Las transformaciones que se aplican de manera general incluyen:
+
+\begin{enumerate}
+    \item \textbf{Casteo de tipos:} Cada columna se convierte explícitamente al tipo de dato correcto. Los campos numéricos se transforman a \texttt{numeric} o \texttt{int4}, las fechas a \texttt{date} y los textos a \texttt{varchar}:
+    \begin{lstlisting}[language=SQL, breaklines=true]
+CAST(b.id AS int4) AS id,
+b.amount_total::numeric AS amount_total,
+b.date::date AS "date",
+    \end{lstlisting}
+
+    \item \textbf{Protección de campos obligatorios:} Se utiliza la función \texttt{COALESCE} para asignar valores predeterminados a campos críticos que no deben contener nulos:
+    \begin{lstlisting}[language=SQL, breaklines=true]
+COALESCE(b.date::date, CURRENT_DATE) AS "date",
+COALESCE(b.state::varchar, 'draft') AS state,
+COALESCE(b.journal_id::int4, 0) AS journal_id,
+    \end{lstlisting}
+
+    \item \textbf{Conversión de estructuras JSONB:} Los campos que provienen de Odoo como estructuras JSON se convierten explícitamente al tipo \texttt{jsonb} de PostgreSQL, permitiendo que las capas posteriores los consulten de forma nativa:
+    \begin{lstlisting}[language=SQL, breaklines=true]
+b.sending_data::jsonb AS sending_data,
+b.analytic_distribution::jsonb AS analytic_distribution,
+    \end{lstlisting}
+
+    \item \textbf{Reglas de integridad de negocio:} Se implementan validaciones específicas según la entidad. Por ejemplo, en la tabla \texttt{account\_move\_line}, se evita la asignación de una cuenta contable a líneas que representan secciones o notas:
+    \begin{lstlisting}[language=SQL, breaklines=true]
+CASE
+    WHEN b.display_type IN ('line_section','line_note')
+    THEN NULL
+    ELSE b.account_id::int4
+END AS account_id
+    \end{lstlisting}
+
+    Asimismo, se protege la consistencia entre débito y crédito para evitar que una misma línea contenga valores simultáneos en ambos campos:
+    \begin{lstlisting}[language=SQL, breaklines=true]
+CASE WHEN b.credit::numeric > 0 THEN 0 
+     ELSE b.debit::numeric END AS debit,
+CASE WHEN b.debit::numeric > 0 THEN 0 
+     ELSE b.credit::numeric END AS credit,
+    \end{lstlisting}
+\end{enumerate}
+
+\subsubsection{Materialización y disponibilidad para la Capa Oro}
+
+Al ejecutar \texttt{sqlmesh plan prod -{}-auto-apply}, SQLMesh determina qué modelos requieren actualización, ejecuta las transformaciones directamente dentro del motor PostgreSQL del Data Warehouse y materializa los resultados en el esquema \texttt{plata}. Conceptualmente, para cada modelo de tipo \texttt{FULL}, el proceso equivale a reconstruir la tabla completa a partir del \texttt{SELECT} definido.
+
+Una vez completada la materialización, las tablas del esquema \texttt{plata} (como \texttt{plata.account\_move}, \texttt{plata.account\_move\_line}, \texttt{plata.account\_account} y \texttt{plata.res\_partner}) quedan tipadas, limpias y normalizadas, listas para ser consumidas por los modelos de la Capa Oro, donde se construyen las tablas de hechos y dimensiones del modelo dimensional.
+
+\subsection{Construcción de Modelo dimensional y tablas de hechos}
+
+% Contenido de la subsección
 
 \section{Configuración de EC2 para exponer datos a Power BI}
 
