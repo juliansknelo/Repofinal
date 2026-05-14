@@ -1,1 +1,174 @@
-Se definen los conceptos fundamentales para el desarrollo del proyecto, tales como Inteligencia de Negocios, Arquitectura Medallón, Procesos ETL y Servicios de Computación en la Nube.
+% ══════════════════════════════════════════════════════════════
+% Capítulo: Marco Teórico
+% Fundamentos teóricos de Ingeniería de Datos y Gestión Empresarial
+% ══════════════════════════════════════════════════════════════
+
+\section{Antecedentes}
+
+La transición estratégica hacia un modelo de inteligencia de negocio basado en Data Lake constituye un cambio de paradigma fundamental para superar las limitaciones estructurales de la infraestructura tradicional. Esta arquitectura avanzada permite alcanzar una agilidad empresarial extrema y una escalabilidad horizontal ilimitada, al tiempo que optimiza el Costo Total de Propiedad (TCO, por sus siglas en inglés) al mitigar el gasto en licenciamiento propietario y hardware especializado. La implementación de este tipo de soluciones garantiza la integridad de los activos de información mediante una gestión de datos inmutable y centralizada, abordando de manera directa los problemas críticos de fragmentación operativa y riesgo sistémico derivados de una visión empresarial descoordinada.
+
+Uno de los principales desafíos que se resuelve mediante esta arquitectura es la eliminación de la dependencia de volcados manuales por parte de administradores de bases de datos, así como la proliferación de silos tecnológicos en hojas de cálculo aisladas. A través de la unificación de los sistemas transaccionales y analíticos, se mitigan las roturas de stock recurrentes en modelos de negocio de proximidad y se supera la incapacidad previa para realizar análisis geográficos y de segmentación local.
+
+Desde una perspectiva técnica, el Business Intelligence (BI) transita de ser una solución de nicho, confinada a informes estáticos, a convertirse en un ecosistema abierto de Big Data que actúa como el sistema nervioso central de las organizaciones modernas. Históricamente, el BI depende de arquitecturas propietarias cerradas que fuerzan ciclos rígidos de procesamiento por lotes. En la actualidad, la competitividad se define por la agilidad en el procesamiento de volúmenes masivos de información, donde la capacidad de transformar datos brutos en decisiones ejecutivas en cuestión de minutos marca la diferencia entre el liderazgo sectorial y la obsolescencia operativa.
+
+Esta evolución se sintetiza en el paso de sistemas monolíticos y costosos ---liderados por proveedores tradicionales--- hacia plataformas basadas en estándares de código abierto. Mientras que las soluciones propietarias imponen procesos de carga restrictivos y licencias por volumen que limitan el crecimiento, las distribuciones modernas ofrecen una escalabilidad horizontal sin precedentes, permitiendo pasar de procesos de extracción lentos hacia un paradigma donde los datos fluyen en tiempo cuasi-real hacia un núcleo de almacenamiento unificado.
+
+
+\section{Modelado Dimensional: La Fundación de la Analítica}
+
+El modelado dimensional, conceptualizado principalmente por Ralph Kimball y Margy Ross en su obra fundamental \textit{The Data Warehouse Toolkit}, se establece como la técnica de diseño de bases de datos de referencia para sistemas de soporte a la decisión. A diferencia del modelado de entidad-relación (ER) utilizado en sistemas transaccionales (OLTP), el cual busca eliminar la redundancia mediante la normalización, el modelado dimensional prioriza la legibilidad y el rendimiento de las consultas analíticas (OLAP).
+
+\subsection{El Proceso de Diseño de Cuatro Pasos}
+
+Kimball propone una metodología rigurosa para la construcción de modelos dimensionales:
+
+\begin{enumerate}
+    \item \textbf{Selección del proceso de negocio:} Se identifica el evento operativo que genera datos (por ejemplo, una transacción de venta o un registro de sensor).
+    \item \textbf{Declaración del grano:} Es el paso más crítico; define qué representa exactamente una fila en la tabla de hechos. Un grano fino (atómico) permite mayor flexibilidad que uno agregado.
+    \item \textbf{Identificación de las dimensiones:} Representan el contexto del evento (``quién'', ``qué'', ``dónde'', ``cuándo'').
+    \item \textbf{Identificación de los hechos:} Son las métricas cuantitativas que resultan del proceso de negocio.
+\end{enumerate}
+\subsection{Estructuras del Esquema}
+
+El modelo resultante suele adoptar la forma de un \textbf{Esquema de Estrella}, donde una tabla de hechos central está rodeada por tablas de dimensiones desnormalizadas. El \textbf{Esquema de Copo de Nieve} es una variación donde las dimensiones se normalizan parcialmente, aunque suele evitarse en entornos analíticos puros por la complejidad que añade a las consultas SQL.
+
+\begin{table}[H]
+    \caption{Componentes del modelo dimensional.}
+    \label{tab:modelo-dimensional}
+    \centering
+    \begin{tabular}{p{4cm} p{5.5cm} p{5.5cm}}
+        \toprule
+        \textbf{Componente} & \textbf{Características Técnicas} & \textbf{Función Analítica} \\
+        \midrule
+        Tablas de Hechos & Contienen claves foráneas (FK) y medidas numéricas. & Soportar agregaciones (SUM, AVG) y cálculos de KPI. \\
+        Tablas de Dimensiones & Contienen atributos descriptivos (texto) y claves subrogadas. & Proporcionar filtros, agrupaciones y etiquetas para reportes. \\
+        \bottomrule
+    \end{tabular}
+\end{table}
+
+
+\section{De Data Warehouse a Data Lakehouse: Un Cambio de Paradigma}
+
+La arquitectura de datos evoluciona significativamente, pasando del \textbf{Data Warehouse (DW)} tradicional, que resulta rígido ante datos no estructurados y costoso de escalar, al \textbf{Data Lake}, que ofrece almacenamiento masivo y económico pero que a menudo se degrada en un ``pantano de datos'' por su falta de esquemas y transaccionalidad.
+
+El \textbf{Data Lakehouse} surge para resolver estas deficiencias, combinando las funciones de gestión y rendimiento del DW e implementándolas directamente sobre el almacenamiento de objetos del Data Lake. Los pilares fundamentales de esta arquitectura incluyen:
+
+\begin{itemize}
+    \item \textbf{Transacciones ACID:} Garantizan la integridad de los datos en escrituras concurrentes.
+    \item \textbf{Esquemas Evolutivos:} Permiten la modificación del esquema sin interrupción del servicio.
+    \item \textbf{Soporte Nativo para IA y ML:} Permiten el acceso directo a los archivos para algoritmos de ciencia de datos sin capas SQL intermedias.
+\end{itemize}
+
+\subsection{Del Data Warehouse al Data Lake}
+
+La transición del Data Warehouse tradicional al Data Lake no es solo una actualización de software, sino un cambio de paradigma hacia la agilidad empresarial extrema. Mientras el DW exige que el dato se adapte a un molde predefinido antes de guardarse, el Data Lake permite que la empresa trabaje con sus datos en formato nativo, postergando la estructura hasta el momento preciso del consumo.
+
+\begin{table}[H]
+    \caption{Comparativa entre Data Warehouse Tradicional y Data Lake.}
+    \label{tab:dw-vs-dl}
+    \centering
+    \begin{tabular}{p{4cm} p{5cm} p{5cm}}
+        \toprule
+        \textbf{Característica} & \textbf{Data Warehouse Tradicional} & \textbf{Data Lake} \\
+        \midrule
+        Paradigma           & Schema-on-Write (rígido)               & Schema-on-Read (flexible) \\
+        Ingesta de datos    & Lenta (requiere transformación previa) & Inmediata (formato nativo) \\
+        Gobernanza/Latencia & Alta latencia de actualización          & Baja latencia; acceso inmediato \\
+        Escalabilidad       & Vertical y costosa (Vendor Lock-in)    & Horizontal e ilimitada \\
+        Costo Total (TCO)   & Elevado (licenciamiento por TB)        & Optimizado (código abierto) \\
+        \bottomrule
+    \end{tabular}
+\end{table}
+
+
+\section{Arquitectura Medallion: Calidad de Datos por Capas}
+
+En el contexto de los Data Lakehouses modernos, la arquitectura Medallion (o arquitectura de capas de calidad) proporciona un flujo lógico para el refinamiento de la información. Este enfoque permite gestionar la ``fuente de verdad'' de manera incremental.
+
+\subsection{Capa Bronze (Raw)}
+
+Es el punto de entrada. Los datos se almacenan en su estado nativo, tal como provienen de la fuente (ERP, APIs, IoT). No se aplican transformaciones, lo que permite que esta capa actúe como un registro histórico inmutable para futuros reprocesos.
+
+\subsection{Capa Silver (Trusted)}
+
+En esta etapa se aplican procesos de limpieza, filtrado y normalización básica. Los datos se transforman a formatos optimizados (como Parquet o Delta). Es la capa donde se resuelven las inconsistencias de tipos de datos y se aplican reglas de validación iniciales.
+
+\subsection{Capa Gold (Curated)}
+
+Representa el nivel más alto de refinamiento. Los datos se organizan siguiendo modelos dimensionales (Kimball) o estructuras agregadas específicas para casos de uso de negocio, como cuadros de mando integrales o modelos de aprendizaje automático.
+
+
+\section{Optimización de Procesos: Ciclo ELT y Datos en Tiempo Real}
+
+Para garantizar la integridad de los reportes financieros y la eficiencia operativa, resulta necesario migrar del ciclo ETL (Extraer-Transformar-Cargar) tradicional hacia un modelo ELT (Extraer-Cargar-Transformar). En el modelo ELT, los datos se encuentran disponibles inmediatamente después de la carga, eliminando los cuellos de botella del procesamiento previo.
+
+\subsection{Arquitectura Lambda}
+
+Para resolver el problema crónico de falta de stock en entornos de comercio minorista, se implementa una Arquitectura Lambda. La \textbf{Capa de Lote} (\textit{Batch Layer}) procesa volúmenes masivos de transacciones para identificar tendencias de consumo a largo plazo. Simultáneamente, la \textbf{Capa de Velocidad} (\textit{Speed Layer}) procesa los pedidos del momento, permitiendo que la operativa en tienda reserve productos de forma inmediata. Este equilibrio transforma la infraestructura en una ventaja competitiva real.
+
+
+\section{Ingeniería de Pipelines y Orquestación con Apache Airflow}
+
+Un \textbf{Pipeline de Datos} constituye la infraestructura esencial para mover información desde un sistema de origen hacia un destino, aplicando transformaciones críticas en el proceso. Dada la creciente complejidad de estos flujos, la orquestación se vuelve indispensable.
+
+Apache Airflow, siguiendo la filosofía ``Workflow as Code'', aborda esta necesidad al permitir la definición de flujos de trabajo mediante código Python, lo que facilita el uso de control de versiones, pruebas unitarias y la colaboración entre ingenieros. La representación lógica de este pipeline se materializa en un \textbf{Grafo Acíclico Dirigido (DAG)}, cuyas propiedades fundamentales son:
+
+\begin{itemize}
+    \item \textbf{Dirigido:} Establece un orden claro de ejecución de las tareas.
+    \item \textbf{Acíclico:} Asegura que el flujo avance siempre hacia un final sin bucles infinitos.
+    \item \textbf{Idempotente:} Garantiza que los mismos parámetros produzcan siempre el mismo resultado, facilitando la recuperación ante fallos.
+\end{itemize}
+
+
+\section{Tecnologías de Procesamiento Analítico: DuckDB}
+
+DuckDB representa una innovación en el ámbito de las bases de datos analíticas embebidas. Se destaca su capacidad para realizar procesamiento OLAP directamente en el entorno de ejecución del usuario (\textit{in-process}), eliminando la latencia de red de los sistemas cliente-servidor tradicionales.
+
+A diferencia de los motores de bases de datos tradicionales que procesan una fila a la vez, DuckDB utiliza \textbf{ejecución vectorizada}, procesando grandes bloques de datos simultáneamente. Esta técnica optimiza el uso de la caché de la CPU y permite un rendimiento superior en consultas complejas sobre grandes volúmenes de datos.
+
+
+\section{Pipelines Declarativos y el Rol de SQLMesh}
+
+La ingeniería de datos experimenta una transición de pipelines imperativos, donde cada paso debe programarse explícitamente, hacia \textbf{pipelines declarativos}, en los cuales el ingeniero describe el estado final deseado de los datos y el sistema subyacente gestiona su ejecución óptima.
+
+En este contexto, SQLMesh emerge como una solución fundamental que integra conceptos avanzados de desarrollo de software para la gestión del ciclo de vida de los datos. Sus funcionalidades clave incluyen:
+
+\begin{itemize}
+    \item \textbf{Virtual Data Environments:} Facilitan la creación de entornos aislados para pruebas sin la duplicación física de datos.
+    \item \textbf{Planificación Automática:} Identifica inteligentemente qué modelos deben ser recalculados tras cambios en el código para optimizar los costos computacionales.
+    \item \textbf{Auditoría Integrada:} Permite el seguimiento detallado de las modificaciones en la estructura de los datos.
+\end{itemize}
+
+
+\section{Gobierno de Datos: Marco Estratégico}
+
+El gobierno de datos (\textit{Data Governance}) se define como el ejercicio de la toma de decisiones y la autoridad sobre los activos de datos. Sus componentes clave incluyen:
+
+\begin{itemize}
+    \item \textbf{Políticas y Estándares:} Reglas sobre cómo se definen y utilizan los datos.
+    \item \textbf{Data Stewardship:} Roles responsables de la calidad y el significado de los datos en áreas de negocio específicas.
+    \item \textbf{Catálogo de Datos:} Herramienta técnica que documenta el linaje, la definición y el uso de los datos en la organización.
+\end{itemize}
+
+Además, la gobernanza se apoya en roles fundamentales:
+
+\begin{itemize}
+    \item \textbf{Data Owner (Dueño de los Datos):} Tiene la máxima responsabilidad sobre la calidad, seguridad y cumplimiento normativo de un activo específico.
+    \item \textbf{Data Producer (Productor de Datos):} Genera o introduce datos en el ecosistema.
+    \item \textbf{Data Consumer (Consumidor de Datos):} Accede y utiliza los datos para análisis y soporte de procesos.
+    \item \textbf{Data Custodian (Custodio de Datos):} Se encarga de la gestión técnica, almacenamiento y seguridad operativa.
+    \item \textbf{Data Governance Manager (Gerente de Gobierno de Datos):} Lidera y coordina las actividades del programa para asegurar la aplicación de políticas y estándares.
+\end{itemize}
+
+
+\section{Sistemas ERP y el Ecosistema Odoo}
+
+Los sistemas de \textbf{Planificación de Recursos Empresariales (ERP)} actúan como la columna vertebral operativa de una organización, integrando procesos que anteriormente residen en silos aislados. Odoo destaca por su arquitectura modular basada en una pila tecnológica moderna (Python y PostgreSQL), lo que permite una integración entre módulos clave como:
+
+\begin{itemize}
+    \item \textbf{Fabricación (MRP):} Control de órdenes de producción.
+    \item \textbf{Gestión de Inventarios:} Seguimiento en tiempo real.
+    \item \textbf{Finanzas y Contabilidad:} Automatización de asientos contables.
+\end{itemize}
+
+En el ecosistema moderno, el ERP es la fuente de datos más crítica para el análisis de negocio, y el modelado dimensional es capaz de extraer datos de sus tablas normalizadas para transformarlos en estructuras de estrella que facilitan la visibilidad ejecutiva sobre la cadena de suministro y la rentabilidad.
