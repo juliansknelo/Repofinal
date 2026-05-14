@@ -1,0 +1,42 @@
+A continuación, se describen las actividades realizadas durante el desarrollo del proyecto, así como su contribución al logro de los objetivos.
+
+\section{Levantamiento de requerimientos del área de Finanzas}
+
+Se realizan reuniones con el área de Finanzas con el objetivo de identificar sus necesidades de información, incluyendo los reportes requeridos, los indicadores clave y la periodicidad de actualización de los mismos. Como parte de este proceso, se analiza el procedimiento actual de extracción manual de datos desde el sistema ERP, así como el formato utilizado por el departamento financiero para la consolidación de la información.
+
+\subsection{Requerimientos de Información Financiera y Contable}
+
+Se establecen los siguientes requerimientos para la solución tecnológica:
+
+\begin{enumerate}
+    \item \textbf{Automatización Integral de la Cédula de Gastos:} Se requiere la automatización completa de la cédula de gastos para eliminar la dependencia operativa de archivos de Excel complejos.
+    \item \textbf{Consolidación Transaccional (Odoo y COI) y Modelado Dimensional:} Es imperativo consolidar la información de egresos proveniente de múltiples orígenes, unificando los datos del ERP principal (Odoo) con los sistemas contables adicionales.
+    \item \textbf{Desarrollo de Vistas de Detalle para Validación de Integridad:} Se debe habilitar una vista analítica a nivel de transacción detallada que permita auditar la asignación de gastos.
+    \item \textbf{Desarrollo de Vistas Agregadas para Conciliación de Saldos:} Se requiere una vista con la información agregada a nivel de cuenta de gasto para permitir una confrontación y cuadre directo contra la balanza de comprobación.
+\end{enumerate}
+
+\section{Diseño de arquitectura del sistema}
+
+Se diseña la arquitectura tecnológica del sistema con el objetivo de establecer una solución que permita la extracción, procesamiento, almacenamiento y visualización automatizada de los datos financieros. Se define una infraestructura cloud en AWS como entorno principal de ejecución.
+
+\subsection{Diseño de arquitectura Data Lakehouse}
+
+El diseño se estructura bajo un modelo de Data Lakehouse fundamentado en tres pilares: robustez, flexibilidad y confiabilidad. Se utilizan los siguientes componentes:
+
+\begin{itemize}
+    \item \textbf{Cómputo Elástico (Amazon EC2):} Se utilizan instancias para el procesamiento de datos.
+    \item \textbf{Almacenamiento Híbrido (EBS y S3):} Se provisionan volúmenes EBS para el Data Warehouse y Amazon S3 para el Data Lake.
+    \item \textbf{Seguridad y Gestión de Accesos (IAM):} Se asignan Roles IAM y Grupos de Seguridad para el control del tráfico y permisos.
+\end{itemize}
+
+\section{Creación y configuración de instancia EC2 en AWS}
+
+Se crea y configura una instancia EC2 en AWS que funciona como servidor principal para la ejecución de los procesos ETL. Se realiza la instalación de Python y las librerías necesarias, así como la configuración de Apache Airflow.
+
+\section{Creación de scripts ETL de datos con Airflow}
+
+Se desarrollan scripts en Python para implementar los procesos de extracción, transformación y carga de datos. Se utiliza Apache Airflow para definir flujos de ejecución mediante DAGs (\textit{Directed Acyclic Graphs}).
+
+\section{Configuración de EC2 para exponer datos a Power BI}
+
+Se configura la instancia EC2 para permitir el acceso seguro de Power BI a los datos procesados, estableciendo una integración directa entre la infraestructura cloud y la herramienta de visualización.
