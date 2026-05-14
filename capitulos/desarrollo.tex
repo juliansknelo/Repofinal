@@ -580,8 +580,80 @@ Una vez completada la materialización, las tablas del esquema \texttt{plata} (c
 
 \subsection{Construcción de Modelo dimensional y tablas de hechos}
 
-% Contenido de la subsección
+La Capa Oro constituye la capa analítica del proyecto. A diferencia de la Capa Plata, donde el objetivo principal es la estandarización de tipos y limpieza básica, en la Capa Oro se construyen modelos orientados a negocio bajo un enfoque de esquema estrella, compuesto por tablas de hechos y dimensiones. Al igual que la Capa Plata, esta transformación se ejecuta mediante SQLMesh a través del mismo DAG \texttt{sqlmesh\_plan}, por lo que los modelos de ambas capas se procesan en una misma ejecución del comando \texttt{sqlmesh plan prod -{}-auto-apply}.
+
+\subsubsection{Tabla de hechos: \texttt{oro.fact\_gastos\_distribucion}}
+
+El modelo central de la Capa Oro es \texttt{oro.fact\_gastos\_distribucion}, una tabla de hechos financiera que toma las líneas contables estandarizadas desde Plata, expande la distribución analítica de Odoo y deja la información lista para el análisis de gastos por cuenta, compañía, proveedor, usuario y cuenta analítica. Su declaración es la siguiente:
+
+\begin{lstlisting}[language=SQL, breaklines=true]
+MODEL (
+    name oro.fact_gastos_distribucion,
+    kind FULL,
+    grain (aml_id),
+    description 'Fact de distribucion analitica de gastos'
+);
+\end{lstlisting}
+
+La granularidad declarada es una fila por \texttt{aml\_id}, que corresponde a una línea de \texttt{account\_move\_line}. El modelo se reconstruye por completo en cada ejecución (\texttt{kind FULL}).
+
+\subsubsection{Flujo de construcción del modelo}
+
+El modelo se construye mediante una serie de CTEs (\textit{Common Table Expressions}) que procesan los datos de forma secuencial:
+
+\begin{enumerate}
+    \item \textbf{Lectura de líneas contables:} Se parte de \texttt{plata.account\_move\_line}, que ya contiene campos tipados y limpios como \texttt{id}, \texttt{move\_id}, \texttt{account\_id}, \texttt{debit}, \texttt{credit}, \texttt{balance} y \texttt{analytic\_distribution}.
+
+    \item \textbf{Expansión de la distribución analítica:} La CTE \texttt{distribucion\_expandida} toma el campo JSONB \texttt{analytic\_distribution} y lo convierte en pares clave-valor mediante \texttt{CROSS JOIN LATERAL jsonb\_each\_text(...)}. Se contempla un caso especial donde el JSONB puede llegar como tipo \textit{string} envuelto, el cual se desempaqueta automáticamente. Solo se incluyen movimientos con estado publicado (\texttt{parent\_state = 'posted'}).
+
+    \item \textbf{Separación de claves compuestas:} La CTE \texttt{distribucion\_individual} maneja las claves analíticas compuestas de Odoo (por ejemplo, ``10,25'') separándolas mediante \texttt{unnest(string\_to\_array(...))} y convirtiendo el porcentaje analítico a tipo numérico.
+
+    \item \textbf{Conservación de líneas sin analítica:} La CTE \texttt{sin\_analitica} captura las líneas contables publicadas que no poseen distribución analítica, asignando valores nulos a los campos correspondientes. Esto permite analizar gastos incluso cuando carecen de clasificación analítica.
+
+    \item \textbf{Unión de conjuntos:} La CTE \texttt{union\_data} combina ambos conjuntos mediante \texttt{UNION ALL}, conformando un universo completo de líneas contables.
+
+    \item \textbf{Clasificación y pivoteo:} La CTE \texttt{pivoteada} se une con la dimensión \texttt{oro.dim\_analytic} para clasificar cada cuenta analítica y determinar si pertenece a un plan de tipo \textit{Former Tag}. Se aplica una agrupación a nivel de línea contable (\texttt{aml\_id}), separando la cuenta analítica principal (\texttt{analytic\_account\_id}) de la etiqueta secundaria (\texttt{former\_tag\_id}).
+
+    \item \textbf{Enriquecimiento final:} En el \texttt{SELECT} final, se obtiene el usuario responsable del movimiento desde \texttt{plata.account\_move} y se filtra por cuentas contables de gasto relevantes (códigos \texttt{601.*}, \texttt{899.01.200} y \texttt{899.01.100}) mediante un \texttt{JOIN} con \texttt{oro.dim\_account}.
+\end{enumerate}
+
+Los campos finales del modelo incluyen las llaves dimensionales (\texttt{company\_id}, \texttt{partner\_id}, \texttt{account\_id}, \texttt{user\_id}, \texttt{analytic\_account\_id}, \texttt{former\_tag\_id}), las medidas financieras (\texttt{debit}, \texttt{credit}, \texttt{balance}) y una bandera de segmentación (\texttt{is\_sin\_analitica}) que indica si la línea carece de clasificación analítica.
+
+\subsubsection{Tablas de dimensiones}
+
+El modelo dimensional se complementa con las siguientes tablas de dimensiones, cada una construida desde las tablas estandarizadas de la Capa Plata:
+
+\begin{itemize}
+    \item \textbf{\texttt{oro.dim\_account}:} Se construye desde \texttt{plata.account\_account}. Contiene el identificador de cuenta, nombre, código contable (almacenado como JSONB para soportar variaciones por compañía) y tipo de cuenta. Permite responder preguntas sobre la clasificación contable del gasto.
+
+    \item \textbf{\texttt{oro.dim\_analytic}:} Se construye desde \texttt{plata.account\_analytic\_account} y \texttt{plata.account\_analytic\_plan}. Incluye el nombre y código de la cuenta analítica, el plan analítico asociado y la bandera \texttt{is\_former\_tag}. Permite analizar gastos por estructura analítica y clasificación organizacional.
+
+    \item \textbf{\texttt{oro.dim\_company}:} Se construye desde \texttt{plata.res\_company} y \texttt{plata.res\_partner}. Contiene el nombre de la empresa, RFC, moneda y país fiscal. Permite segmentar gastos por entidad legal o razón social.
+
+    \item \textbf{\texttt{oro.dim\_partner}:} Se construye desde \texttt{plata.res\_partner}, enriquecida con información del socio comercial y la compañía asociada. Incluye nombre completo, RFC, correo electrónico, ciudad y rangos de cliente/proveedor. Permite analizar gastos por proveedor, cliente o entidad comercial.
+
+    \item \textbf{\texttt{oro.dim\_users}:} Se construye desde \texttt{plata.res\_users} y \texttt{plata.res\_partner}. Contiene el nombre del usuario, región, sucursal, tipo de usuario y estado activo. Permite asociar cada gasto al usuario responsable del movimiento.
+\end{itemize}
+
+\subsubsection{Esquema estrella resultante}
+
+El modelo dimensional resultante sigue un enfoque de esquema estrella donde la tabla central \texttt{oro.fact\_gastos\_distribucion} se relaciona con las dimensiones de negocio a través de sus llaves foráneas. Esta estructura permite realizar consultas analíticas como: el total de gasto por cuenta contable, la distribución de gastos por empresa, la identificación de proveedores con mayor concentración de gasto, el análisis por usuario responsable y la segmentación por estructura analítica. La información queda preparada para ser consumida directamente por herramientas de visualización como Power BI.
+
 
 \section{Configuración de EC2 para exponer datos a Power BI}
 
 Se configura la instancia EC2 para permitir el acceso seguro de Power BI a los datos procesados, estableciendo una integración directa entre la infraestructura cloud y la herramienta de visualización.
+
+\subsection{Configuración de Ec2 para exposición de datos}
+
+La exposición de los datos procesados desde la instancia EC2 hacia las herramientas de visualización se gestiona mediante mecanismos de seguridad en dos niveles: infraestructura y base de datos. A nivel de infraestructura, se establece una regla específica en el Grupo de Seguridad de AWS que permite el tráfico entrante únicamente desde las direcciones IP autorizadas por la organización.
+
+En el motor de base de datos PostgreSQL, se crea un usuario exclusivo para la plataforma de Business Intelligence (BI). Este usuario se configura con permisos restringidos, permitiendo el acceso únicamente a los elementos que conforman la Capa Oro. Esta estrategia de seguridad asegura que la herramienta de visualización solo tenga visibilidad sobre los modelos dimensionales y tablas de hechos finales, protegiendo la integridad de los datos crudos y estandarizados presentes en las capas Bronce y Plata.
+
+\subsection{Configuración de Power BI service}
+
+Una vez establecida la conectividad con la instancia EC2, se procede a la configuración en el entorno local mediante Power BI Desktop utilizando un conector ODBC (\textit{Open Database Connectivity}). Se proporcionan las credenciales del usuario exclusivo y se seleccionan las tablas de hechos y dimensiones de la Capa Oro necesarias para el desarrollo del tablero de control.
+
+Al realizar la importación de los datos, Power BI genera un objeto técnico denominado Modelo Semántico. Sobre este modelo se definen las relaciones, jerarquías y medidas necesarias para la analítica. Una vez finalizado el desarrollo del tablero, el proyecto se publica en el espacio de trabajo (\textit{Workspace}) seleccionado dentro de la nube de Microsoft.
+
+Posteriormente, se accede a la consola de Power BI Service para localizar el Modelo Semántico publicado. En este entorno, se configuran las opciones de actualización programada de datos y se establece la conexión persistente entre el servicio en la nube y el Data Lakehouse alojado en AWS, garantizando que los reportes reflejen la información más reciente procesada por el pipeline de datos.

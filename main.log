@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.28 (MiKTeX 25.12) (preloaded format=pdflatex 2026.5.14)  14 MAY 2026 13:07
+This is pdfTeX, Version 3.141592653-2.6-1.40.28 (MiKTeX 25.12) (preloaded format=pdflatex 2026.5.14)  14 MAY 2026 14:10
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -933,7 +933,7 @@ Package: lscape 2020/05/28 v3.02 Landscape Pages (DPC)
 )
 Package pdflscape Info: Auto-detected driver: pdftex on input line 81.
 )) (capitulos/portada.tex
-<figuras/logo_itv.png, id=195, 1.00375pt x 1.00375pt>
+<figuras/logo_itv.png, id=203, 1.00375pt x 1.00375pt>
 File: figuras/logo_itv.png Graphic file (type png)
 <use figuras/logo_itv.png>
 Package pdftex.def Info: figuras/logo_itv.png  used on input line 7.
@@ -1080,17 +1080,49 @@ Overfull \hbox (18.33455pt too wide) in paragraph at lines 579--580
 []\T1/ptm/m/n/12 Una vez com-ple-ta-da la ma-te-ria-li-za-ción, las ta-blas del es-que-ma \T1/cmtt/m/n/12 plata \T1/ptm/m/n/12 (co-mo \T1/cmtt/m/n/12 plata.account_move\T1/ptm/m/n/12 ,
  []
 
-) [30]
+LaTeX Font Info:    Font shape `T1/cmtt/bx/n' in size <12> not available
+(Font)              Font shape `T1/cmtt/m/n' tried instead on input line 585.
+[30]
+Overfull \hbox (33.32373pt too wide) in paragraph at lines 598--599
+[]\T1/ptm/m/n/12 La gra-nu-la-ri-dad de-cla-ra-da es una fi-la por \T1/cmtt/m/n/12 aml_id\T1/ptm/m/n/12 , que co-rres-pon-de a una lí-nea de \T1/cmtt/m/n/12 account_move_line\T1/ptm/m/n/12 .
+ []
+
+
+Overfull \hbox (6.26587pt too wide) in paragraph at lines 607--608
+\T1/ptm/m/n/12 men-te. So-lo se in-clu-yen mo-vi-mien-tos con es-ta-do pu-bli-ca-do (\T1/cmtt/m/n/12 parent_state = 'posted'\T1/ptm/m/n/12 ). 
+ []
+
+
+Overfull \hbox (131.62874pt too wide) in paragraph at lines 609--610
+\T1/ptm/m/n/12 ves ana-lí-ti-cas com-pues-tas de Odoo (por ejem-plo, ``10,25'') se-pa-rán-do-las me-dian-te \T1/cmtt/m/n/12 unnest(string_to_array(...))
+ []
+
+
+Overfull \hbox (2.06244pt too wide) in paragraph at lines 615--616
+[]\T1/ptm/b/n/12 Clasificación y pi-vo-teo: \T1/ptm/m/n/12 La CTE \T1/cmtt/m/n/12 pivoteada \T1/ptm/m/n/12 se une con la di-men-sión \T1/cmtt/m/n/12 oro.dim_analytic
+ []
+
+[31]
+Overfull \hbox (19.82928pt too wide) in paragraph at lines 620--621
+\T1/cmtt/m/n/12 account_id\T1/ptm/m/n/12 , \T1/cmtt/m/n/12 user_id\T1/ptm/m/n/12 , \T1/cmtt/m/n/12 analytic_account_id\T1/ptm/m/n/12 , \T1/cmtt/m/n/12 former_tag_id\T1/ptm/m/n/12 ), las me-di-das fi-nan-cie-ras (\T1/cmtt/m/n/12 debit\T1/ptm/m/n/12 ,
+ []
+
+
+Overfull \hbox (134.89223pt too wide) in paragraph at lines 629--630
+[]\T1/cmtt/m/n/12 oro.dim_analytic\T1/ptm/b/n/12 : \T1/ptm/m/n/12 Se cons-tru-ye des-de \T1/cmtt/m/n/12 plata.account_analytic_account \T1/ptm/m/n/12 y \T1/cmtt/m/n/12 plata.account_analytic_plan\T1/ptm/m/n/12 .
+ []
+
+[32] [33]) [34]
 Cap\'{\i }tulo 8.
-(capitulos/resultados.tex) [31
+(capitulos/resultados.tex) [35
 
 ]
 Cap\'{\i }tulo 9.
-(capitulos/actividades_sociales.tex) [32
+(capitulos/actividades_sociales.tex) [36
 
 ]
 Cap\'{\i }tulo 10.
-(capitulos/conclusiones.tex) [33
+(capitulos/conclusiones.tex) [37
 
 ]
 Cap\'{\i }tulo 11.
@@ -1098,15 +1130,15 @@ Cap\'{\i }tulo 11.
 
 LaTeX Warning: Empty bibliography on input line 137.
 
-[34
+[38
 
 ]
 Ap\'{e}ndice A.
-(capitulos/anexos.tex) [35
+(capitulos/anexos.tex) [39
 
 ]
 Ap\'{e}ndice B.
-(capitulos/registros_productos.tex) [36
+(capitulos/registros_productos.tex) [40
 
 ] (main.aux
 LaTeX Info: Redefining \sptext on input line 12.
@@ -1118,23 +1150,23 @@ LaTeX2e <2025-11-01>
 L3 programming layer <2025-12-24>
  ***********
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 10ED6FD8C1E5CB97DD4ECAA42E4F973B;11946.
+(rerunfilecheck)             Checksum: 917BAD130ECF94E08A2DDD3A2E8E9F6D;12499.
 Package logreq Info: Writing requests to 'main.run.xml'.
 \openout1 = `main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 30255 strings out of 467871
- 578983 string characters out of 5411080
+ 30285 strings out of 467871
+ 579365 string characters out of 5411080
  1621184 words of memory out of 5000000
- 58436 multiletter control sequences out of 15000+600000
+ 58442 multiletter control sequences out of 15000+600000
  668866 words of font info for 92 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  73i,10n,80p,911b,3147s stack positions out of 10000i,1000n,20000p,200000b,200000s
  <C:\Users\ANGEL JFLORES ACOSTA\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ectt1200.pk><C:/Users/ANGEL JFLORES ACOSTA/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/ANGEL JFLORES ACOSTA/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/ANGEL JFLORES ACOSTA/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmb8a.pfb><C:/Users/ANGEL JFLORES ACOSTA/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmr8a.pfb><C:/Users/ANGEL JFLORES ACOSTA/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmri8a.pfb>
-Output written on main.pdf (43 pages, 250626 bytes).
+Output written on main.pdf (47 pages, 265960 bytes).
 PDF statistics:
- 850 PDF objects out of 1000 (max. 8388607)
- 308 named destinations out of 1000 (max. 500000)
- 390 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 905 PDF objects out of 1000 (max. 8388607)
+ 332 named destinations out of 1000 (max. 500000)
+ 406 words of extra memory for PDF output out of 10000 (max. 10000000)
 
