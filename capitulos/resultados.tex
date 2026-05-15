@@ -2,14 +2,17 @@ Se presentan los resultados obtenidos tras la implementación de la arquitectura
 
 \section{Dashboards de Inteligencia de Negocios}
 
-Para satisfacer las necesidades de información financiera y control operativo, se implementan cuatro vistas analíticas principales:
+Para satisfacer las necesidades de información financiera y control operativo, se implementan tres vistas analíticas principales dentro de Power BI, cada una orientada a un propósito específico del área de Finanzas.
 
 \begin{enumerate}
     \item \textbf{Matriz Jerárquica Interactiva:} Permite la visualización consolidada de la información de gastos desde el nivel general hasta el detalle granular por departamento o cuenta específica.
     \item \textbf{Panel Tabular de Nivel Atómico:} Expone cada transacción individual registrada, integrando folios de movimientos, fechas y referencias cruzadas para auditorías precisas.
-    \item \textbf{Vista de Confrontación Contable:} Presenta un resumen totalizado de los montos agrupados por cuenta contable y un desglose por fecha para el cuadre contra la balanza de comprobación.
-    \item \textbf{Vista de Validación de Etiquetas Analíticas:} Se utiliza para la validación de las etiquetas analíticas asignadas a cada movimiento, permitiendo que el área financiera identifique las transacciones que carecen de clasificación y establezca las etiquetas correspondientes de manera oportuna.
+    \item \textbf{Vista de Confrontación Contable y Validación Analítica:} Presenta un resumen totalizado por cuenta contable para el cuadre contra la balanza de comprobación y permite la validación de etiquetas analíticas para asegurar la correcta clasificación de los gastos.
 \end{enumerate}
+
+\subsection{Matriz jerárquica interactiva}
+
+Se desarrolla una matriz jerárquica interactiva que permite la visualización consolidada de la información de gastos desde el nivel general hasta el detalle granular por departamento o cuenta específica. Esta vista facilita la navegación entre distintos niveles de agregación, permitiendo al usuario expandir o contraer las categorías de gasto para identificar concentraciones de egresos y analizar tendencias por periodo (ver figura \ref{fig:dashboard1}).
 
 \begin{figure}[H]
     \centering
@@ -18,16 +21,24 @@ Para satisfacer las necesidades de información financiera y control operativo, 
     \label{fig:dashboard1}
 \end{figure}
 
+\subsection{Panel tabular de nivel atómico}
+
+Se implementa un panel tabular de nivel atómico que expone cada transacción individual registrada en el sistema. Este tablero integra folios de movimientos, fechas, proveedores y referencias cruzadas, lo cual permite al área financiera realizar auditorías precisas y rastrear cualquier movimiento contable hasta su origen en el sistema ERP (ver figura \ref{fig:dashboard2}).
+
 \begin{figure}[H]
     \centering
-    \includegraphics[width=0.8\textwidth]{figuras/resultados/Panel tabular para validación de transacciones.png}
+    \includegraphics[width=0.65\textwidth]{figuras/resultados/Panel tabular para validación de transacciones.png}
     \caption{Panel tabular para validación de transacciones.}
     \label{fig:dashboard2}
 \end{figure}
 
+\subsection{Vista de confrontación contable y validación analítica}
+
+Se construye una vista de confrontación contable y validación analítica que presenta un resumen totalizado de los montos agrupados por cuenta contable y un desglose por fecha. Esta herramienta se utiliza para el cuadre directo contra la balanza de comprobación y para la validación de las etiquetas analíticas asignadas a cada movimiento contable. Permite identificar transacciones que carecen de clasificación o presentan asignaciones incorrectas, facilitando que el área financiera establezca las etiquetas correspondientes y garantice la correcta distribución de gastos mediante filtros interactivos por empresa y periodo (ver figura \ref{fig:dashboard3}).
+
 \begin{figure}[H]
     \centering
     \includegraphics[width=0.8\textwidth]{figuras/resultados/Vista de Confrontación Contable.png}
-    \caption{Vista de Confrontación Contable.}
+    \caption{Vista de confrontación contable y validación analítica.}
     \label{fig:dashboard3}
 \end{figure}
