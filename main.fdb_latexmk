@@ -1,12 +1,12 @@
 # Fdb version 4
-["biber main"] 0 "main.bcf" "main.bbl" "main" 1778877072.9743 -1
-  "main.bcf" 1778877072 134430 fab860bfecf560a8a5afc8ee11a7c1b4 "pdflatex"
+["biber main"] 0 "main.bcf" "main.bbl" "main" 1778878142.82352 -1
+  "main.bcf" 1778878142 134430 fab860bfecf560a8a5afc8ee11a7c1b4 "pdflatex"
   "referencias.bib" 1778870535 1268 49c8aec7a7f41e6792b89ed7356e0d0a ""
   (generated)
   "main.bbl"
   "main.blg"
   (rewritten before read)
-["pdflatex"] 1778877068.75547 "c:/Users/ANGEL JFLORES ACOSTA/ReporteResis/main.tex" "main.pdf" "main" 1778877072.97502 0
+["pdflatex"] 1778878138.66086 "c:/Users/ANGEL JFLORES ACOSTA/ReporteResis/main.tex" "main.pdf" "main" 1778878142.82423 0
   "C:/Users/ANGEL" 1756310582 19003 a3dbcc2a3e23d61c9b83fee38426a5e8 ""
   "C:/Users/ANGEL JFLORES ACOSTA/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map" 1778773785 82507 a9eef8696c92627b87e9975edea03b2a ""
   "C:/Users/ANGEL JFLORES ACOSTA/AppData/Local/MiKTeX/fonts/pk/ljfour/jknappen/ec/dpi600/ectt1200.pk" 1778776841 24152 a36a2b9bc6443f75baa1384a7cdbdd8e ""
@@ -159,7 +159,7 @@
   "C:/Users/ANGEL JFLORES ACOSTA/AppData/Local/Programs/MiKTeX/tex/latex/xcolor/xcolor.sty" 1729265222 55384 b454dec21c2d9f45ec0b793f0995b992 ""
   "c:/Users/ANGEL" 1756310582 19003 a3dbcc2a3e23d61c9b83fee38426a5e8 ""
   "c:/Users/ANGEL JFLORES ACOSTA/ReporteResis/main.tex" 1778870951 6153 c9dbd499913c28d132070c13d13b3855 ""
-  "capitulos/agradecimientos.tex" 1778870629 1732 0d6e4e93b370360ce945e9facaa9a968 ""
+  "capitulos/agradecimientos.tex" 1778878138 1734 9a9d6a0c7d9dbc57a6c4d89361bc58e7 ""
   "capitulos/anexos.tex" 1778770183 103 d1cc2c0f091c6cd2502c30229a3e54d1 ""
   "capitulos/competencias.tex" 1778802496 937 b8e6f8f2d04c7d131fe196e881d050e9 ""
   "capitulos/conclusiones.tex" 1778803238 6083 ca9ca9fb991ab19df670759243d9b7a8 ""
@@ -205,14 +205,14 @@
   "figuras/resultados/Matriz jerárquica interactiva para consolidación de gastos.png" 1778863925 110133 49e6eb74dd08a0ffa5faf6f1fec052c6 ""
   "figuras/resultados/Panel tabular para validación de transacciones.png" 1778863968 159984 08833bf2006ab6638bd12d7155fee249 ""
   "figuras/resultados/Vista de Confrontación Contable.png" 1778864063 354238 e6fc0e0d58f58e213cf16627c73012c5 ""
-  "main.aux" 1778877072 24307 3daf4c96f47c1f635e860ccf76e75922 "pdflatex"
+  "main.aux" 1778878142 24307 3daf4c96f47c1f635e860ccf76e75922 "pdflatex"
   "main.bbl" 1778870654 15781 99f19e62a635ec51e0e390155de9b054 "biber main"
-  "main.lof" 1778877072 4373 e244e7c51a421378edd59e2f25606a32 "pdflatex"
-  "main.lot" 1778877072 498 0f04b4cb9805a9d63d98d2952bb19b58 "pdflatex"
-  "main.out" 1778877072 12481 52da973a8f7a95ad595ae1a0e10a6e41 "pdflatex"
-  "main.run.xml" 1778877072 2360 e823dede0fdb354f7eff64774b1cfad0 "pdflatex"
+  "main.lof" 1778878142 4373 e244e7c51a421378edd59e2f25606a32 "pdflatex"
+  "main.lot" 1778878142 498 0f04b4cb9805a9d63d98d2952bb19b58 "pdflatex"
+  "main.out" 1778878142 12481 52da973a8f7a95ad595ae1a0e10a6e41 "pdflatex"
+  "main.run.xml" 1778878142 2360 e823dede0fdb354f7eff64774b1cfad0 "pdflatex"
   "main.tex" 1778870951 6153 c9dbd499913c28d132070c13d13b3855 ""
-  "main.toc" 1778877072 7677 7d447eac8b716db197540d50a4dd4d1e "pdflatex"
+  "main.toc" 1778878142 7677 7d447eac8b716db197540d50a4dd4d1e "pdflatex"
   (generated)
   "main.aux"
   "main.bcf"
