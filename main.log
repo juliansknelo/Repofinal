@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.28 (MiKTeX 25.12) (preloaded format=pdflatex 2026.5.14)  15 MAY 2026 10:27
+This is pdfTeX, Version 3.141592653-2.6-1.40.28 (MiKTeX 25.12) (preloaded format=pdflatex 2026.5.14)  15 MAY 2026 11:06
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1215,23 +1215,40 @@ Overfull \hbox (134.89223pt too wide) in paragraph at lines 638--639
 
 [42] [43]) [44]
 Cap\'{\i }tulo 8.
-(capitulos/resultados.tex) [45
+(capitulos/resultados.tex
+<figuras/resultados/Matriz jerárquica interactiva para consolidación de gastos.png, id=785, 712.91344pt x 341.02406pt>
+File: figuras/resultados/Matriz jerárquica interactiva para consolidación de gastos.png Graphic file (type png)
+<use figuras/resultados/Matriz jerárquica interactiva para consolidación de gastos.png>
+Package pdftex.def Info: figuras/resultados/Matriz jerárquica interactiva para consolidación de gastos.png  used on input line 16.
+(pdftex.def)             Requested size: 366.24527pt x 175.19484pt.
+ [45
 
 ]
+<figuras/resultados/Panel tabular para validación de transacciones.png, id=794, 710.655pt x 205.5178pt>
+File: figuras/resultados/Panel tabular para validación de transacciones.png Graphic file (type png)
+<use figuras/resultados/Panel tabular para validación de transacciones.png>
+Package pdftex.def Info: figuras/resultados/Panel tabular para validación de transacciones.png  used on input line 23.
+(pdftex.def)             Requested size: 366.24527pt x 105.91968pt.
+<figuras/resultados/Vista de Confrontación Contable.png, id=795, 840.89156pt x 472.76625pt>
+File: figuras/resultados/Vista de Confrontación Contable.png Graphic file (type png)
+<use figuras/resultados/Vista de Confrontación Contable.png>
+Package pdftex.def Info: figuras/resultados/Vista de Confrontación Contable.png  used on input line 30.
+(pdftex.def)             Requested size: 366.24527pt x 205.91135pt.
+) [46 <./figuras/resultados/Matriz jerárquica interactiva para consolidación de gastos.png> <./figuras/resultados/Panel tabular para validación de transacciones.png> <./figuras/resultados/Vista de Confrontación Contable.png>]
 Cap\'{\i }tulo 9.
-(capitulos/conclusiones.tex [46
+(capitulos/conclusiones.tex [47
 
-] [47]) [48]
+] [48]) [49]
 Cap\'{\i }tulo 10.
 (capitulos/competencias.tex)
 
 LaTeX Warning: Empty bibliography on input line 165.
 
-[49
+[50
 
 ]
 Ap\'{e}ndice A.
-(capitulos/anexos.tex) [50
+(capitulos/anexos.tex) [51
 
 ] (main.aux
 LaTeX Info: Redefining \sptext on input line 12.
@@ -1249,17 +1266,17 @@ Package logreq Info: Writing requests to 'main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 30414 strings out of 467871
- 594214 string characters out of 5411080
+ 30437 strings out of 467871
+ 595828 string characters out of 5411080
  1603326 words of memory out of 5000000
- 58566 multiletter control sequences out of 15000+600000
+ 58587 multiletter control sequences out of 15000+600000
  668866 words of font info for 92 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  73i,10n,80p,1201b,3151s stack positions out of 10000i,1000n,20000p,200000b,200000s
  <C:\Users\ANGEL JFLORES ACOSTA\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ectt1200.pk><C:/Users/ANGEL JFLORES ACOSTA/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/ANGEL JFLORES ACOSTA/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/ANGEL JFLORES ACOSTA/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmb8a.pfb><C:/Users/ANGEL JFLORES ACOSTA/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmr8a.pfb><C:/Users/ANGEL JFLORES ACOSTA/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmri8a.pfb>
-Output written on main.pdf (57 pages, 1295993 bytes).
+Output written on main.pdf (58 pages, 1729783 bytes).
 PDF statistics:
- 987 PDF objects out of 1000 (max. 8388607)
- 343 named destinations out of 1000 (max. 500000)
- 493 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 998 PDF objects out of 1000 (max. 8388607)
+ 345 named destinations out of 1000 (max. 500000)
+ 508 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -67,13 +67,13 @@
 \contentsline {chapter}{\numberline {8}Resultados}{45}{chapter.8}%
 \contentsline {section}{\numberline {8.1}Dashboards de Inteligencia de Negocios}{45}{section.8.1}%
 \vspace {1em}\noindent \textbf {Conclusiones}\par \vspace {0.3em}
-\contentsline {chapter}{\numberline {9}Conclusiones, recomendaciones y experiencia profesional adquirida}{46}{chapter.9}%
-\contentsline {section}{\numberline {9.1}Conclusiones}{46}{section.9.1}%
-\contentsline {section}{\numberline {9.2}Recomendaciones}{47}{section.9.2}%
-\contentsline {section}{\numberline {9.3}Experiencia profesional adquirida}{48}{section.9.3}%
+\contentsline {chapter}{\numberline {9}Conclusiones, recomendaciones y experiencia profesional adquirida}{47}{chapter.9}%
+\contentsline {section}{\numberline {9.1}Conclusiones}{47}{section.9.1}%
+\contentsline {section}{\numberline {9.2}Recomendaciones}{48}{section.9.2}%
+\contentsline {section}{\numberline {9.3}Experiencia profesional adquirida}{49}{section.9.3}%
 \vspace {1em}\noindent \textbf {Competencias Desarrolladas}\par \vspace {0.3em}
-\contentsline {chapter}{\numberline {10}Competencias desarrolladas y/o aplicadas}{49}{chapter.10}%
+\contentsline {chapter}{\numberline {10}Competencias desarrolladas y/o aplicadas}{50}{chapter.10}%
 \vspace {1em}\noindent \textbf {Fuentes de Información}\par \vspace {0.3em}
 \vspace {1em}\noindent \textbf {Anexos}\par \vspace {0.3em}
-\contentsline {chapter}{\numberline {A}Anexos}{50}{appendix.Alph1}%
-\contentsline {section}{\numberline {A.1}Carta de autorización de la empresa}{50}{section.Alph1.1}%
+\contentsline {chapter}{\numberline {A}Anexos}{51}{appendix.Alph1}%
+\contentsline {section}{\numberline {A.1}Carta de autorización de la empresa}{51}{section.Alph1.1}%
