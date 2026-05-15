@@ -34,46 +34,46 @@
 \contentsline {subsection}{\numberline {7.2.1}Diseño de arquitectura Data Lakehouse}{15}{subsection.7.2.1}%
 \contentsline {section}{\numberline {7.3}Creación y configuración de instancia EC2 en AWS}{15}{section.7.3}%
 \contentsline {subsection}{\numberline {7.3.1}Creación de EC2}{15}{subsection.7.3.1}%
-\contentsline {subsection}{\numberline {7.3.2}Configuración de entorno Cloud (Linux)}{17}{subsection.7.3.2}%
-\contentsline {section}{\numberline {7.4}Creación de scripts ETL de datos con Airflow}{22}{section.7.4}%
-\contentsline {subsection}{\numberline {7.4.1}Scripts de Extracción a Bronce}{23}{subsection.7.4.1}%
-\contentsline {subsubsection}{Inicio de la instancia de ingesta en Airflow}{23}{subsubsection*.24}%
-\contentsline {subsubsection}{Definición de la ventana de extracción}{23}{subsubsection*.25}%
-\contentsline {subsubsection}{Lectura del SQL de extracción}{24}{subsubsection*.26}%
-\contentsline {subsubsection}{Conexión a la base de datos fuente}{24}{subsubsection*.27}%
-\contentsline {subsubsection}{Extracción de datos a CSV}{24}{subsubsection*.28}%
-\contentsline {subsubsection}{Validación de la extracción}{25}{subsubsection*.29}%
-\contentsline {subsubsection}{Conversión de CSV a Parquet con DuckDB}{25}{subsubsection*.30}%
-\contentsline {subsubsection}{Preparación de la carga hacia el Data Warehouse}{25}{subsubsection*.31}%
-\contentsline {subsubsection}{Conexión de DuckDB al Data Warehouse}{26}{subsubsection*.32}%
-\contentsline {subsubsection}{Creación del esquema y tabla destino}{26}{subsubsection*.33}%
-\contentsline {subsubsection}{Aplicación de idempotencia y carga de datos}{26}{subsubsection*.34}%
-\contentsline {subsubsection}{Limpieza de archivos temporales}{27}{subsubsection*.35}%
-\contentsline {subsection}{\numberline {7.4.2}Ingesta de datos del Modelo de datos Bronce a Plata con SQLmesh}{27}{subsection.7.4.2}%
-\contentsline {subsubsection}{Ejecución del plan de SQLMesh desde Airflow}{27}{subsubsection*.36}%
-\contentsline {subsubsection}{Configuración de conexión de SQLMesh}{28}{subsubsection*.37}%
-\contentsline {subsubsection}{Descubrimiento y estructura de los modelos Plata}{28}{subsubsection*.38}%
-\contentsline {subsubsection}{Transformaciones aplicadas en la Capa Plata}{29}{subsubsection*.39}%
-\contentsline {subsubsection}{Materialización y disponibilidad para la Capa Oro}{30}{subsubsection*.40}%
-\contentsline {subsection}{\numberline {7.4.3}Construcción de Modelo dimensional y tablas de hechos}{30}{subsection.7.4.3}%
-\contentsline {subsubsection}{Tabla de hechos: \texttt {oro.fact\_gastos\_distribucion}}{30}{subsubsection*.41}%
-\contentsline {subsubsection}{Flujo de construcción del modelo}{31}{subsubsection*.42}%
-\contentsline {subsubsection}{Tablas de dimensiones}{32}{subsubsection*.43}%
-\contentsline {subsubsection}{Esquema estrella resultante}{33}{subsubsection*.44}%
-\contentsline {section}{\numberline {7.5}Configuración de EC2 para exponer datos a Power BI}{33}{section.7.5}%
-\contentsline {subsection}{\numberline {7.5.1}Configuración de Ec2 para exposición de datos}{33}{subsection.7.5.1}%
-\contentsline {subsection}{\numberline {7.5.2}Configuración de Power BI service}{33}{subsection.7.5.2}%
+\contentsline {subsection}{\numberline {7.3.2}Configuración de entorno Cloud (Linux)}{23}{subsection.7.3.2}%
+\contentsline {section}{\numberline {7.4}Creación de scripts ETL de datos con Airflow}{28}{section.7.4}%
+\contentsline {subsection}{\numberline {7.4.1}Scripts de Extracción a Bronce}{28}{subsection.7.4.1}%
+\contentsline {subsubsection}{Inicio de la instancia de ingesta en Airflow}{28}{subsubsection*.24}%
+\contentsline {subsubsection}{Definición de la ventana de extracción}{28}{subsubsection*.25}%
+\contentsline {subsubsection}{Lectura del SQL de extracción}{29}{subsubsection*.26}%
+\contentsline {subsubsection}{Conexión a la base de datos fuente}{29}{subsubsection*.27}%
+\contentsline {subsubsection}{Extracción de datos a CSV}{29}{subsubsection*.28}%
+\contentsline {subsubsection}{Validación de la extracción}{30}{subsubsection*.29}%
+\contentsline {subsubsection}{Conversión de CSV a Parquet con DuckDB}{30}{subsubsection*.30}%
+\contentsline {subsubsection}{Preparación de la carga hacia el Data Warehouse}{31}{subsubsection*.31}%
+\contentsline {subsubsection}{Conexión de DuckDB al Data Warehouse}{31}{subsubsection*.32}%
+\contentsline {subsubsection}{Creación del esquema y tabla destino}{31}{subsubsection*.33}%
+\contentsline {subsubsection}{Aplicación de idempotencia y carga de datos}{32}{subsubsection*.34}%
+\contentsline {subsubsection}{Limpieza de archivos temporales}{32}{subsubsection*.35}%
+\contentsline {subsection}{\numberline {7.4.2}Ingesta de datos del Modelo de datos Bronce a Plata con SQLmesh}{32}{subsection.7.4.2}%
+\contentsline {subsubsection}{Ejecución del plan de SQLMesh desde Airflow}{33}{subsubsection*.36}%
+\contentsline {subsubsection}{Configuración de conexión de SQLMesh}{33}{subsubsection*.37}%
+\contentsline {subsubsection}{Descubrimiento y estructura de los modelos Plata}{33}{subsubsection*.38}%
+\contentsline {subsubsection}{Transformaciones aplicadas en la Capa Plata}{34}{subsubsection*.39}%
+\contentsline {subsubsection}{Materialización y disponibilidad para la Capa Oro}{35}{subsubsection*.40}%
+\contentsline {subsection}{\numberline {7.4.3}Construcción de Modelo dimensional y tablas de hechos}{35}{subsection.7.4.3}%
+\contentsline {subsubsection}{Tabla de hechos: \texttt {oro.fact\_gastos\_distribucion}}{35}{subsubsection*.41}%
+\contentsline {subsubsection}{Flujo de construcción del modelo}{36}{subsubsection*.42}%
+\contentsline {subsubsection}{Tablas de dimensiones}{37}{subsubsection*.43}%
+\contentsline {subsubsection}{Esquema estrella resultante}{38}{subsubsection*.44}%
+\contentsline {section}{\numberline {7.5}Configuración de EC2 para exponer datos a Power BI}{38}{section.7.5}%
+\contentsline {subsection}{\numberline {7.5.1}Configuración de Ec2 para exposición de datos}{38}{subsection.7.5.1}%
+\contentsline {subsection}{\numberline {7.5.2}Configuración de Power BI service}{39}{subsection.7.5.2}%
 \vspace {1em}\noindent \textbf {Resultados}\par \vspace {0.3em}
-\contentsline {chapter}{\numberline {8}Resultados}{35}{chapter.8}%
-\contentsline {section}{\numberline {8.1}Dashboards de Inteligencia de Negocios}{35}{section.8.1}%
+\contentsline {chapter}{\numberline {8}Resultados}{40}{chapter.8}%
+\contentsline {section}{\numberline {8.1}Dashboards de Inteligencia de Negocios}{40}{section.8.1}%
 \vspace {1em}\noindent \textbf {Conclusiones}\par \vspace {0.3em}
-\contentsline {chapter}{\numberline {9}Conclusiones, recomendaciones y experiencia profesional adquirida}{36}{chapter.9}%
-\contentsline {section}{\numberline {9.1}Conclusiones}{36}{section.9.1}%
-\contentsline {section}{\numberline {9.2}Recomendaciones}{37}{section.9.2}%
-\contentsline {section}{\numberline {9.3}Experiencia profesional adquirida}{38}{section.9.3}%
+\contentsline {chapter}{\numberline {9}Conclusiones, recomendaciones y experiencia profesional adquirida}{41}{chapter.9}%
+\contentsline {section}{\numberline {9.1}Conclusiones}{41}{section.9.1}%
+\contentsline {section}{\numberline {9.2}Recomendaciones}{42}{section.9.2}%
+\contentsline {section}{\numberline {9.3}Experiencia profesional adquirida}{43}{section.9.3}%
 \vspace {1em}\noindent \textbf {Competencias Desarrolladas}\par \vspace {0.3em}
-\contentsline {chapter}{\numberline {10}Competencias desarrolladas y/o aplicadas}{39}{chapter.10}%
+\contentsline {chapter}{\numberline {10}Competencias desarrolladas y/o aplicadas}{44}{chapter.10}%
 \vspace {1em}\noindent \textbf {Fuentes de Información}\par \vspace {0.3em}
 \vspace {1em}\noindent \textbf {Anexos}\par \vspace {0.3em}
-\contentsline {chapter}{\numberline {A}Anexos}{40}{appendix.Alph1}%
-\contentsline {section}{\numberline {A.1}Carta de autorización de la empresa}{40}{section.Alph1.1}%
+\contentsline {chapter}{\numberline {A}Anexos}{45}{appendix.Alph1}%
+\contentsline {section}{\numberline {A.1}Carta de autorización de la empresa}{45}{section.Alph1.1}%

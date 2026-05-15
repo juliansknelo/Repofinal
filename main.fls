@@ -390,19 +390,103 @@ INPUT .\capitulos\desarrollo.tex
 INPUT .\capitulos\desarrollo.tex
 INPUT .\capitulos\desarrollo.tex
 INPUT capitulos\desarrollo.tex
+INPUT .\figuras\Creación y configuración de instancia EC2 en AWS\Inicio de sesión en la consola de AWS.png
+INPUT .\figuras\Creación y configuración de instancia EC2 en AWS\Inicio de sesión en la consola de AWS.png
+INPUT .\figuras\Creación y configuración de instancia EC2 en AWS\Inicio de sesión en la consola de AWS.png
+INPUT .\figuras\Creación y configuración de instancia EC2 en AWS\Inicio de sesión en la consola de AWS.png
+INPUT .\figuras\Creación y configuración de instancia EC2 en AWS\Inicio de sesión en la consola de AWS.png
+INPUT .\figuras\Creación y configuración de instancia EC2 en AWS\Inicio de sesión en la consola de AWS.png
+INPUT .\figuras\Creación y configuración de instancia EC2 en AWS\Inicio de sesión en la consola de AWS.png
+INPUT .\figuras\Creación y configuración de instancia EC2 en AWS\Búsqueda del servicio EC2 en la consola de AWS.png
+INPUT .\figuras\Creación y configuración de instancia EC2 en AWS\Búsqueda del servicio EC2 en la consola de AWS.png
+INPUT .\figuras\Creación y configuración de instancia EC2 en AWS\Búsqueda del servicio EC2 en la consola de AWS.png
+INPUT .\figuras\Creación y configuración de instancia EC2 en AWS\Búsqueda del servicio EC2 en la consola de AWS.png
+INPUT .\figuras\Creación y configuración de instancia EC2 en AWS\Búsqueda del servicio EC2 en la consola de AWS.png
+INPUT .\figuras\Creación y configuración de instancia EC2 en AWS\Búsqueda del servicio EC2 en la consola de AWS.png
+INPUT .\figuras\Creación y configuración de instancia EC2 en AWS\Búsqueda del servicio EC2 en la consola de AWS.png
+INPUT .\figuras\Creación y configuración de instancia EC2 en AWS\Opción para lanzar una nueva instancia.png
+INPUT .\figuras\Creación y configuración de instancia EC2 en AWS\Opción para lanzar una nueva instancia.png
+INPUT .\figuras\Creación y configuración de instancia EC2 en AWS\Opción para lanzar una nueva instancia.png
+INPUT .\figuras\Creación y configuración de instancia EC2 en AWS\Opción para lanzar una nueva instancia.png
+INPUT .\figuras\Creación y configuración de instancia EC2 en AWS\Opción para lanzar una nueva instancia.png
+INPUT .\figuras\Creación y configuración de instancia EC2 en AWS\Opción para lanzar una nueva instancia.png
+INPUT .\figuras\Creación y configuración de instancia EC2 en AWS\Opción para lanzar una nueva instancia.png
+INPUT .\figuras\Creación y configuración de instancia EC2 en AWS\Asignación de nombre a la instancia EC2.png
+INPUT .\figuras\Creación y configuración de instancia EC2 en AWS\Asignación de nombre a la instancia EC2.png
+INPUT .\figuras\Creación y configuración de instancia EC2 en AWS\Asignación de nombre a la instancia EC2.png
+INPUT .\figuras\Creación y configuración de instancia EC2 en AWS\Asignación de nombre a la instancia EC2.png
+INPUT .\figuras\Creación y configuración de instancia EC2 en AWS\Asignación de nombre a la instancia EC2.png
+INPUT .\figuras\Creación y configuración de instancia EC2 en AWS\Asignación de nombre a la instancia EC2.png
+INPUT .\figuras\Creación y configuración de instancia EC2 en AWS\Asignación de nombre a la instancia EC2.png
+INPUT .\figuras\Creación y configuración de instancia EC2 en AWS\Selección de la imagen del sistema operativo Ubuntu.png
+INPUT .\figuras\Creación y configuración de instancia EC2 en AWS\Selección de la imagen del sistema operativo Ubuntu.png
+INPUT .\figuras\Creación y configuración de instancia EC2 en AWS\Selección de la imagen del sistema operativo Ubuntu.png
+INPUT .\figuras\Creación y configuración de instancia EC2 en AWS\Selección de la imagen del sistema operativo Ubuntu.png
+INPUT .\figuras\Creación y configuración de instancia EC2 en AWS\Selección de la imagen del sistema operativo Ubuntu.png
+INPUT .\figuras\Creación y configuración de instancia EC2 en AWS\Selección de la imagen del sistema operativo Ubuntu.png
+INPUT .\figuras\Creación y configuración de instancia EC2 en AWS\Selección de la imagen del sistema operativo Ubuntu.png
+INPUT .\figuras\Creación y configuración de instancia EC2 en AWS\Selección de la versión Ubuntu Server 24.04.png
+INPUT .\figuras\Creación y configuración de instancia EC2 en AWS\Selección de la versión Ubuntu Server 24.04.png
+INPUT .\figuras\Creación y configuración de instancia EC2 en AWS\Selección de la versión Ubuntu Server 24.04.png
+INPUT .\figuras\Creación y configuración de instancia EC2 en AWS\Selección de la versión Ubuntu Server 24.04.png
+INPUT .\figuras\Creación y configuración de instancia EC2 en AWS\Selección de la versión Ubuntu Server 24.04.png
+INPUT .\figuras\Creación y configuración de instancia EC2 en AWS\Selección de la versión Ubuntu Server 24.04.png
+INPUT .\figuras\Creación y configuración de instancia EC2 en AWS\Selección de la versión Ubuntu Server 24.04.png
 INPUT C:\Users\ANGEL JFLORES ACOSTA\AppData\Local\Programs\MiKTeX\fonts\tfm\jknappen\ec\ectt1200.tfm
-INPUT C:\Users\ANGEL JFLORES ACOSTA\AppData\Local\Programs\MiKTeX\tex\latex\listings\lstlang1.sty
-INPUT C:\Users\ANGEL JFLORES ACOSTA\AppData\Local\Programs\MiKTeX\tex\latex\listings\lstlang1.sty
-INPUT C:\Users\ANGEL JFLORES ACOSTA\AppData\Local\Programs\MiKTeX\tex\latex\listings\lstlang1.sty
-INPUT C:\Users\ANGEL JFLORES ACOSTA\AppData\Local\Programs\MiKTeX\tex\latex\listings\lstlang1.sty
-INPUT C:\Users\ANGEL JFLORES ACOSTA\AppData\Local\Programs\MiKTeX\tex\latex\listings\lstlang1.sty
-INPUT C:\Users\ANGEL JFLORES ACOSTA\AppData\Local\Programs\MiKTeX\tex\latex\listings\lstlang1.sty
+INPUT .\figuras\Creación y configuración de instancia EC2 en AWS\Selección del tipo de instancia optimizada para memoria.png
+INPUT .\figuras\Creación y configuración de instancia EC2 en AWS\Selección del tipo de instancia optimizada para memoria.png
+INPUT .\figuras\Creación y configuración de instancia EC2 en AWS\Selección del tipo de instancia optimizada para memoria.png
+INPUT .\figuras\Creación y configuración de instancia EC2 en AWS\Selección del tipo de instancia optimizada para memoria.png
+INPUT .\figuras\Creación y configuración de instancia EC2 en AWS\Selección del tipo de instancia optimizada para memoria.png
+INPUT .\figuras\Creación y configuración de instancia EC2 en AWS\Selección del tipo de instancia optimizada para memoria.png
+INPUT .\figuras\Creación y configuración de instancia EC2 en AWS\Selección del tipo de instancia optimizada para memoria.png
+INPUT .\figuras\Creación y configuración de instancia EC2 en AWS\Creación del par de claves para conexión SSH.png
+INPUT .\figuras\Creación y configuración de instancia EC2 en AWS\Creación del par de claves para conexión SSH.png
+INPUT .\figuras\Creación y configuración de instancia EC2 en AWS\Creación del par de claves para conexión SSH.png
+INPUT .\figuras\Creación y configuración de instancia EC2 en AWS\Creación del par de claves para conexión SSH.png
+INPUT .\figuras\Creación y configuración de instancia EC2 en AWS\Creación del par de claves para conexión SSH.png
+INPUT .\figuras\Creación y configuración de instancia EC2 en AWS\Creación del par de claves para conexión SSH.png
+INPUT .\figuras\Creación y configuración de instancia EC2 en AWS\Creación del par de claves para conexión SSH.png
+INPUT .\figuras\Creación y configuración de instancia EC2 en AWS\Edición de las configuraciones de red.png
+INPUT .\figuras\Creación y configuración de instancia EC2 en AWS\Edición de las configuraciones de red.png
+INPUT .\figuras\Creación y configuración de instancia EC2 en AWS\Edición de las configuraciones de red.png
+INPUT .\figuras\Creación y configuración de instancia EC2 en AWS\Edición de las configuraciones de red.png
+INPUT .\figuras\Creación y configuración de instancia EC2 en AWS\Edición de las configuraciones de red.png
+INPUT .\figuras\Creación y configuración de instancia EC2 en AWS\Edición de las configuraciones de red.png
+INPUT .\figuras\Creación y configuración de instancia EC2 en AWS\Edición de las configuraciones de red.png
+INPUT .\figuras\Creación y configuración de instancia EC2 en AWS\Configuración avanzada de red (VPC, subred e IP pública).png
+INPUT .\figuras\Creación y configuración de instancia EC2 en AWS\Configuración avanzada de red (VPC, subred e IP pública).png
+INPUT .\figuras\Creación y configuración de instancia EC2 en AWS\Configuración avanzada de red (VPC, subred e IP pública).png
+INPUT .\figuras\Creación y configuración de instancia EC2 en AWS\Configuración avanzada de red (VPC, subred e IP pública).png
+INPUT .\figuras\Creación y configuración de instancia EC2 en AWS\Configuración avanzada de red (VPC, subred e IP pública).png
+INPUT .\figuras\Creación y configuración de instancia EC2 en AWS\Configuración avanzada de red (VPC, subred e IP pública).png
+INPUT .\figuras\Creación y configuración de instancia EC2 en AWS\Configuración avanzada de red (VPC, subred e IP pública).png
+INPUT .\figuras\Creación y configuración de instancia EC2 en AWS\Configuración avanzada del volumen de almacenamiento EBS.png
+INPUT .\figuras\Creación y configuración de instancia EC2 en AWS\Configuración avanzada del volumen de almacenamiento EBS.png
+INPUT .\figuras\Creación y configuración de instancia EC2 en AWS\Configuración avanzada del volumen de almacenamiento EBS.png
+INPUT .\figuras\Creación y configuración de instancia EC2 en AWS\Configuración avanzada del volumen de almacenamiento EBS.png
+INPUT .\figuras\Creación y configuración de instancia EC2 en AWS\Configuración avanzada del volumen de almacenamiento EBS.png
+INPUT .\figuras\Creación y configuración de instancia EC2 en AWS\Configuración avanzada del volumen de almacenamiento EBS.png
+INPUT .\figuras\Creación y configuración de instancia EC2 en AWS\Configuración avanzada del volumen de almacenamiento EBS.png
+INPUT .\figuras\Creación y configuración de instancia EC2 en AWS\Resumen y lanzamiento de la instancia EC2.png
+INPUT .\figuras\Creación y configuración de instancia EC2 en AWS\Resumen y lanzamiento de la instancia EC2.png
+INPUT .\figuras\Creación y configuración de instancia EC2 en AWS\Resumen y lanzamiento de la instancia EC2.png
+INPUT .\figuras\Creación y configuración de instancia EC2 en AWS\Resumen y lanzamiento de la instancia EC2.png
+INPUT .\figuras\Creación y configuración de instancia EC2 en AWS\Resumen y lanzamiento de la instancia EC2.png
+INPUT .\figuras\Creación y configuración de instancia EC2 en AWS\Resumen y lanzamiento de la instancia EC2.png
+INPUT .\figuras\Creación y configuración de instancia EC2 en AWS\Resumen y lanzamiento de la instancia EC2.png
 INPUT C:\Users\ANGEL JFLORES ACOSTA\AppData\Local\Programs\MiKTeX\fonts\vf\adobe\times\zptmcm7t.vf
 INPUT C:\Users\ANGEL JFLORES ACOSTA\AppData\Local\Programs\MiKTeX\fonts\tfm\adobe\symbol\psyr.tfm
 INPUT C:\Users\ANGEL JFLORES ACOSTA\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmr10.tfm
 INPUT C:\Users\ANGEL JFLORES ACOSTA\AppData\Local\Programs\MiKTeX\fonts\vf\adobe\times\zptmcm7m.vf
 INPUT C:\Users\ANGEL JFLORES ACOSTA\AppData\Local\Programs\MiKTeX\fonts\tfm\adobe\times\psyro.tfm
 INPUT C:\Users\ANGEL JFLORES ACOSTA\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmmi10.tfm
+INPUT C:\Users\ANGEL JFLORES ACOSTA\AppData\Local\Programs\MiKTeX\tex\latex\listings\lstlang1.sty
+INPUT C:\Users\ANGEL JFLORES ACOSTA\AppData\Local\Programs\MiKTeX\tex\latex\listings\lstlang1.sty
+INPUT C:\Users\ANGEL JFLORES ACOSTA\AppData\Local\Programs\MiKTeX\tex\latex\listings\lstlang1.sty
+INPUT C:\Users\ANGEL JFLORES ACOSTA\AppData\Local\Programs\MiKTeX\tex\latex\listings\lstlang1.sty
+INPUT C:\Users\ANGEL JFLORES ACOSTA\AppData\Local\Programs\MiKTeX\tex\latex\listings\lstlang1.sty
+INPUT C:\Users\ANGEL JFLORES ACOSTA\AppData\Local\Programs\MiKTeX\tex\latex\listings\lstlang1.sty
 INPUT C:\Users\ANGEL JFLORES ACOSTA\AppData\Local\Programs\MiKTeX\tex\latex\psnfss\ts1ptm.fd
 INPUT C:\Users\ANGEL JFLORES ACOSTA\AppData\Local\Programs\MiKTeX\tex\latex\psnfss\ts1ptm.fd
 INPUT C:\Users\ANGEL JFLORES ACOSTA\AppData\Local\Programs\MiKTeX\tex\latex\psnfss\ts1ptm.fd

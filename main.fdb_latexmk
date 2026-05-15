@@ -1,11 +1,11 @@
 # Fdb version 4
-["biber main"] 1778777137.21935 "main.bcf" "main.bbl" "main" 1778859586.05507 0
-  "main.bcf" 1778859585 133351 08ba25774df3888e04087046f6427584 "pdflatex"
+["biber main"] 1778777137.21935 "main.bcf" "main.bbl" "main" 1778860393.85094 0
+  "main.bcf" 1778860393 133351 08ba25774df3888e04087046f6427584 "pdflatex"
   (generated)
   "main.bbl"
   "main.blg"
   (rewritten before read)
-["pdflatex"] 1778859583.70299 "c:/Users/ANGEL JFLORES ACOSTA/ReporteResis/main.tex" "main.pdf" "main" 1778859586.05579 0
+["pdflatex"] 1778860390.91816 "c:/Users/ANGEL JFLORES ACOSTA/ReporteResis/main.tex" "main.pdf" "main" 1778860393.85157 0
   "C:/Users/ANGEL" 1756310582 19003 a3dbcc2a3e23d61c9b83fee38426a5e8 ""
   "C:/Users/ANGEL JFLORES ACOSTA/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map" 1778773785 82507 a9eef8696c92627b87e9975edea03b2a ""
   "C:/Users/ANGEL JFLORES ACOSTA/AppData/Local/MiKTeX/fonts/pk/ljfour/jknappen/ec/dpi600/ectt1200.pk" 1778776841 24152 a36a2b9bc6443f75baa1384a7cdbdd8e ""
@@ -162,7 +162,7 @@
   "capitulos/anexos.tex" 1778770183 103 d1cc2c0f091c6cd2502c30229a3e54d1 ""
   "capitulos/competencias.tex" 1778802496 937 b8e6f8f2d04c7d131fe196e881d050e9 ""
   "capitulos/conclusiones.tex" 1778803238 6083 ca9ca9fb991ab19df670759243d9b7a8 ""
-  "capitulos/desarrollo.tex" 1778859580 42613 032b5f2ebe605dd831ec233dae11272d ""
+  "capitulos/desarrollo.tex" 1778860387 43588 31061c8dbab9ca065eb1ecfb63156cec ""
   "capitulos/descripcion_empresa.tex" 1778770128 1227 24a5b54ab9dca0a5c09f6b40f6351dc8 ""
   "capitulos/introduccion.tex" 1778770123 1018 43a0f531458fec1a1380109dc0d24837 ""
   "capitulos/justificacion.tex" 1778770144 764 66cbb9b51a768b322bc992857e0714fd ""
@@ -172,15 +172,27 @@
   "capitulos/problemas.tex" 1778770134 803 a906862b68fdb229771d420ee3cdb6af ""
   "capitulos/resultados.tex" 1778770163 1380 72920fee12c3d3efe9f358d1ec6fe5e8 ""
   "capitulos/resumen.tex" 1778770118 100 9d12b20cd6943eebf96b3df346e2af26 ""
+  "figuras/Creación y configuración de instancia EC2 en AWS/Asignación de nombre a la instancia EC2.png" 1778857613 18265 fcd456823f2596ae2c98f70e984167d0 ""
+  "figuras/Creación y configuración de instancia EC2 en AWS/Búsqueda del servicio EC2 en la consola de AWS.png" 1778857566 79466 33757f51c6c37b9bcb00b731086855b9 ""
+  "figuras/Creación y configuración de instancia EC2 en AWS/Configuración avanzada de red (VPC, subred e IP pública).png" 1778857744 131645 b302c5648e41348af63f189e3cf30bb5 ""
+  "figuras/Creación y configuración de instancia EC2 en AWS/Configuración avanzada del volumen de almacenamiento EBS.png" 1778857837 95164 e50093682da743b8473a2ccc82db0e3c ""
+  "figuras/Creación y configuración de instancia EC2 en AWS/Creación del par de claves para conexión SSH.png" 1778857684 95682 3e264ebfc9f0cfb41b62ee65129fc6a9 ""
+  "figuras/Creación y configuración de instancia EC2 en AWS/Edición de las configuraciones de red.png" 1778857697 56804 d3ec5d65e22c8d20a7e5a247df766d66 ""
+  "figuras/Creación y configuración de instancia EC2 en AWS/Inicio de sesión en la consola de AWS.png" 1778857381 224122 3602a35c433ab5111297883ddbc5109e ""
+  "figuras/Creación y configuración de instancia EC2 en AWS/Opción para lanzar una nueva instancia.png" 1778857593 85547 826f85a0f52b462726caaf9aec5b2e46 ""
+  "figuras/Creación y configuración de instancia EC2 en AWS/Resumen y lanzamiento de la instancia EC2.png" 1778857856 64688 1b2ba468e94326ec019620aaee90ca45 ""
+  "figuras/Creación y configuración de instancia EC2 en AWS/Selección de la imagen del sistema operativo Ubuntu.png" 1778857632 83655 cb6967f5fdd0bba289cf9e8bf9469913 ""
+  "figuras/Creación y configuración de instancia EC2 en AWS/Selección de la versión Ubuntu Server 24.04.png" 1778857651 144113 f8a218b499dd6274192a15be4eb919df ""
+  "figuras/Creación y configuración de instancia EC2 en AWS/Selección del tipo de instancia optimizada para memoria.png" 1778857670 106796 c04f7469a7b1e472bf8bea2de8319c71 ""
   "figuras/logo_itv.png" 1778774285 70 06d940104c0c428e61add74ff160f991 ""
-  "main.aux" 1778859585 18416 9f6e22952176f5138ba94c6f5d27b02a "pdflatex"
+  "main.aux" 1778860393 18416 e12d2b3d3134e24373c595a2c424c16a "pdflatex"
   "main.bbl" 1778777149 486 76d65a242ec496c9b4361af646ff12cb "biber main"
-  "main.lof" 1778859585 3058 6d3dcebe35b0bd87e8b94db68adc2ed9 "pdflatex"
-  "main.lot" 1778859585 498 0f04b4cb9805a9d63d98d2952bb19b58 "pdflatex"
-  "main.out" 1778859585 11814 3ff89b0097abc76b8a51448ab55d34cb "pdflatex"
-  "main.run.xml" 1778859585 2360 e823dede0fdb354f7eff64774b1cfad0 "pdflatex"
+  "main.lof" 1778860393 3058 fa0ee931b7f358ca222513efc5c09cbe "pdflatex"
+  "main.lot" 1778860393 498 0f04b4cb9805a9d63d98d2952bb19b58 "pdflatex"
+  "main.out" 1778860393 11814 3ff89b0097abc76b8a51448ab55d34cb "pdflatex"
+  "main.run.xml" 1778860393 2360 e823dede0fdb354f7eff64774b1cfad0 "pdflatex"
   "main.tex" 1778799894 6178 dfaf6898673540eca5cd377cfc3b5a23 ""
-  "main.toc" 1778859585 7371 915d33b8831dfbd4e4aa227b9612336e "pdflatex"
+  "main.toc" 1778860393 7371 6d1cbb1001364bc92af202a13b2f45fc "pdflatex"
   (generated)
   "main.aux"
   "main.bcf"

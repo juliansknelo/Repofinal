@@ -33,7 +33,7 @@ Para iniciar este proceso, se accede a la consola de administración mediante un
 
 \begin{figure}[H]
     \centering
-    % \includegraphics[width=0.8\textwidth]{figuras/aws_login.png}
+    \includegraphics[width=0.8\textwidth]{figuras/Creación y configuración de instancia EC2 en AWS/Inicio de sesión en la consola de AWS.png}
     \caption{Inicio de sesión en la consola de AWS.}
     \label{fig:aws_login}
 \end{figure}
@@ -42,16 +42,16 @@ Posteriormente, en la barra de búsqueda principal se ingresa el término ``EC2'
 
 \begin{figure}[H]
     \centering
-    % \includegraphics[width=0.8\textwidth]{figuras/aws_ec2_search.png}
+    \includegraphics[width=0.8\textwidth]{figuras/Creación y configuración de instancia EC2 en AWS/Búsqueda del servicio EC2 en la consola de AWS.png}
     \caption{Búsqueda del servicio EC2 en la consola de AWS.}
     \label{fig:aws_ec2_search}
 \end{figure}
-
+\newpage
 En el panel principal del servicio, se ubica y selecciona la opción \textit{Lanzar instancia} para comenzar con la configuración (ver figura \ref{fig:aws_launch_instance}).
 
 \begin{figure}[H]
     \centering
-    % \includegraphics[width=0.8\textwidth]{figuras/aws_launch_instance.png}
+    \includegraphics[width=0.8\textwidth]{figuras/Creación y configuración de instancia EC2 en AWS/Opción para lanzar una nueva instancia.png}
     \caption{Opción para lanzar una nueva instancia.}
     \label{fig:aws_launch_instance}
 \end{figure}
@@ -60,7 +60,7 @@ Se despliega un formulario para definir los parámetros de lanzamiento. En prime
 
 \begin{figure}[H]
     \centering
-    % \includegraphics[width=0.8\textwidth]{figuras/aws_name.png}
+    \includegraphics[width=0.8\textwidth]{figuras/Creación y configuración de instancia EC2 en AWS/Asignación de nombre a la instancia EC2.png}
     \caption{Asignación de nombre a la instancia EC2.}
     \label{fig:aws_name}
 \end{figure}
@@ -69,14 +69,14 @@ En la sección de Imágenes de Aplicaciones y Sistemas Operativos (AMI), se elig
 
 \begin{figure}[H]
     \centering
-    % \includegraphics[width=0.8\textwidth]{figuras/aws_ami_selection.png}
+    \includegraphics[width=0.8\textwidth]{figuras/Creación y configuración de instancia EC2 en AWS/Selección de la imagen del sistema operativo Ubuntu.png}
     \caption{Selección de la imagen del sistema operativo Ubuntu.}
     \label{fig:aws_ami_selection}
 \end{figure}
 
 \begin{figure}[H]
     \centering
-    % \includegraphics[width=0.8\textwidth]{figuras/aws_ami_version.png}
+    \includegraphics[width=0.8\textwidth]{figuras/Creación y configuración de instancia EC2 en AWS/Selección de la versión Ubuntu Server 24.04.png}
     \caption{Selección de la versión Ubuntu Server 24.04.}
     \label{fig:aws_ami_version}
 \end{figure}
@@ -85,16 +85,16 @@ Para el tipo de instancia, se decide por la familia \texttt{r7.xlarge} tras un a
 
 \begin{figure}[H]
     \centering
-    % \includegraphics[width=0.8\textwidth]{figuras/aws_instance_type_selection.png}
+    \includegraphics[width=0.8\textwidth]{figuras/Creación y configuración de instancia EC2 en AWS/Selección del tipo de instancia optimizada para memoria.png}
     \caption{Selección del tipo de instancia optimizada para memoria.}
     \label{fig:aws_instance_type_selection}
 \end{figure}
-
+\newpage
 A continuación, se genera un nuevo par de claves de seguridad, el cual resulta fundamental para establecer futuras conexiones seguras mediante el protocolo SSH (ver figura \ref{fig:aws_key_pair_creation}).
 
 \begin{figure}[H]
     \centering
-    % \includegraphics[width=0.8\textwidth]{figuras/aws_key_pair_creation.png}
+    \includegraphics[width=0.8\textwidth]{figuras/Creación y configuración de instancia EC2 en AWS/Creación del par de claves para conexión SSH.png}
     \caption{Creación del par de claves para conexión SSH.}
     \label{fig:aws_key_pair_creation}
 \end{figure}
@@ -103,23 +103,23 @@ En el apartado de \textit{Configuraciones de red}, se despliegan las opciones av
 
 \begin{figure}[H]
     \centering
-    % \includegraphics[width=0.8\textwidth]{figuras/aws_edit_network_info.png}
+    \includegraphics[width=0.8\textwidth]{figuras/Creación y configuración de instancia EC2 en AWS/Edición de las configuraciones de red.png}
     \caption{Edición de las configuraciones de red.}
     \label{fig:aws_edit_network_info}
 \end{figure}
 
 \begin{figure}[H]
     \centering
-    % \includegraphics[width=0.8\textwidth]{figuras/aws_edit_advance_network.png}
+    \includegraphics[width=0.8\textwidth]{figuras/Creación y configuración de instancia EC2 en AWS/Configuración avanzada de red (VPC, subred e IP pública).png}
     \caption{Configuración avanzada de red (VPC, subred e IP pública).}
     \label{fig:aws_edit_advance_network}
 \end{figure}
-
+\newpage
 Finalmente, se configura el almacenamiento seleccionando la opción avanzada (ver figura \ref{fig:aws_storage}). Se establece un volumen de tipo \texttt{gp3} con una capacidad de \SI{300}{GB}, configurado con \num{7000} IOPS y un rendimiento de \SI{300}{MB/s}. Se especifica que el volumen no se elimine al terminar la instancia y se deshabilita el cifrado para esta capa de almacenamiento.
 
 \begin{figure}[H]
     \centering
-    % \includegraphics[width=0.8\textwidth]{figuras/aws_storage.png}
+    \includegraphics[width=0.8\textwidth]{figuras/Creación y configuración de instancia EC2 en AWS/Configuración avanzada del volumen de almacenamiento EBS.png}
     \caption{Configuración avanzada del volumen de almacenamiento EBS.}
     \label{fig:aws_storage}
 \end{figure}
@@ -128,10 +128,12 @@ Para finalizar el proceso de configuración, se observa el resumen de los recurs
 
 \begin{figure}[H]
     \centering
-    % \includegraphics[width=0.8\textwidth]{figuras/aws_launch_summary.png}
+    \includegraphics[width=0.6\textwidth]{figuras/Creación y configuración de instancia EC2 en AWS/Resumen y lanzamiento de la instancia EC2.png}
     \caption{Resumen y lanzamiento de la instancia EC2.}
     \label{fig:aws_launch_summary}
 \end{figure}
+\newpage
+
 
 \subsection{Configuración de entorno Cloud (Linux)}
 
