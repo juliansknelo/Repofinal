@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.28 (MiKTeX 25.12) (preloaded format=pdflatex 2026.5.14)  15 MAY 2026 12:44
+This is pdfTeX, Version 3.141592653-2.6-1.40.28 (MiKTeX 25.12) (preloaded format=pdflatex 2026.5.14)  15 MAY 2026 13:02
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1044,68 +1044,68 @@ Cap\'{\i }tulo 7.
 (capitulos/desarrollo.tex [14
 
 ]
-<figuras/Creación y configuración de instancia EC2 en AWS/Inicio de sesión en la consola de AWS.png, id=433, 769.37437pt x 562.35094pt>
+<figuras/Creación y configuración de instancia EC2 en AWS/Inicio de sesión en la consola de AWS.png, id=436, 769.37437pt x 562.35094pt>
 File: figuras/Creación y configuración de instancia EC2 en AWS/Inicio de sesión en la consola de AWS.png Graphic file (type png)
 <use figuras/Creación y configuración de instancia EC2 en AWS/Inicio de sesión en la consola de AWS.png>
 Package pdftex.def Info: figuras/Creación y configuración de instancia EC2 en AWS/Inicio de sesión en la consola de AWS.png  used on input line 36.
 (pdftex.def)             Requested size: 366.24527pt x 267.70296pt.
  [15]
-<figuras/Creación y configuración de instancia EC2 en AWS/Búsqueda del servicio EC2 en la consola de AWS.png, id=440, 890.5772pt x 251.43938pt>
+<figuras/Creación y configuración de instancia EC2 en AWS/Búsqueda del servicio EC2 en la consola de AWS.png, id=443, 890.5772pt x 251.43938pt>
 File: figuras/Creación y configuración de instancia EC2 en AWS/Búsqueda del servicio EC2 en la consola de AWS.png Graphic file (type png)
 <use figuras/Creación y configuración de instancia EC2 en AWS/Búsqueda del servicio EC2 en la consola de AWS.png>
 Package pdftex.def Info: figuras/Creación y configuración de instancia EC2 en AWS/Búsqueda del servicio EC2 en la consola de AWS.png  used on input line 45.
 (pdftex.def)             Requested size: 366.24527pt x 103.40157pt.
  [16 <./figuras/Creación y configuración de instancia EC2 en AWS/Inicio de sesión en la consola de AWS.png> <./figuras/Creación y configuración de instancia EC2 en AWS/Búsqueda del servicio EC2 en la consola de AWS.png>]
-<figuras/Creación y configuración de instancia EC2 en AWS/Opción para lanzar una nueva instancia.png, id=448, 1114.91531pt x 282.30469pt>
+<figuras/Creación y configuración de instancia EC2 en AWS/Opción para lanzar una nueva instancia.png, id=451, 1114.91531pt x 282.30469pt>
 File: figuras/Creación y configuración de instancia EC2 en AWS/Opción para lanzar una nueva instancia.png Graphic file (type png)
 <use figuras/Creación y configuración de instancia EC2 en AWS/Opción para lanzar una nueva instancia.png>
 Package pdftex.def Info: figuras/Creación y configuración de instancia EC2 en AWS/Opción para lanzar una nueva instancia.png  used on input line 54.
 (pdftex.def)             Requested size: 366.24527pt x 92.73438pt.
-<figuras/Creación y configuración de instancia EC2 en AWS/Asignación de nombre a la instancia EC2.png, id=450, 860.46469pt x 137.01187pt>
+<figuras/Creación y configuración de instancia EC2 en AWS/Asignación de nombre a la instancia EC2.png, id=453, 860.46469pt x 137.01187pt>
 File: figuras/Creación y configuración de instancia EC2 en AWS/Asignación de nombre a la instancia EC2.png Graphic file (type png)
 <use figuras/Creación y configuración de instancia EC2 en AWS/Asignación de nombre a la instancia EC2.png>
 Package pdftex.def Info: figuras/Creación y configuración de instancia EC2 en AWS/Asignación de nombre a la instancia EC2.png  used on input line 63.
 (pdftex.def)             Requested size: 366.24527pt x 58.31812pt.
-<figuras/Creación y configuración de instancia EC2 en AWS/Selección de la imagen del sistema operativo Ubuntu.png, id=453, 909.3975pt x 350.81062pt>
+<figuras/Creación y configuración de instancia EC2 en AWS/Selección de la imagen del sistema operativo Ubuntu.png, id=456, 909.3975pt x 350.81062pt>
 File: figuras/Creación y configuración de instancia EC2 en AWS/Selección de la imagen del sistema operativo Ubuntu.png Graphic file (type png)
 <use figuras/Creación y configuración de instancia EC2 en AWS/Selección de la imagen del sistema operativo Ubuntu.png>
 Package pdftex.def Info: figuras/Creación y configuración de instancia EC2 en AWS/Selección de la imagen del sistema operativo Ubuntu.png  used on input line 72.
 (pdftex.def)             Requested size: 366.24527pt x 141.28528pt.
-<figuras/Creación y configuración de instancia EC2 en AWS/Selección de la versión Ubuntu Server 24.04.png, id=454, 925.20656pt x 337.26pt>
+<figuras/Creación y configuración de instancia EC2 en AWS/Selección de la versión Ubuntu Server 24.04.png, id=457, 925.20656pt x 337.26pt>
 File: figuras/Creación y configuración de instancia EC2 en AWS/Selección de la versión Ubuntu Server 24.04.png Graphic file (type png)
 <use figuras/Creación y configuración de instancia EC2 en AWS/Selección de la versión Ubuntu Server 24.04.png>
 Package pdftex.def Info: figuras/Creación y configuración de instancia EC2 en AWS/Selección de la versión Ubuntu Server 24.04.png  used on input line 79.
 (pdftex.def)             Requested size: 366.24527pt x 133.50699pt.
  [17 <./figuras/Creación y configuración de instancia EC2 en AWS/Opción para lanzar una nueva instancia.png> <./figuras/Creación y configuración de instancia EC2 en AWS/Asignación de nombre a la instancia EC2.png> <./figuras/Creación y configuración de instancia EC2 en AWS/Selección de la imagen del sistema operativo Ubuntu.png>]
-<figuras/Creación y configuración de instancia EC2 en AWS/Selección del tipo de instancia optimizada para memoria.png, id=463, 883.80188pt x 296.60812pt>
+<figuras/Creación y configuración de instancia EC2 en AWS/Selección del tipo de instancia optimizada para memoria.png, id=466, 883.80188pt x 296.60812pt>
 File: figuras/Creación y configuración de instancia EC2 en AWS/Selección del tipo de instancia optimizada para memoria.png Graphic file (type png)
 <use figuras/Creación y configuración de instancia EC2 en AWS/Selección del tipo de instancia optimizada para memoria.png>
 Package pdftex.def Info: figuras/Creación y configuración de instancia EC2 en AWS/Selección del tipo de instancia optimizada para memoria.png  used on input line 88.
 (pdftex.def)             Requested size: 366.24527pt x 122.91356pt.
  [18 <./figuras/Creación y configuración de instancia EC2 en AWS/Selección de la versión Ubuntu Server 24.04.png> <./figuras/Creación y configuración de instancia EC2 en AWS/Selección del tipo de instancia optimizada para memoria.png>]
-<figuras/Creación y configuración de instancia EC2 en AWS/Creación del par de claves para conexión SSH.png, id=473, 571.38469pt x 532.23843pt>
+<figuras/Creación y configuración de instancia EC2 en AWS/Creación del par de claves para conexión SSH.png, id=476, 571.38469pt x 532.23843pt>
 File: figuras/Creación y configuración de instancia EC2 en AWS/Creación del par de claves para conexión SSH.png Graphic file (type png)
 <use figuras/Creación y configuración de instancia EC2 en AWS/Creación del par de claves para conexión SSH.png>
 Package pdftex.def Info: figuras/Creación y configuración de instancia EC2 en AWS/Creación del par de claves para conexión SSH.png  used on input line 97.
 (pdftex.def)             Requested size: 366.24527pt x 341.15118pt.
-<figuras/Creación y configuración de instancia EC2 en AWS/Edición de las configuraciones de red.png, id=476, 911.65594pt x 292.84406pt>
+<figuras/Creación y configuración de instancia EC2 en AWS/Edición de las configuraciones de red.png, id=479, 911.65594pt x 292.84406pt>
 File: figuras/Creación y configuración de instancia EC2 en AWS/Edición de las configuraciones de red.png Graphic file (type png)
 <use figuras/Creación y configuración de instancia EC2 en AWS/Edición de las configuraciones de red.png>
 Package pdftex.def Info: figuras/Creación y configuración de instancia EC2 en AWS/Edición de las configuraciones de red.png  used on input line 106.
 (pdftex.def)             Requested size: 366.24527pt x 117.64941pt.
  [19 <./figuras/Creación y configuración de instancia EC2 en AWS/Creación del par de claves para conexión SSH.png>]
-<figuras/Creación y configuración de instancia EC2 en AWS/Configuración avanzada de red (VPC, subred e IP pública).png, id=482, 602.25pt x 403.5075pt>
+<figuras/Creación y configuración de instancia EC2 en AWS/Configuración avanzada de red (VPC, subred e IP pública).png, id=485, 602.25pt x 403.5075pt>
 File: figuras/Creación y configuración de instancia EC2 en AWS/Configuración avanzada de red (VPC, subred e IP pública).png Graphic file (type png)
 <use figuras/Creación y configuración de instancia EC2 en AWS/Configuración avanzada de red (VPC, subred e IP pública).png>
 Package pdftex.def Info: figuras/Creación y configuración de instancia EC2 en AWS/Configuración avanzada de red (VPC, subred e IP pública).png  used on input line 113.
 (pdftex.def)             Requested size: 366.24527pt x 245.39421pt.
  [20 <./figuras/Creación y configuración de instancia EC2 en AWS/Edición de las configuraciones de red.png> <./figuras/Creación y configuración de instancia EC2 en AWS/Configuración avanzada de red (VPC, subred e IP pública).png>]
-<figuras/Creación y configuración de instancia EC2 en AWS/Configuración avanzada del volumen de almacenamiento EBS.png, id=490, 907.89188pt x 465.99094pt>
+<figuras/Creación y configuración de instancia EC2 en AWS/Configuración avanzada del volumen de almacenamiento EBS.png, id=493, 907.89188pt x 465.99094pt>
 File: figuras/Creación y configuración de instancia EC2 en AWS/Configuración avanzada del volumen de almacenamiento EBS.png Graphic file (type png)
 <use figuras/Creación y configuración de instancia EC2 en AWS/Configuración avanzada del volumen de almacenamiento EBS.png>
 Package pdftex.def Info: figuras/Creación y configuración de instancia EC2 en AWS/Configuración avanzada del volumen de almacenamiento EBS.png  used on input line 122.
 (pdftex.def)             Requested size: 366.24527pt x 187.9787pt.
-<figuras/Creación y configuración de instancia EC2 en AWS/Resumen y lanzamiento de la instancia EC2.png, id=492, 448.67625pt x 509.65407pt>
+<figuras/Creación y configuración de instancia EC2 en AWS/Resumen y lanzamiento de la instancia EC2.png, id=495, 448.67625pt x 509.65407pt>
 File: figuras/Creación y configuración de instancia EC2 en AWS/Resumen y lanzamiento de la instancia EC2.png Graphic file (type png)
 <use figuras/Creación y configuración de instancia EC2 en AWS/Resumen y lanzamiento de la instancia EC2.png>
 Package pdftex.def Info: figuras/Creación y configuración de instancia EC2 en AWS/Resumen y lanzamiento de la instancia EC2.png  used on input line 131.
@@ -1119,40 +1119,40 @@ LaTeX Font Info:    Trying to load font information for TS1+ptm on input line 14
  (C:\Users\ANGEL JFLORES ACOSTA\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\ts1ptm.fd
 File: ts1ptm.fd 2001/06/04 font definitions for TS1/ptm.
 ) [23] [24] [25] [26]
-<figuras/Configuración de entorno Cloud (Linux)/Pantalla de inicio de sesión de Apache Airflow.png, id=597, 529.22719pt x 522.45187pt>
+<figuras/Configuración de entorno Cloud (Linux)/Pantalla de inicio de sesión de Apache Airflow.png, id=600, 529.22719pt x 522.45187pt>
 File: figuras/Configuración de entorno Cloud (Linux)/Pantalla de inicio de sesión de Apache Airflow.png Graphic file (type png)
 <use figuras/Configuración de entorno Cloud (Linux)/Pantalla de inicio de sesión de Apache Airflow.png>
 Package pdftex.def Info: figuras/Configuración de entorno Cloud (Linux)/Pantalla de inicio de sesión de Apache Airflow.png  used on input line 250.
 (pdftex.def)             Requested size: 366.24527pt x 361.56042pt.
-<figuras/Configuración de entorno Cloud (Linux)/Menú principal de la consola de administración de Apache Airflow.png, id=599, 1008.76875pt x 684.30656pt>
+<figuras/Configuración de entorno Cloud (Linux)/Menú principal de la consola de administración de Apache Airflow.png, id=602, 1008.76875pt x 684.30656pt>
 File: figuras/Configuración de entorno Cloud (Linux)/Menú principal de la consola de administración de Apache Airflow.png Graphic file (type png)
 <use figuras/Configuración de entorno Cloud (Linux)/Menú principal de la consola de administración de Apache Airflow.png>
 Package pdftex.def Info: figuras/Configuración de entorno Cloud (Linux)/Menú principal de la consola de administración de Apache Airflow.png  used on input line 259.
 (pdftex.def)             Requested size: 366.24527pt x 248.44894pt.
  [27 <./figuras/Configuración de entorno Cloud (Linux)/Pantalla de inicio de sesión de Apache Airflow.png>]
-<figuras/Configuración de entorno Cloud (Linux)/Menú para agregar una nueva conexión en Apache Airflow.png, id=606, 643.6547pt x 620.3175pt>
+<figuras/Configuración de entorno Cloud (Linux)/Menú para agregar una nueva conexión en Apache Airflow.png, id=609, 643.6547pt x 620.3175pt>
 File: figuras/Configuración de entorno Cloud (Linux)/Menú para agregar una nueva conexión en Apache Airflow.png Graphic file (type png)
 <use figuras/Configuración de entorno Cloud (Linux)/Menú para agregar una nueva conexión en Apache Airflow.png>
 Package pdftex.def Info: figuras/Configuración de entorno Cloud (Linux)/Menú para agregar una nueva conexión en Apache Airflow.png  used on input line 274.
 (pdftex.def)             Requested size: 366.24527pt x 352.97888pt.
  [28 <./figuras/Configuración de entorno Cloud (Linux)/Menú principal de la consola de administración de Apache Airflow.png>] [29 <./figuras/Configuración de entorno Cloud (Linux)/Menú para agregar una nueva conexión en Apache Airflow.png>]
-<figuras/Configuración de entorno Cloud (Linux)/Vista general de los DAGs disponibles en el sistema.png, id=619, 877.02657pt x 420.06938pt>
+<figuras/Configuración de entorno Cloud (Linux)/Vista general de los DAGs disponibles en el sistema.png, id=622, 877.02657pt x 420.06938pt>
 File: figuras/Configuración de entorno Cloud (Linux)/Vista general de los DAGs disponibles en el sistema.png Graphic file (type png)
 <use figuras/Configuración de entorno Cloud (Linux)/Vista general de los DAGs disponibles en el sistema.png>
 Package pdftex.def Info: figuras/Configuración de entorno Cloud (Linux)/Vista general de los DAGs disponibles en el sistema.png  used on input line 294.
 (pdftex.def)             Requested size: 366.24527pt x 175.4216pt.
-<figuras/Configuración de entorno Cloud (Linux)/Información general y tareas de un DAG específico.png, id=621, 1269.24188pt x 439.6425pt>
+<figuras/Configuración de entorno Cloud (Linux)/Información general y tareas de un DAG específico.png, id=624, 1269.24188pt x 439.6425pt>
 File: figuras/Configuración de entorno Cloud (Linux)/Información general y tareas de un DAG específico.png Graphic file (type png)
 <use figuras/Configuración de entorno Cloud (Linux)/Información general y tareas de un DAG específico.png>
 Package pdftex.def Info: figuras/Configuración de entorno Cloud (Linux)/Información general y tareas de un DAG específico.png  used on input line 307.
 (pdftex.def)             Requested size: 366.24527pt x 126.86246pt.
-<figuras/Configuración de entorno Cloud (Linux)/Historial e información de las instancias de ejecución del DAG.png, id=623, 269.50688pt x 301.8778pt>
+<figuras/Configuración de entorno Cloud (Linux)/Historial e información de las instancias de ejecución del DAG.png, id=626, 269.50688pt x 301.8778pt>
 File: figuras/Configuración de entorno Cloud (Linux)/Historial e información de las instancias de ejecución del DAG.png Graphic file (type png)
 <use figuras/Configuración de entorno Cloud (Linux)/Historial e información de las instancias de ejecución del DAG.png>
 Package pdftex.def Info: figuras/Configuración de entorno Cloud (Linux)/Historial e información de las instancias de ejecución del DAG.png  used on input line 316.
 (pdftex.def)             Requested size: 366.24527pt x 410.24435pt.
  [30 <./figuras/Configuración de entorno Cloud (Linux)/Vista general de los DAGs disponibles en el sistema.png> <./figuras/Configuración de entorno Cloud (Linux)/Información general y tareas de un DAG específico.png>] [31 <./figuras/Configuración de entorno Cloud (Linux)/Historial e información de las instancias de ejecución del DAG.png>]
-<figuras/Configuración de entorno Cloud (Linux)/Vista de calendario con ejecuciones pasadas y futuras del DAG.png, id=639, 475.02469pt x 462.22687pt>
+<figuras/Configuración de entorno Cloud (Linux)/Vista de calendario con ejecuciones pasadas y futuras del DAG.png, id=642, 475.02469pt x 462.22687pt>
 File: figuras/Configuración de entorno Cloud (Linux)/Vista de calendario con ejecuciones pasadas y futuras del DAG.png Graphic file (type png)
 <use figuras/Configuración de entorno Cloud (Linux)/Vista de calendario con ejecuciones pasadas y futuras del DAG.png>
 Package pdftex.def Info: figuras/Configuración de entorno Cloud (Linux)/Vista de calendario con ejecuciones pasadas y futuras del DAG.png  used on input line 326.
@@ -1218,18 +1218,18 @@ Cap\'{\i }tulo 8.
 (capitulos/resultados.tex [45
 
 ]
-<figuras/resultados/Matriz jerárquica interactiva para consolidación de gastos.png, id=825, 712.91344pt x 341.02406pt>
+<figuras/resultados/Matriz jerárquica interactiva para consolidación de gastos.png, id=830, 712.91344pt x 341.02406pt>
 File: figuras/resultados/Matriz jerárquica interactiva para consolidación de gastos.png Graphic file (type png)
 <use figuras/resultados/Matriz jerárquica interactiva para consolidación de gastos.png>
 Package pdftex.def Info: figuras/resultados/Matriz jerárquica interactiva para consolidación de gastos.png  used on input line 21.
 (pdftex.def)             Requested size: 366.24527pt x 175.19484pt.
-<figuras/resultados/Panel tabular para validación de transacciones.png, id=827, 710.655pt x 205.5178pt>
+<figuras/resultados/Panel tabular para validación de transacciones.png, id=832, 710.655pt x 205.5178pt>
 File: figuras/resultados/Panel tabular para validación de transacciones.png Graphic file (type png)
 <use figuras/resultados/Panel tabular para validación de transacciones.png>
 Package pdftex.def Info: figuras/resultados/Panel tabular para validación de transacciones.png  used on input line 32.
 (pdftex.def)             Requested size: 297.57036pt x 86.0566pt.
  [46 <./figuras/resultados/Matriz jerárquica interactiva para consolidación de gastos.png> <./figuras/resultados/Panel tabular para validación de transacciones.png>]
-<figuras/resultados/Vista de Confrontación Contable.png, id=835, 840.89156pt x 472.76625pt>
+<figuras/resultados/Vista de Confrontación Contable.png, id=840, 840.89156pt x 472.76625pt>
 File: figuras/resultados/Vista de Confrontación Contable.png Graphic file (type png)
 <use figuras/resultados/Vista de Confrontación Contable.png>
 Package pdftex.def Info: figuras/resultados/Vista de Confrontación Contable.png  used on input line 44.
@@ -1258,23 +1258,23 @@ LaTeX2e <2025-11-01>
 L3 programming layer <2025-12-24>
  ***********
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: F2E20120921EABE07C40475E8B2BF8FD;12616.
+(rerunfilecheck)             Checksum: 52DA973A8F7A95AD595AE1A0E10A6E41;12481.
 Package logreq Info: Writing requests to 'main.run.xml'.
 \openout1 = `main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 30717 strings out of 467871
- 602098 string characters out of 5411080
- 1603822 words of memory out of 5000000
- 58856 multiletter control sequences out of 15000+600000
+ 30721 strings out of 467871
+ 602182 string characters out of 5411080
+ 1603982 words of memory out of 5000000
+ 58858 multiletter control sequences out of 15000+600000
  671588 words of font info for 94 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  73i,10n,80p,1201b,3153s stack positions out of 10000i,1000n,20000p,200000b,200000s
  <C:\Users\ANGEL JFLORES ACOSTA\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ectt1200.pk><C:/Users/ANGEL JFLORES ACOSTA/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/ANGEL JFLORES ACOSTA/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/ANGEL JFLORES ACOSTA/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmb8a.pfb><C:/Users/ANGEL JFLORES ACOSTA/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmr8a.pfb><C:/Users/ANGEL JFLORES ACOSTA/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmri8a.pfb>
-Output written on main.pdf (60 pages, 1741962 bytes).
+Output written on main.pdf (60 pages, 1742893 bytes).
 PDF statistics:
- 1043 PDF objects out of 1200 (max. 8388607)
- 355 named destinations out of 1000 (max. 500000)
+ 1048 PDF objects out of 1200 (max. 8388607)
+ 357 named destinations out of 1000 (max. 500000)
  532 words of extra memory for PDF output out of 10000 (max. 10000000)
 

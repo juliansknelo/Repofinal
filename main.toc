@@ -1,7 +1,7 @@
 \babel@toc {spanish}{}\relax 
 \vspace {1em}\noindent \textbf {Generalidades del Proyecto}\par \vspace {0.3em}
 \contentsline {chapter}{\numberline {1}Introducción}{1}{chapter.1}%
-\contentsline {chapter}{\numberline {2}Descripción de la empresa u organización y del puesto o área de trabajo del estudiante}{2}{chapter.2}%
+\contentsline {chapter}{\numberline {2}Descripción de la empresa y del área de trabajo del estudiante}{2}{chapter.2}%
 \contentsline {section}{\numberline {2.1}Generalidades de la empresa}{2}{section.2.1}%
 \contentsline {section}{\numberline {2.2}Descripción del área de trabajo}{2}{section.2.2}%
 \contentsline {chapter}{\numberline {3}Problemas a resolver}{3}{chapter.3}%
@@ -62,7 +62,7 @@
 \contentsline {subsubsection}{Esquema estrella resultante}{43}{subsubsection*.44}%
 \contentsline {section}{\numberline {7.5}Configuración de EC2 para exponer datos a Power BI}{43}{section.7.5}%
 \contentsline {subsection}{\numberline {7.5.1}Configuración de Ec2 para exposición de datos}{43}{subsection.7.5.1}%
-\contentsline {subsection}{\numberline {7.5.2}Configuración de Power BI service}{43}{subsection.7.5.2}%
+\contentsline {subsection}{\numberline {7.5.2}Configuración de Power BI service}{44}{subsection.7.5.2}%
 \vspace {1em}\noindent \textbf {Resultados}\par \vspace {0.3em}
 \contentsline {chapter}{\numberline {8}Resultados}{45}{chapter.8}%
 \contentsline {section}{\numberline {8.1}Dashboards de Inteligencia de Negocios}{45}{section.8.1}%
