@@ -659,18 +659,17 @@ La exposición de los datos procesados desde la instancia EC2 hacia las herramie
 
 \begin{figure}[H]
     \centering
-    % \includegraphics[width=0.8\textwidth]{figuras/Configuración de EC2 para exposición de datos/Configuración de AWS Security Group.png}
+    \includegraphics[width=0.8\textwidth]{figuras/Configuración de Ec2 para exposición de datos/Configuración de AWS Security Group.png}
     \caption{Configuración de AWS Security Group.}
     \label{fig:aws_security_group}
 \end{figure}
 
 \begin{figure}[H]
     \centering
-    % \includegraphics[width=0.8\textwidth]{figuras/Configuración de EC2 para exposición de datos/Configuración de reglas de entrada del Security Group.png}
+    \includegraphics[width=0.8\textwidth]{figuras/Configuración de Ec2 para exposición de datos/Configuración de reglas de entrada del Security Group.png}
     \caption{Configuración de reglas de entrada del Security Group.}
     \label{fig:aws_sg_inbound_rules}
 \end{figure}
-\newpage
 En el motor de base de datos PostgreSQL, se crea un usuario exclusivo para la plataforma de Business Intelligence (BI). Este usuario se configura con permisos restringidos, permitiendo el acceso únicamente a los elementos que conforman la Capa Oro. Esta estrategia de seguridad asegura que la herramienta de visualización solo tenga visibilidad sobre los modelos dimensionales y tablas de hechos finales, protegiendo la integridad de los datos crudos y estandarizados presentes en las capas Bronce y Plata.
 
 \subsection{Configuración de Power BI service}

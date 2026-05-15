@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.28 (MiKTeX 25.12) (preloaded format=pdflatex 2026.5.14)  15 MAY 2026 13:02
+This is pdfTeX, Version 3.141592653-2.6-1.40.28 (MiKTeX 25.12) (preloaded format=pdflatex 2026.5.14)  15 MAY 2026 13:13
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1213,23 +1213,34 @@ Overfull \hbox (134.89223pt too wide) in paragraph at lines 638--639
 []\T1/cmtt/m/n/12 oro.dim_analytic\T1/ptm/b/n/12 : \T1/ptm/m/n/12 Se cons-tru-ye des-de \T1/cmtt/m/n/12 plata.account_analytic_account \T1/ptm/m/n/12 y \T1/cmtt/m/n/12 plata.account_analytic_plan\T1/ptm/m/n/12 .
  []
 
-[42] [43]) [44]
+[42]
+<figuras/Configuración de Ec2 para exposición de datos/Configuración de AWS Security Group.png, id=813, 819.8128pt x 314.67563pt>
+File: figuras/Configuración de Ec2 para exposición de datos/Configuración de AWS Security Group.png Graphic file (type png)
+<use figuras/Configuración de Ec2 para exposición de datos/Configuración de AWS Security Group.png>
+Package pdftex.def Info: figuras/Configuración de Ec2 para exposición de datos/Configuración de AWS Security Group.png  used on input line 662.
+(pdftex.def)             Requested size: 366.24527pt x 140.57999pt.
+<figuras/Configuración de Ec2 para exposición de datos/Configuración de reglas de entrada del Security Group.png, id=814, 1397.22pt x 493.0922pt>
+File: figuras/Configuración de Ec2 para exposición de datos/Configuración de reglas de entrada del Security Group.png Graphic file (type png)
+<use figuras/Configuración de Ec2 para exposición de datos/Configuración de reglas de entrada del Security Group.png>
+Package pdftex.def Info: figuras/Configuración de Ec2 para exposición de datos/Configuración de reglas de entrada del Security Group.png  used on input line 669.
+(pdftex.def)             Requested size: 366.24527pt x 129.24677pt.
+ [43 <./figuras/Configuración de Ec2 para exposición de datos/Configuración de AWS Security Group.png>]) [44 <./figuras/Configuración de Ec2 para exposición de datos/Configuración de reglas de entrada del Security Group.png>]
 Cap\'{\i }tulo 8.
 (capitulos/resultados.tex [45
 
 ]
-<figuras/resultados/Matriz jerárquica interactiva para consolidación de gastos.png, id=830, 712.91344pt x 341.02406pt>
+<figuras/resultados/Matriz jerárquica interactiva para consolidación de gastos.png, id=834, 712.91344pt x 341.02406pt>
 File: figuras/resultados/Matriz jerárquica interactiva para consolidación de gastos.png Graphic file (type png)
 <use figuras/resultados/Matriz jerárquica interactiva para consolidación de gastos.png>
 Package pdftex.def Info: figuras/resultados/Matriz jerárquica interactiva para consolidación de gastos.png  used on input line 21.
 (pdftex.def)             Requested size: 366.24527pt x 175.19484pt.
-<figuras/resultados/Panel tabular para validación de transacciones.png, id=832, 710.655pt x 205.5178pt>
+<figuras/resultados/Panel tabular para validación de transacciones.png, id=836, 710.655pt x 205.5178pt>
 File: figuras/resultados/Panel tabular para validación de transacciones.png Graphic file (type png)
 <use figuras/resultados/Panel tabular para validación de transacciones.png>
 Package pdftex.def Info: figuras/resultados/Panel tabular para validación de transacciones.png  used on input line 32.
 (pdftex.def)             Requested size: 297.57036pt x 86.0566pt.
  [46 <./figuras/resultados/Matriz jerárquica interactiva para consolidación de gastos.png> <./figuras/resultados/Panel tabular para validación de transacciones.png>]
-<figuras/resultados/Vista de Confrontación Contable.png, id=840, 840.89156pt x 472.76625pt>
+<figuras/resultados/Vista de Confrontación Contable.png, id=844, 840.89156pt x 472.76625pt>
 File: figuras/resultados/Vista de Confrontación Contable.png Graphic file (type png)
 <use figuras/resultados/Vista de Confrontación Contable.png>
 Package pdftex.def Info: figuras/resultados/Vista de Confrontación Contable.png  used on input line 44.
@@ -1264,17 +1275,17 @@ Package logreq Info: Writing requests to 'main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 30721 strings out of 467871
- 602182 string characters out of 5411080
+ 30735 strings out of 467871
+ 603748 string characters out of 5411080
  1603982 words of memory out of 5000000
- 58858 multiletter control sequences out of 15000+600000
+ 58872 multiletter control sequences out of 15000+600000
  671588 words of font info for 94 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  73i,10n,80p,1201b,3153s stack positions out of 10000i,1000n,20000p,200000b,200000s
  <C:\Users\ANGEL JFLORES ACOSTA\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ectt1200.pk><C:/Users/ANGEL JFLORES ACOSTA/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/ANGEL JFLORES ACOSTA/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/ANGEL JFLORES ACOSTA/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmb8a.pfb><C:/Users/ANGEL JFLORES ACOSTA/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmr8a.pfb><C:/Users/ANGEL JFLORES ACOSTA/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmri8a.pfb>
-Output written on main.pdf (60 pages, 1742893 bytes).
+Output written on main.pdf (60 pages, 1852524 bytes).
 PDF statistics:
- 1048 PDF objects out of 1200 (max. 8388607)
+ 1052 PDF objects out of 1200 (max. 8388607)
  357 named destinations out of 1000 (max. 500000)
- 532 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 542 words of extra memory for PDF output out of 10000 (max. 10000000)
 
