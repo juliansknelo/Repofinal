@@ -1,3 +1,31 @@
-Se concluye que la implementación de una arquitectura tecnológica automatizada reduce significativamente el tiempo de procesamiento de datos y mejora la confiabilidad de los reportes financieros.
+\section{Conclusiones}
 
-La validación por parte del área de Finanzas confirma que la solución cumple con los requerimientos establecidos, eliminando procesos manuales propensos a errores. Se adquiere experiencia profesional en el manejo de infraestructura cloud (AWS), orquestación de datos (Airflow) y herramientas de visualización (Power BI).
+Se concluye que la implementación de una arquitectura tecnológica basada en un modelo de Data Lakehouse reduce significativamente el tiempo de procesamiento de datos y mejora la confiabilidad de los reportes financieros. La adopción de una estrategia por capas (Bronce, Plata y Oro) permite separar de forma clara las responsabilidades de ingesta, estandarización y modelado analítico, lo cual facilita tanto el mantenimiento como la escalabilidad de la solución.
+
+La automatización de los procesos ETL mediante Apache Airflow elimina la dependencia de procedimientos manuales basados en archivos de Excel, los cuales resultan propensos a errores y demandan un alto consumo de tiempo por parte del personal del área de Finanzas. Con la solución implementada, la consolidación de la cédula de gastos se realiza de forma programada y repetible, garantizando la consistencia de la información en cada ejecución.
+
+El uso de SQLMesh como marco de transformación declarativa permite versionar y reproducir cada modelo de datos, asegurando la trazabilidad de las transformaciones aplicadas desde los datos crudos hasta las tablas de hechos y dimensiones. Este enfoque refuerza la confiabilidad del proceso al hacer explícitas las reglas de negocio contenidas en cada capa.
+
+La integración entre la infraestructura cloud de AWS y Power BI Service posibilita la actualización automatizada de los tableros de control, proporcionando al área financiera acceso a información consolidada y actualizada sin intervención manual. La validación por parte del área de Finanzas confirma que la solución cumple con los requerimientos establecidos en cuanto a disponibilidad, granularidad y oportunidad de la información.
+
+\section{Recomendaciones}
+
+Se recomienda incorporar una capa de validación de calidad de datos mediante herramientas como Soda Core, con el objetivo de detectar anomalías o registros inconsistentes antes de que estos alcancen las capas de transformación. Esta medida contribuye a fortalecer la integridad de la información procesada.
+
+Asimismo, se sugiere evaluar la implementación de un esquema de actualización incremental en las tablas de mayor volumen, lo cual permite reducir los tiempos de procesamiento y optimizar el uso de recursos de cómputo. De igual manera, se recomienda documentar las reglas de negocio aplicadas en cada modelo de la Capa Oro, de modo que cualquier modificación futura pueda realizarse con pleno conocimiento de la lógica existente.
+
+En materia de gobernanza y calidad de datos, se recomienda la adopción de OpenMetadata como plataforma centralizada de catálogo de datos. Esta herramienta permite registrar de forma automática los metadatos de cada tabla y modelo del Data Lakehouse, establecer políticas de propiedad y clasificación de activos de datos, y ejecutar pruebas de calidad programadas que validen la completitud, unicidad y frescura de la información en cada capa. Su integración con el pipeline existente facilita la visibilidad del linaje de datos desde la fuente hasta los tableros de control, fortaleciendo la trazabilidad y el cumplimiento de estándares de calidad dentro de la organización.
+
+Adicionalmente, se recomienda evolucionar las tablas de dimensiones del modelo estrella mediante la implementación de estrategias de Slowly Changing Dimensions (SCD). Para dimensiones donde únicamente se requiere conservar el valor más reciente, como el nombre o correo electrónico de un proveedor, resulta apropiado aplicar SCD Tipo 1, el cual sobrescribe el registro anterior. Para dimensiones cuyo historial es relevante para el análisis, como cambios en la clasificación contable o en la estructura analítica, se recomienda SCD Tipo 2, el cual preserva cada versión del registro mediante campos de vigencia (fecha de inicio y fecha de fin) y una bandera de registro activo. Finalmente, para casos donde se requiere conservar únicamente el valor anterior y el actual sin mantener un historial completo, se sugiere evaluar SCD Tipo 3 mediante la adición de columnas adicionales que almacenen el valor previo. Esta estrategia permite enriquecer la capacidad analítica del modelo dimensional al habilitar comparaciones históricas y auditorías de cambios en las entidades de negocio.
+
+Finalmente, se considera conveniente explorar la migración hacia un servicio de base de datos administrado, como Amazon RDS, para reducir la carga operativa asociada a la administración directa del motor PostgreSQL sobre la instancia EC2.
+
+\section{Experiencia profesional adquirida}
+
+Durante el desarrollo del proyecto se adquiere experiencia profesional en diversas áreas de la ingeniería de datos. Se fortalece el dominio en el diseño y despliegue de infraestructura cloud mediante Amazon Web Services, incluyendo la configuración de instancias EC2, volúmenes EBS, almacenamiento S3 y la gestión de accesos a través de IAM.
+
+Se desarrolla competencia práctica en la orquestación de flujos de datos con Apache Airflow, abarcando la definición de DAGs, la gestión de conexiones, la configuración de servicios de sistema y la resolución de incidencias en ambientes de producción. Asimismo, se profundiza en el uso de SQLMesh para la construcción de pipelines de transformación declarativos con control de versiones y materialización automatizada.
+
+En el ámbito del modelado de datos, se adquiere experiencia en el diseño de esquemas estrella compuestos por tablas de hechos y dimensiones, orientados al análisis financiero. Se refuerza el manejo de PostgreSQL en entornos analíticos, incluyendo la optimización de parámetros de rendimiento y la administración de esquemas. 
+
+Por último, se fortalece la capacidad de comunicación con áreas no técnicas, al traducir los requerimientos del departamento de Finanzas en soluciones tecnológicas concretas y validar los resultados de manera conjunta. Esta interacción contribuye a desarrollar una visión integral que combina el conocimiento técnico con la comprensión de las necesidades de negocio.

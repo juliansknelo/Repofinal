@@ -68,9 +68,12 @@
 \contentsline {section}{\numberline {8.1}Dashboards de Inteligencia de Negocios}{35}{section.8.1}%
 \vspace {1em}\noindent \textbf {Conclusiones}\par \vspace {0.3em}
 \contentsline {chapter}{\numberline {9}Conclusiones, recomendaciones y experiencia profesional adquirida}{36}{chapter.9}%
+\contentsline {section}{\numberline {9.1}Conclusiones}{36}{section.9.1}%
+\contentsline {section}{\numberline {9.2}Recomendaciones}{37}{section.9.2}%
+\contentsline {section}{\numberline {9.3}Experiencia profesional adquirida}{38}{section.9.3}%
 \vspace {1em}\noindent \textbf {Competencias Desarrolladas}\par \vspace {0.3em}
-\contentsline {chapter}{\numberline {10}Competencias desarrolladas y/o aplicadas}{37}{chapter.10}%
+\contentsline {chapter}{\numberline {10}Competencias desarrolladas y/o aplicadas}{39}{chapter.10}%
 \vspace {1em}\noindent \textbf {Fuentes de Información}\par \vspace {0.3em}
 \vspace {1em}\noindent \textbf {Anexos}\par \vspace {0.3em}
-\contentsline {chapter}{\numberline {A}Anexos}{38}{appendix.Alph1}%
-\contentsline {section}{\numberline {A.1}Carta de autorización de la empresa}{38}{section.Alph1.1}%
+\contentsline {chapter}{\numberline {A}Anexos}{40}{appendix.Alph1}%
+\contentsline {section}{\numberline {A.1}Carta de autorización de la empresa}{40}{section.Alph1.1}%
