@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.28 (MiKTeX 25.12) (preloaded format=pdflatex 2026.5.14)  15 MAY 2026 11:20
+This is pdfTeX, Version 3.141592653-2.6-1.40.28 (MiKTeX 25.12) (preloaded format=pdflatex 2026.5.14)  15 MAY 2026 11:27
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1215,25 +1215,24 @@ Overfull \hbox (134.89223pt too wide) in paragraph at lines 638--639
 
 [42] [43]) [44]
 Cap\'{\i }tulo 8.
-(capitulos/resultados.tex
-<figuras/resultados/Matriz jerárquica interactiva para consolidación de gastos.png, id=801, 712.91344pt x 341.02406pt>
-File: figuras/resultados/Matriz jerárquica interactiva para consolidación de gastos.png Graphic file (type png)
-<use figuras/resultados/Matriz jerárquica interactiva para consolidación de gastos.png>
-Package pdftex.def Info: figuras/resultados/Matriz jerárquica interactiva para consolidación de gastos.png  used on input line 19.
-(pdftex.def)             Requested size: 366.24527pt x 175.19484pt.
- [45
+(capitulos/resultados.tex [45
 
 ]
+<figuras/resultados/Matriz jerárquica interactiva para consolidación de gastos.png, id=808, 712.91344pt x 341.02406pt>
+File: figuras/resultados/Matriz jerárquica interactiva para consolidación de gastos.png Graphic file (type png)
+<use figuras/resultados/Matriz jerárquica interactiva para consolidación de gastos.png>
+Package pdftex.def Info: figuras/resultados/Matriz jerárquica interactiva para consolidación de gastos.png  used on input line 21.
+(pdftex.def)             Requested size: 366.24527pt x 175.19484pt.
 <figuras/resultados/Panel tabular para validación de transacciones.png, id=810, 710.655pt x 205.5178pt>
 File: figuras/resultados/Panel tabular para validación de transacciones.png Graphic file (type png)
 <use figuras/resultados/Panel tabular para validación de transacciones.png>
-Package pdftex.def Info: figuras/resultados/Panel tabular para validación de transacciones.png  used on input line 30.
+Package pdftex.def Info: figuras/resultados/Panel tabular para validación de transacciones.png  used on input line 32.
 (pdftex.def)             Requested size: 297.57036pt x 86.0566pt.
  [46 <./figuras/resultados/Matriz jerárquica interactiva para consolidación de gastos.png> <./figuras/resultados/Panel tabular para validación de transacciones.png>]
 <figuras/resultados/Vista de Confrontación Contable.png, id=818, 840.89156pt x 472.76625pt>
 File: figuras/resultados/Vista de Confrontación Contable.png Graphic file (type png)
 <use figuras/resultados/Vista de Confrontación Contable.png>
-Package pdftex.def Info: figuras/resultados/Vista de Confrontación Contable.png  used on input line 41.
+Package pdftex.def Info: figuras/resultados/Vista de Confrontación Contable.png  used on input line 44.
 (pdftex.def)             Requested size: 366.24527pt x 205.91135pt.
 ) [47 <./figuras/resultados/Vista de Confrontación Contable.png>]
 Cap\'{\i }tulo 9.
@@ -1275,7 +1274,7 @@ Here is how much of TeX's memory you used:
  1141 hyphenation exceptions out of 8191
  73i,10n,80p,1201b,3153s stack positions out of 10000i,1000n,20000p,200000b,200000s
  <C:\Users\ANGEL JFLORES ACOSTA\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ectt1200.pk><C:/Users/ANGEL JFLORES ACOSTA/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/ANGEL JFLORES ACOSTA/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/ANGEL JFLORES ACOSTA/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmb8a.pfb><C:/Users/ANGEL JFLORES ACOSTA/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmr8a.pfb><C:/Users/ANGEL JFLORES ACOSTA/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmri8a.pfb>
-Output written on main.pdf (59 pages, 1734507 bytes).
+Output written on main.pdf (59 pages, 1734540 bytes).
 PDF statistics:
  1019 PDF objects out of 1200 (max. 8388607)
  348 named destinations out of 1000 (max. 500000)
