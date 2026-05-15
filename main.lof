@@ -27,10 +27,17 @@
 \contentsline {figure}{\numberline {7.19}{\ignorespaces Vista de calendario con ejecuciones pasadas y futuras del DAG.}}{32}{figure.caption.23}%
 \contentsline {figure}{\numberline {7.20}{\ignorespaces Configuración de AWS Security Group.}}{43}{figure.caption.45}%
 \contentsline {figure}{\numberline {7.21}{\ignorespaces Configuración de reglas de entrada del Security Group.}}{44}{figure.caption.46}%
+\contentsline {figure}{\numberline {7.22}{\ignorespaces Apertura del administrador de orígenes de datos ODBC.}}{45}{figure.caption.47}%
+\contentsline {figure}{\numberline {7.23}{\ignorespaces Creación de una nueva conexión ODBC.}}{45}{figure.caption.48}%
+\contentsline {figure}{\numberline {7.24}{\ignorespaces Ingreso de credenciales de conexión ODBC.}}{46}{figure.caption.49}%
+\contentsline {figure}{\numberline {7.25}{\ignorespaces Selección de Obtener datos en Power BI Desktop.}}{46}{figure.caption.50}%
+\contentsline {figure}{\numberline {7.26}{\ignorespaces Selección del conector ODBC en el catálogo de orígenes.}}{47}{figure.caption.51}%
+\contentsline {figure}{\numberline {7.27}{\ignorespaces Selección de la conexión ODBC configurada.}}{47}{figure.caption.52}%
+\contentsline {figure}{\numberline {7.28}{\ignorespaces Selección de tablas de la Capa Oro para el reporte.}}{48}{figure.caption.53}%
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {8.1}{\ignorespaces Matriz jerárquica interactiva para consolidación de gastos.}}{46}{figure.caption.47}%
-\contentsline {figure}{\numberline {8.2}{\ignorespaces Panel tabular para validación de transacciones.}}{46}{figure.caption.48}%
-\contentsline {figure}{\numberline {8.3}{\ignorespaces Vista de confrontación contable y validación analítica.}}{47}{figure.caption.49}%
+\contentsline {figure}{\numberline {8.1}{\ignorespaces Matriz jerárquica interactiva para consolidación de gastos.}}{50}{figure.caption.54}%
+\contentsline {figure}{\numberline {8.2}{\ignorespaces Panel tabular para validación de transacciones.}}{50}{figure.caption.55}%
+\contentsline {figure}{\numberline {8.3}{\ignorespaces Vista de confrontación contable y validación analítica.}}{51}{figure.caption.56}%
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }

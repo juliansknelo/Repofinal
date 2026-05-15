@@ -1,12 +1,12 @@
 # Fdb version 4
-["biber main"] 1778870652.46271 "main.bcf" "main.bbl" "main" 1778872426.45814 0
-  "main.bcf" 1778872426 134430 fab860bfecf560a8a5afc8ee11a7c1b4 "pdflatex"
+["biber main"] 0 "main.bcf" "main.bbl" "main" 1778877072.9743 -1
+  "main.bcf" 1778877072 134430 fab860bfecf560a8a5afc8ee11a7c1b4 "pdflatex"
   "referencias.bib" 1778870535 1268 49c8aec7a7f41e6792b89ed7356e0d0a ""
   (generated)
   "main.bbl"
   "main.blg"
   (rewritten before read)
-["pdflatex"] 1778872422.57713 "c:/Users/ANGEL JFLORES ACOSTA/ReporteResis/main.tex" "main.pdf" "main" 1778872426.45897 0
+["pdflatex"] 1778877068.75547 "c:/Users/ANGEL JFLORES ACOSTA/ReporteResis/main.tex" "main.pdf" "main" 1778877072.97502 0
   "C:/Users/ANGEL" 1756310582 19003 a3dbcc2a3e23d61c9b83fee38426a5e8 ""
   "C:/Users/ANGEL JFLORES ACOSTA/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map" 1778773785 82507 a9eef8696c92627b87e9975edea03b2a ""
   "C:/Users/ANGEL JFLORES ACOSTA/AppData/Local/MiKTeX/fonts/pk/ljfour/jknappen/ec/dpi600/ectt1200.pk" 1778776841 24152 a36a2b9bc6443f75baa1384a7cdbdd8e ""
@@ -163,7 +163,7 @@
   "capitulos/anexos.tex" 1778770183 103 d1cc2c0f091c6cd2502c30229a3e54d1 ""
   "capitulos/competencias.tex" 1778802496 937 b8e6f8f2d04c7d131fe196e881d050e9 ""
   "capitulos/conclusiones.tex" 1778803238 6083 ca9ca9fb991ab19df670759243d9b7a8 ""
-  "capitulos/desarrollo.tex" 1778872414 44958 b60a7eeff4b29c9aabcd848ccbad1299 ""
+  "capitulos/desarrollo.tex" 1778877068 48019 b88a762e83458a2782b9283891121cf3 ""
   "capitulos/descripcion_empresa.tex" 1778770128 1227 24a5b54ab9dca0a5c09f6b40f6351dc8 ""
   "capitulos/introduccion.tex" 1778770123 1018 43a0f531458fec1a1380109dc0d24837 ""
   "capitulos/justificacion.tex" 1778770144 764 66cbb9b51a768b322bc992857e0714fd ""
@@ -175,6 +175,13 @@
   "capitulos/resumen.tex" 1778770118 100 9d12b20cd6943eebf96b3df346e2af26 ""
   "figuras/Configuración de Ec2 para exposición de datos/Configuración de AWS Security Group.png" 1778871252 56522 9364145b1cd1d7a68a36ab3df3acc2e2 ""
   "figuras/Configuración de Ec2 para exposición de datos/Configuración de reglas de entrada del Security Group.png" 1778871298 111237 f20c07cda42b0649a494054371b48c49 ""
+  "figuras/Configuración de Power BI service/Apertura del administrador de orígenes de datos ODBC.png" 1778873104 97100 538f060affe13378ac0ddc967cbf0734 ""
+  "figuras/Configuración de Power BI service/Creación de una nueva conexión ODBC.png" 1778873119 171028 33d48c806faa41a82b9eb47df85fdcdf ""
+  "figuras/Configuración de Power BI service/Ingreso de credenciales de conexión ODBC.png" 1778873146 33099 4c759fef173c947598e0022dfe1d69e1 ""
+  "figuras/Configuración de Power BI service/Selección de Obtener datos en Power BI Desktop.png" 1778873159 76180 6d35c76aceadc431d2e5e22edca0ef87 ""
+  "figuras/Configuración de Power BI service/Selección de la conexión ODBC configurada.png" 1778873190 13615 69f0c5146b8ecf76b24d22eaa26a8f55 ""
+  "figuras/Configuración de Power BI service/Selección de tablas de la Capa Oro para el reporte.png" 1778873969 25341 7e8825a7f5f7d7b514c548d32d3bf96c ""
+  "figuras/Configuración de Power BI service/Selección del conector ODBC en el catálogo de orígenes.png" 1778873180 12302 af7d4fd2dc6c2498f98bb446cc82835b ""
   "figuras/Configuración de entorno Cloud (Linux)/Historial e información de las instancias de ejecución del DAG.png" 1778861094 17694 4d6a501b842130e1453c279eff547d86 ""
   "figuras/Configuración de entorno Cloud (Linux)/Información general y tareas de un DAG específico.png" 1778778502 57480 58976a49dd8d7071a8148cbf3028fa28 ""
   "figuras/Configuración de entorno Cloud (Linux)/Menú para agregar una nueva conexión en Apache Airflow.png" 1778778972 36646 43f41702862466684c31db9bb6a3a4e4 ""
@@ -198,14 +205,14 @@
   "figuras/resultados/Matriz jerárquica interactiva para consolidación de gastos.png" 1778863925 110133 49e6eb74dd08a0ffa5faf6f1fec052c6 ""
   "figuras/resultados/Panel tabular para validación de transacciones.png" 1778863968 159984 08833bf2006ab6638bd12d7155fee249 ""
   "figuras/resultados/Vista de Confrontación Contable.png" 1778864063 354238 e6fc0e0d58f58e213cf16627c73012c5 ""
-  "main.aux" 1778872426 22307 bf3eb04f51c87b82386e261ea7095615 "pdflatex"
+  "main.aux" 1778877072 24307 3daf4c96f47c1f635e860ccf76e75922 "pdflatex"
   "main.bbl" 1778870654 15781 99f19e62a635ec51e0e390155de9b054 "biber main"
-  "main.lof" 1778872426 3456 ca62596787376040cb253d4f32457026 "pdflatex"
-  "main.lot" 1778872426 498 0f04b4cb9805a9d63d98d2952bb19b58 "pdflatex"
-  "main.out" 1778872426 12481 52da973a8f7a95ad595ae1a0e10a6e41 "pdflatex"
-  "main.run.xml" 1778872426 2360 e823dede0fdb354f7eff64774b1cfad0 "pdflatex"
+  "main.lof" 1778877072 4373 e244e7c51a421378edd59e2f25606a32 "pdflatex"
+  "main.lot" 1778877072 498 0f04b4cb9805a9d63d98d2952bb19b58 "pdflatex"
+  "main.out" 1778877072 12481 52da973a8f7a95ad595ae1a0e10a6e41 "pdflatex"
+  "main.run.xml" 1778877072 2360 e823dede0fdb354f7eff64774b1cfad0 "pdflatex"
   "main.tex" 1778870951 6153 c9dbd499913c28d132070c13d13b3855 ""
-  "main.toc" 1778872426 7677 9869052d6d72ee58c19ae8a6794316b2 "pdflatex"
+  "main.toc" 1778877072 7677 7d447eac8b716db197540d50a4dd4d1e "pdflatex"
   (generated)
   "main.aux"
   "main.bcf"

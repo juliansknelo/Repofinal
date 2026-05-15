@@ -674,7 +674,70 @@ En el motor de base de datos PostgreSQL, se crea un usuario exclusivo para la pl
 
 \subsection{Configuración de Power BI service}
 
-Una vez establecida la conectividad con la instancia EC2, se procede a la configuración en el entorno local mediante Power BI Desktop utilizando un conector ODBC (\textit{Open Database Connectivity}). Se proporcionan las credenciales del usuario exclusivo y se seleccionan las tablas de hechos y dimensiones de la Capa Oro necesarias para el desarrollo del tablero de control.
+Para establecer la comunicación entre Power BI Desktop y el Data Lakehouse alojado en AWS, se configura un conector ODBC (\textit{Open Database Connectivity}) en el equipo local. El proceso se describe a continuación.
+
+En primer lugar, se abre el administrador de orígenes de datos ODBC del sistema operativo Windows (ver figura \ref{fig:pbi_odbc_open}).
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.8\textwidth]{figuras/Configuración de Power BI service/Apertura del administrador de orígenes de datos ODBC.png}
+    \caption{Apertura del administrador de orígenes de datos ODBC.}
+    \label{fig:pbi_odbc_open}
+\end{figure}
+
+Se procede a agregar una nueva conexión de tipo PostgreSQL, indicando el nombre del origen de datos y el controlador correspondiente (ver figura \ref{fig:pbi_odbc_add}).
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.8\textwidth]{figuras/Configuración de Power BI service/Creación de una nueva conexión ODBC.png}
+    \caption{Creación de una nueva conexión ODBC.}
+    \label{fig:pbi_odbc_add}
+\end{figure}
+
+A continuación, se ingresan las credenciales de acceso: dirección IP de la instancia EC2, puerto, nombre de la base de datos, usuario exclusivo de BI y contraseña (ver figura \ref{fig:pbi_odbc_credentials}).
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.8\textwidth]{figuras/Configuración de Power BI service/Ingreso de credenciales de conexión ODBC.png}
+    \caption{Ingreso de credenciales de conexión ODBC.}
+    \label{fig:pbi_odbc_credentials}
+\end{figure}
+
+Una vez configurado el origen ODBC, se abre Power BI Desktop con un reporte en blanco y se selecciona la opción \textit{Obtener datos} desde la cinta de opciones (ver figura \ref{fig:pbi_get_data}).
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.8\textwidth]{figuras/Configuración de Power BI service/Selección de Obtener datos en Power BI Desktop.png}
+    \caption{Selección de Obtener datos en Power BI Desktop.}
+    \label{fig:pbi_get_data}
+\end{figure}
+
+En el catálogo de conectores disponibles, se selecciona la opción \textit{ODBC} como tipo de origen de datos (ver figura \ref{fig:pbi_select_odbc}).
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.8\textwidth]{figuras/Configuración de Power BI service/Selección del conector ODBC en el catálogo de orígenes.png}
+    \caption{Selección del conector ODBC en el catálogo de orígenes.}
+    \label{fig:pbi_select_odbc}
+\end{figure}
+
+Se selecciona la conexión ODBC previamente configurada desde la lista desplegable de orígenes disponibles (ver figura \ref{fig:pbi_select_connection}).
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.8\textwidth]{figuras/Configuración de Power BI service/Selección de la conexión ODBC configurada.png}
+    \caption{Selección de la conexión ODBC configurada.}
+    \label{fig:pbi_select_connection}
+\end{figure}
+
+Finalmente, se despliega el navegador de tablas donde se seleccionan las tablas de hechos y dimensiones de la Capa Oro que se utilizan para la construcción del tablero de control (ver figura \ref{fig:pbi_select_tables}).
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.38\textwidth]{figuras/Configuración de Power BI service/Selección de tablas de la Capa Oro para el reporte.png}
+    \caption{Selección de tablas de la Capa Oro para el reporte.}
+    \label{fig:pbi_select_tables}
+\end{figure}
 
 Al realizar la importación de los datos, Power BI genera un objeto técnico denominado Modelo Semántico. Sobre este modelo se definen las relaciones, jerarquías y medidas necesarias para la analítica. Una vez finalizado el desarrollo del tablero, el proyecto se publica en el espacio de trabajo (\textit{Workspace}) seleccionado dentro de la nube de Microsoft.
 
