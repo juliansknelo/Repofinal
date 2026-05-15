@@ -241,12 +241,13 @@ systemctl daemon-reload
 systemctl enable airflow-scheduler airflow-dag-processor airflow-api-server
 systemctl start airflow-scheduler airflow-dag-processor airflow-api-server
 \end{lstlisting}
+\newpage
 
 Una vez instaladas las herramientas y dependencias, se accede mediante un navegador web a la dirección IP del servidor en el puerto 8080 (\texttt{http://[ip\_del\_servidor]:8080}), donde se despliega el menú de inicio de sesión de Apache Airflow (ver figura \ref{fig:airflow_login}).
 
 \begin{figure}[H]
     \centering
-    % \includegraphics[width=0.8\textwidth]{figuras/airflow_login.png}
+    \includegraphics[width=0.8\textwidth]{figuras/Configuración de entorno Cloud (Linux)/Pantalla de inicio de sesión de Apache Airflow.png}
     \caption{Pantalla de inicio de sesión de Apache Airflow.}
     \label{fig:airflow_login}
 \end{figure}
@@ -255,7 +256,7 @@ Por defecto, el sistema crea un usuario administrador cuya contraseña autogener
 
 \begin{figure}[H]
     \centering
-    % \includegraphics[width=0.8\textwidth]{figuras/airflow_main_menu.png}
+    \includegraphics[width=0.8\textwidth]{figuras/Configuración de entorno Cloud (Linux)/Menú principal de la consola de administración de Apache Airflow.png}
     \caption{Menú principal de la consola de administración de Apache Airflow.}
     \label{fig:airflow_main_menu}
 \end{figure}
@@ -270,7 +271,7 @@ Se procede a agregar cada una al seleccionar la opción \textit{Add Connection},
 
 \begin{figure}[H]
     \centering
-    % \includegraphics[width=0.8\textwidth]{figuras/airflow_add_conection_menu.png}
+    \includegraphics[width=0.8\textwidth]{figuras/Configuración de entorno Cloud (Linux)/Menú para agregar una nueva conexión en Apache Airflow.png}
     \caption{Menú para agregar una nueva conexión en Apache Airflow.}
     \label{fig:airflow_add_conection}
 \end{figure}
@@ -283,12 +284,14 @@ En dicho formulario se ingresan los siguientes datos solicitados y se guardan lo
     \item \textbf{Port:} Puerto de conexión.
     \item \textbf{Schema:} Nombre de la base de datos a la cual se accederá.
 \end{itemize}
+\newpage
+
 
 Para la visualización y control de los flujos de trabajo (DAGs), se ubica una pestaña denominada \textit{DAGs} en la barra lateral de la interfaz. En esta sección se enlista la información correspondiente a cada uno de los procesos configurados (ver figura \ref{fig:multiple_dags}).
 
 \begin{figure}[H]
     \centering
-    % \includegraphics[width=0.8\textwidth]{figuras/multiple_dags.png}
+    \includegraphics[width=0.8\textwidth]{figuras/Configuración de entorno Cloud (Linux)/Vista general de los DAGs disponibles en el sistema.png}
     \caption{Vista general de los DAGs disponibles en el sistema.}
     \label{fig:multiple_dags}
 \end{figure}
@@ -301,7 +304,7 @@ Al ingresar a la información específica de un DAG, se observan principalmente 
 
 \begin{figure}[H]
     \centering
-    % \includegraphics[width=0.8\textwidth]{figuras/dag_general_info.png}
+    \includegraphics[width=0.8\textwidth]{figuras/Configuración de entorno Cloud (Linux)/Información general y tareas de un DAG específico.png}
     \caption{Información general y tareas de un DAG específico.}
     \label{fig:dag_general_info}
 \end{figure}
@@ -310,16 +313,17 @@ Asimismo, la plataforma permite visualizar el historial de las instancias de eje
 
 \begin{figure}[H]
     \centering
-    % \includegraphics[width=0.8\textwidth]{figuras/dag_run_info.png}
+    \includegraphics[width=0.8\textwidth]{figuras/Configuración de entorno Cloud (Linux)/Historial e información de las instancias de ejecución del DAG.png}
     \caption{Historial e información de las instancias de ejecución del DAG.}
     \label{fig:dag_run_info}
 \end{figure}
+\newpage
 
 Por último, se cuenta con una vista de calendario que facilita el monitoreo de las ejecuciones pasadas, su estado correspondiente y, en el caso de flujos programados recurrentemente, las ejecuciones planificadas a futuro (ver figura \ref{fig:dag_calendar_info}).
 
 \begin{figure}[H]
     \centering
-    % \includegraphics[width=0.8\textwidth]{figuras/dag_calendar_info.png}
+    \includegraphics[width=0.8\textwidth]{figuras/Configuración de entorno Cloud (Linux)/Vista de calendario con ejecuciones pasadas y futuras del DAG.png}
     \caption{Vista de calendario con ejecuciones pasadas y futuras del DAG.}
     \label{fig:dag_calendar_info}
 \end{figure}

@@ -1,0 +1,26 @@
+# --- Imágenes ---
+# Ignorar todas las imágenes en la carpeta de figuras
+figuras/**/*.png
+figuras/**/*.jpg
+figuras/**/*.jpeg
+figuras/**/*.pdf
+
+# --- Archivos auxiliares de LaTeX ---
+*.aux
+*.log
+*.toc
+*.lof
+*.lot
+*.out
+*.bbl
+*.blg
+*.pdf
+*.synctex.gz
+*.fdb_latexmk
+*.fls
+*.run.xml
+*.bcf
+
+# --- Otros ---
+.DS_Store
+Thumbs.db
