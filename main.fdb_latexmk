@@ -1,11 +1,11 @@
 # Fdb version 4
-["biber main"] 1778777137.21935 "main.bcf" "main.bbl" "main" 1778803243.28663 0
-  "main.bcf" 1778803243 133351 08ba25774df3888e04087046f6427584 "pdflatex"
+["biber main"] 1778777137.21935 "main.bcf" "main.bbl" "main" 1778859586.05507 0
+  "main.bcf" 1778859585 133351 08ba25774df3888e04087046f6427584 "pdflatex"
   (generated)
   "main.bbl"
   "main.blg"
   (rewritten before read)
-["pdflatex"] 1778803241.01488 "c:/Users/ANGEL JFLORES ACOSTA/ReporteResis/main.tex" "main.pdf" "main" 1778803243.28731 0
+["pdflatex"] 1778859583.70299 "c:/Users/ANGEL JFLORES ACOSTA/ReporteResis/main.tex" "main.pdf" "main" 1778859586.05579 0
   "C:/Users/ANGEL" 1756310582 19003 a3dbcc2a3e23d61c9b83fee38426a5e8 ""
   "C:/Users/ANGEL JFLORES ACOSTA/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map" 1778773785 82507 a9eef8696c92627b87e9975edea03b2a ""
   "C:/Users/ANGEL JFLORES ACOSTA/AppData/Local/MiKTeX/fonts/pk/ljfour/jknappen/ec/dpi600/ectt1200.pk" 1778776841 24152 a36a2b9bc6443f75baa1384a7cdbdd8e ""
@@ -162,7 +162,7 @@
   "capitulos/anexos.tex" 1778770183 103 d1cc2c0f091c6cd2502c30229a3e54d1 ""
   "capitulos/competencias.tex" 1778802496 937 b8e6f8f2d04c7d131fe196e881d050e9 ""
   "capitulos/conclusiones.tex" 1778803238 6083 ca9ca9fb991ab19df670759243d9b7a8 ""
-  "capitulos/desarrollo.tex" 1778801665 42159 e9e7f010990003817286023a48741829 ""
+  "capitulos/desarrollo.tex" 1778859580 42613 032b5f2ebe605dd831ec233dae11272d ""
   "capitulos/descripcion_empresa.tex" 1778770128 1227 24a5b54ab9dca0a5c09f6b40f6351dc8 ""
   "capitulos/introduccion.tex" 1778770123 1018 43a0f531458fec1a1380109dc0d24837 ""
   "capitulos/justificacion.tex" 1778770144 764 66cbb9b51a768b322bc992857e0714fd ""
@@ -173,14 +173,14 @@
   "capitulos/resultados.tex" 1778770163 1380 72920fee12c3d3efe9f358d1ec6fe5e8 ""
   "capitulos/resumen.tex" 1778770118 100 9d12b20cd6943eebf96b3df346e2af26 ""
   "figuras/logo_itv.png" 1778774285 70 06d940104c0c428e61add74ff160f991 ""
-  "main.aux" 1778803243 18140 870308caa5e8afa9cf5022e3805c0dc7 "pdflatex"
+  "main.aux" 1778859585 18416 9f6e22952176f5138ba94c6f5d27b02a "pdflatex"
   "main.bbl" 1778777149 486 76d65a242ec496c9b4361af646ff12cb "biber main"
-  "main.lof" 1778803243 2933 de50e74330b2c5d8aca406b48144c798 "pdflatex"
-  "main.lot" 1778803243 498 0f04b4cb9805a9d63d98d2952bb19b58 "pdflatex"
-  "main.out" 1778803243 11814 3ff89b0097abc76b8a51448ab55d34cb "pdflatex"
-  "main.run.xml" 1778803243 2360 e823dede0fdb354f7eff64774b1cfad0 "pdflatex"
+  "main.lof" 1778859585 3058 6d3dcebe35b0bd87e8b94db68adc2ed9 "pdflatex"
+  "main.lot" 1778859585 498 0f04b4cb9805a9d63d98d2952bb19b58 "pdflatex"
+  "main.out" 1778859585 11814 3ff89b0097abc76b8a51448ab55d34cb "pdflatex"
+  "main.run.xml" 1778859585 2360 e823dede0fdb354f7eff64774b1cfad0 "pdflatex"
   "main.tex" 1778799894 6178 dfaf6898673540eca5cd377cfc3b5a23 ""
-  "main.toc" 1778803243 7371 08d28da5db83c66b0848454a0edbcab1 "pdflatex"
+  "main.toc" 1778859585 7371 915d33b8831dfbd4e4aa227b9612336e "pdflatex"
   (generated)
   "main.aux"
   "main.bcf"

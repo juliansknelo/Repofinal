@@ -17,16 +17,17 @@
 \contentsline {figure}{\numberline {7.9}{\ignorespaces Edición de las configuraciones de red.}}{17}{figure.caption.13}%
 \contentsline {figure}{\numberline {7.10}{\ignorespaces Configuración avanzada de red (VPC, subred e IP pública).}}{17}{figure.caption.14}%
 \contentsline {figure}{\numberline {7.11}{\ignorespaces Configuración avanzada del volumen de almacenamiento EBS.}}{17}{figure.caption.15}%
-\contentsline {figure}{\numberline {7.12}{\ignorespaces Pantalla de inicio de sesión de Apache Airflow.}}{21}{figure.caption.16}%
-\contentsline {figure}{\numberline {7.13}{\ignorespaces Menú principal de la consola de administración de Apache Airflow.}}{21}{figure.caption.17}%
-\contentsline {figure}{\numberline {7.14}{\ignorespaces Menú para agregar una nueva conexión en Apache Airflow.}}{21}{figure.caption.18}%
-\contentsline {figure}{\numberline {7.15}{\ignorespaces Vista general de los DAGs disponibles en el sistema.}}{22}{figure.caption.19}%
-\contentsline {figure}{\numberline {7.16}{\ignorespaces Información general y tareas de un DAG específico.}}{22}{figure.caption.20}%
-\contentsline {figure}{\numberline {7.17}{\ignorespaces Historial e información de las instancias de ejecución del DAG.}}{22}{figure.caption.21}%
-\contentsline {figure}{\numberline {7.18}{\ignorespaces Vista de calendario con ejecuciones pasadas y futuras del DAG.}}{22}{figure.caption.22}%
+\contentsline {figure}{\numberline {7.12}{\ignorespaces Resumen y lanzamiento de la instancia EC2.}}{17}{figure.caption.16}%
+\contentsline {figure}{\numberline {7.13}{\ignorespaces Pantalla de inicio de sesión de Apache Airflow.}}{21}{figure.caption.17}%
+\contentsline {figure}{\numberline {7.14}{\ignorespaces Menú principal de la consola de administración de Apache Airflow.}}{21}{figure.caption.18}%
+\contentsline {figure}{\numberline {7.15}{\ignorespaces Menú para agregar una nueva conexión en Apache Airflow.}}{21}{figure.caption.19}%
+\contentsline {figure}{\numberline {7.16}{\ignorespaces Vista general de los DAGs disponibles en el sistema.}}{22}{figure.caption.20}%
+\contentsline {figure}{\numberline {7.17}{\ignorespaces Información general y tareas de un DAG específico.}}{22}{figure.caption.21}%
+\contentsline {figure}{\numberline {7.18}{\ignorespaces Historial e información de las instancias de ejecución del DAG.}}{22}{figure.caption.22}%
+\contentsline {figure}{\numberline {7.19}{\ignorespaces Vista de calendario con ejecuciones pasadas y futuras del DAG.}}{22}{figure.caption.23}%
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {8.1}{\ignorespaces Matriz jerárquica interactiva para consolidación de gastos.}}{35}{figure.caption.44}%
-\contentsline {figure}{\numberline {8.2}{\ignorespaces Panel tabular para validación de transacciones.}}{35}{figure.caption.45}%
+\contentsline {figure}{\numberline {8.1}{\ignorespaces Matriz jerárquica interactiva para consolidación de gastos.}}{35}{figure.caption.45}%
+\contentsline {figure}{\numberline {8.2}{\ignorespaces Panel tabular para validación de transacciones.}}{35}{figure.caption.46}%
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }

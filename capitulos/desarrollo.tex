@@ -124,6 +124,15 @@ Finalmente, se configura el almacenamiento seleccionando la opción avanzada (ve
     \label{fig:aws_storage}
 \end{figure}
 
+Para finalizar el proceso de configuración, se observa el resumen de los recursos seleccionados y se lanza la instancia (ver figura \ref{fig:aws_launch_summary}), lo cual inicia el despliegue de los recursos en la infraestructura cloud.
+
+\begin{figure}[H]
+    \centering
+    % \includegraphics[width=0.8\textwidth]{figuras/aws_launch_summary.png}
+    \caption{Resumen y lanzamiento de la instancia EC2.}
+    \label{fig:aws_launch_summary}
+\end{figure}
+
 \subsection{Configuración de entorno Cloud (Linux)}
 
 Tras el despliegue de la instancia, se ejecuta de manera automática un script de inicialización (\textit{User Data}) que prepara y configura el entorno operativo Linux. A continuación, se detalla el procedimiento ejecutado a través de los diversos comandos del script:
