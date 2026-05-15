@@ -1,12 +1,12 @@
 # Fdb version 4
-["biber main"] 0 "main.bcf" "main.bbl" "main" 1778883681.16493 -1
-  "main.bcf" 1778883680 134430 fab860bfecf560a8a5afc8ee11a7c1b4 "pdflatex"
+["biber main"] 0 "main.bcf" "main.bbl" "main" 1778885939.75549 -1
+  "main.bcf" 1778885939 134430 fab860bfecf560a8a5afc8ee11a7c1b4 "pdflatex"
   "referencias.bib" 1778870535 1268 49c8aec7a7f41e6792b89ed7356e0d0a ""
   (generated)
   "main.bbl"
   "main.blg"
   (rewritten before read)
-["pdflatex"] 1778883676.41299 "c:/Users/ANGEL JFLORES ACOSTA/ReporteResis/main.tex" "main.pdf" "main" 1778883681.16618 0
+["pdflatex"] 1778885935.55882 "c:/Users/ANGEL JFLORES ACOSTA/ReporteResis/main.tex" "main.pdf" "main" 1778885939.75619 0
   "C:/Users/ANGEL" 1756310582 19003 a3dbcc2a3e23d61c9b83fee38426a5e8 ""
   "C:/Users/ANGEL JFLORES ACOSTA/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map" 1778773785 82507 a9eef8696c92627b87e9975edea03b2a ""
   "C:/Users/ANGEL JFLORES ACOSTA/AppData/Local/MiKTeX/fonts/pk/ljfour/jknappen/ec/dpi600/ectt1200.pk" 1778776841 24152 a36a2b9bc6443f75baa1384a7cdbdd8e ""
@@ -158,7 +158,7 @@
   "C:/Users/ANGEL JFLORES ACOSTA/AppData/Local/Programs/MiKTeX/tex/latex/url/url.sty" 1388490452 12796 8edb7d69a20b857904dd0ea757c14ec9 ""
   "C:/Users/ANGEL JFLORES ACOSTA/AppData/Local/Programs/MiKTeX/tex/latex/xcolor/xcolor.sty" 1729265222 55384 b454dec21c2d9f45ec0b793f0995b992 ""
   "c:/Users/ANGEL" 1756310582 19003 a3dbcc2a3e23d61c9b83fee38426a5e8 ""
-  "c:/Users/ANGEL JFLORES ACOSTA/ReporteResis/main.tex" 1778870951 6153 c9dbd499913c28d132070c13d13b3855 ""
+  "c:/Users/ANGEL JFLORES ACOSTA/ReporteResis/main.tex" 1778885930 6175 b675fe65953186e61cf86f4dc81a20f4 ""
   "capitulos/agradecimientos.tex" 1778878138 1734 9a9d6a0c7d9dbc57a6c4d89361bc58e7 ""
   "capitulos/anexos.tex" 1778770183 103 d1cc2c0f091c6cd2502c30229a3e54d1 ""
   "capitulos/competencias.tex" 1778802496 937 b8e6f8f2d04c7d131fe196e881d050e9 ""
@@ -170,7 +170,7 @@
   "capitulos/marco_teorico.tex" 1778870587 14752 f84fd70ca628126cf738e88c0c116f41 ""
   "capitulos/objetivos.tex" 1778770139 1159 0d6a50853bc402a1d7519249adece37e ""
   "capitulos/portada.tex" 1778770108 864 d51369d80ec3aef4baeb009e6ec230e9 ""
-  "capitulos/problemas.tex" 1778883675 1363 c090b1f4cd81183abb2c2d30de2ad226 ""
+  "capitulos/problemas.tex" 1778885890 1363 c090b1f4cd81183abb2c2d30de2ad226 ""
   "capitulos/resultados.tex" 1778871688 3601 9f6265d9565e20bc019c182a68badfc1 ""
   "capitulos/resumen.tex" 1778770118 100 9d12b20cd6943eebf96b3df346e2af26 ""
   "figuras/Configuración de Ec2 para exposición de datos/Configuración de AWS Security Group.png" 1778871252 56522 9364145b1cd1d7a68a36ab3df3acc2e2 ""
@@ -205,14 +205,14 @@
   "figuras/resultados/Matriz jerárquica interactiva para consolidación de gastos.png" 1778863925 110133 49e6eb74dd08a0ffa5faf6f1fec052c6 ""
   "figuras/resultados/Panel tabular para validación de transacciones.png" 1778863968 159984 08833bf2006ab6638bd12d7155fee249 ""
   "figuras/resultados/Vista de Confrontación Contable.png" 1778864063 354238 e6fc0e0d58f58e213cf16627c73012c5 ""
-  "main.aux" 1778883680 24307 3daf4c96f47c1f635e860ccf76e75922 "pdflatex"
+  "main.aux" 1778885939 24307 438a01c0f39d4d612efabf2c7bcb19a4 "pdflatex"
   "main.bbl" 1778870654 15781 99f19e62a635ec51e0e390155de9b054 "biber main"
-  "main.lof" 1778883680 4373 e244e7c51a421378edd59e2f25606a32 "pdflatex"
-  "main.lot" 1778883680 498 0f04b4cb9805a9d63d98d2952bb19b58 "pdflatex"
-  "main.out" 1778883680 12481 52da973a8f7a95ad595ae1a0e10a6e41 "pdflatex"
-  "main.run.xml" 1778883680 2360 e823dede0fdb354f7eff64774b1cfad0 "pdflatex"
-  "main.tex" 1778870951 6153 c9dbd499913c28d132070c13d13b3855 ""
-  "main.toc" 1778883680 7677 7d447eac8b716db197540d50a4dd4d1e "pdflatex"
+  "main.lof" 1778885939 4373 e244e7c51a421378edd59e2f25606a32 "pdflatex"
+  "main.lot" 1778885939 498 0f04b4cb9805a9d63d98d2952bb19b58 "pdflatex"
+  "main.out" 1778885939 12481 52da973a8f7a95ad595ae1a0e10a6e41 "pdflatex"
+  "main.run.xml" 1778885939 2360 e823dede0fdb354f7eff64774b1cfad0 "pdflatex"
+  "main.tex" 1778885930 6175 b675fe65953186e61cf86f4dc81a20f4 ""
+  "main.toc" 1778885939 7677 dad494e64e752f5a4f263e7ebc3b3f92 "pdflatex"
   (generated)
   "main.aux"
   "main.bcf"
