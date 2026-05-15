@@ -16,5 +16,366 @@
   {}
 \endgroup
 
+
+\refsection{0}
+  \datalist[entry]{nyt/apasortcite//global/global/global}
+    \entry{harenslak2021data}{book}{}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=d0e5000441425ffa835af1f6231aa705}{%
+           family={Harenslak},
+           familyi={H\bibinitperiod},
+           given={Bas\bibnamedelima P},
+           giveni={B\bibinitperiod\bibinitdelim P\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=a6bb452934e6c894d10ed0e13fb3a88d}{%
+           family={De\bibnamedelima Ruiter},
+           familyi={D\bibinitperiod\bibinitdelim R\bibinitperiod},
+           given={Julian},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{2}{%
+        {Simon}%
+        {Schuster}%
+      }
+      \strng{namehash}{d6f7cf3784d47d524cfdb09226c55b6d}
+      \strng{fullhash}{d6f7cf3784d47d524cfdb09226c55b6d}
+      \strng{fullhashraw}{d6f7cf3784d47d524cfdb09226c55b6d}
+      \strng{bibnamehash}{d6f7cf3784d47d524cfdb09226c55b6d}
+      \strng{authorbibnamehash}{d6f7cf3784d47d524cfdb09226c55b6d}
+      \strng{authornamehash}{d6f7cf3784d47d524cfdb09226c55b6d}
+      \strng{authorfullhash}{d6f7cf3784d47d524cfdb09226c55b6d}
+      \strng{authorfullhashraw}{d6f7cf3784d47d524cfdb09226c55b6d}
+      \field{sortinit}{H}
+      \field{sortinithash}{23a3aa7c24e56cfa16945d55545109b5}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Data pipelines with Apache Airflow}
+      \field{year}{2021}
+    \endentry
+    \entry{kimball2013data}{book}{}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=6ec3b140429bc59ad63c593b172f665c}{%
+           family={Kimball},
+           familyi={K\bibinitperiod},
+           given={Ralph},
+           giveni={R\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=257f73b4d408fcd5e8d4a110ef8c8f49}{%
+           family={Ross},
+           familyi={R\bibinitperiod},
+           given={Margy},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {John Wiley \& Sons}%
+      }
+      \strng{namehash}{c18f3b1557ab75000609609691801c5b}
+      \strng{fullhash}{c18f3b1557ab75000609609691801c5b}
+      \strng{fullhashraw}{c18f3b1557ab75000609609691801c5b}
+      \strng{bibnamehash}{c18f3b1557ab75000609609691801c5b}
+      \strng{authorbibnamehash}{c18f3b1557ab75000609609691801c5b}
+      \strng{authornamehash}{c18f3b1557ab75000609609691801c5b}
+      \strng{authorfullhash}{c18f3b1557ab75000609609691801c5b}
+      \strng{authorfullhashraw}{c18f3b1557ab75000609609691801c5b}
+      \field{sortinit}{K}
+      \field{sortinithash}{c02bf6bff1c488450c352b40f5d853ab}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{The data warehouse toolkit: The definitive guide to dimensional modeling}
+      \field{year}{2013}
+    \endentry
+    \entry{ladley2019data}{book}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=cb2f2205ca775100a50d5c1dc05c1dac}{%
+           family={Ladley},
+           familyi={L\bibinitperiod},
+           given={John},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Academic Press}%
+      }
+      \strng{namehash}{cb2f2205ca775100a50d5c1dc05c1dac}
+      \strng{fullhash}{cb2f2205ca775100a50d5c1dc05c1dac}
+      \strng{fullhashraw}{cb2f2205ca775100a50d5c1dc05c1dac}
+      \strng{bibnamehash}{cb2f2205ca775100a50d5c1dc05c1dac}
+      \strng{authorbibnamehash}{cb2f2205ca775100a50d5c1dc05c1dac}
+      \strng{authornamehash}{cb2f2205ca775100a50d5c1dc05c1dac}
+      \strng{authorfullhash}{cb2f2205ca775100a50d5c1dc05c1dac}
+      \strng{authorfullhashraw}{cb2f2205ca775100a50d5c1dc05c1dac}
+      \field{sortinit}{L}
+      \field{sortinithash}{7c47d417cecb1f4bd38d1825c427a61a}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{edition}{2}
+      \field{title}{Data Governance: How to Design, Deploy, and Sustain an Effective Data Governance Program}
+      \field{year}{2019}
+    \endentry
+    \entry{needham2024duckdb}{book}{}{}
+      \name{author}{3}{}{%
+        {{un=0,uniquepart=base,hash=6ec5ddd69ddd6dcb80c48b037fff6b54}{%
+           family={Needham},
+           familyi={N\bibinitperiod},
+           given={Mark},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=c231f87bf5a76037148bc7099ca4fd73}{%
+           family={Hunger},
+           familyi={H\bibinitperiod},
+           given={Michael},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=e9ae7095d402f3b83e2f9a6b9cbd4492}{%
+           family={Simons},
+           familyi={S\bibinitperiod},
+           given={Michael},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{2}{%
+        {Simon}%
+        {Schuster}%
+      }
+      \strng{namehash}{6cd4aa30b52d73a4c082bd346ac90c60}
+      \strng{fullhash}{dbd0541e28f06e2d2a4fc8e62caf35bc}
+      \strng{fullhashraw}{dbd0541e28f06e2d2a4fc8e62caf35bc}
+      \strng{bibnamehash}{dbd0541e28f06e2d2a4fc8e62caf35bc}
+      \strng{authorbibnamehash}{dbd0541e28f06e2d2a4fc8e62caf35bc}
+      \strng{authornamehash}{6cd4aa30b52d73a4c082bd346ac90c60}
+      \strng{authorfullhash}{dbd0541e28f06e2d2a4fc8e62caf35bc}
+      \strng{authorfullhashraw}{dbd0541e28f06e2d2a4fc8e62caf35bc}
+      \field{sortinit}{N}
+      \field{sortinithash}{22369a73d5f88983a108b63f07f37084}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{DuckDB in action}
+      \field{year}{2024}
+    \endentry
+    \entry{tagarro2019desarrollo}{article}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=706dc7061a982bbea1a9fc8f1d6227b0}{%
+           family={Tagarro\bibnamedelima Martí},
+           familyi={T\bibinitperiod\bibinitdelim M\bibinitperiod},
+           given={José\bibnamedelima María},
+           giveni={J\bibinitperiod\bibinitdelim M\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Universitat Oberta de Catalunya (UOC)}%
+      }
+      \strng{namehash}{706dc7061a982bbea1a9fc8f1d6227b0}
+      \strng{fullhash}{706dc7061a982bbea1a9fc8f1d6227b0}
+      \strng{fullhashraw}{706dc7061a982bbea1a9fc8f1d6227b0}
+      \strng{bibnamehash}{706dc7061a982bbea1a9fc8f1d6227b0}
+      \strng{authorbibnamehash}{706dc7061a982bbea1a9fc8f1d6227b0}
+      \strng{authornamehash}{706dc7061a982bbea1a9fc8f1d6227b0}
+      \strng{authorfullhash}{706dc7061a982bbea1a9fc8f1d6227b0}
+      \strng{authorfullhashraw}{706dc7061a982bbea1a9fc8f1d6227b0}
+      \field{sortinit}{T}
+      \field{sortinithash}{9af77f0292593c26bde9a56e688eaee9}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Desarrollo de una solución business intelligence mediante un paradigma de data lake}
+      \field{year}{2019}
+    \endentry
+  \enddatalist
+  \datalist[entry]{nyt/global//global/global/global}
+    \entry{harenslak2021data}{book}{}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=d0e5000441425ffa835af1f6231aa705}{%
+           family={Harenslak},
+           familyi={H\bibinitperiod},
+           given={Bas\bibnamedelima P},
+           giveni={B\bibinitperiod\bibinitdelim P\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=a6bb452934e6c894d10ed0e13fb3a88d}{%
+           family={De\bibnamedelima Ruiter},
+           familyi={D\bibinitperiod\bibinitdelim R\bibinitperiod},
+           given={Julian},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{2}{%
+        {Simon}%
+        {Schuster}%
+      }
+      \strng{namehash}{d6f7cf3784d47d524cfdb09226c55b6d}
+      \strng{fullhash}{d6f7cf3784d47d524cfdb09226c55b6d}
+      \strng{fullhashraw}{d6f7cf3784d47d524cfdb09226c55b6d}
+      \strng{bibnamehash}{d6f7cf3784d47d524cfdb09226c55b6d}
+      \strng{authorbibnamehash}{d6f7cf3784d47d524cfdb09226c55b6d}
+      \strng{authornamehash}{d6f7cf3784d47d524cfdb09226c55b6d}
+      \strng{authorfullhash}{d6f7cf3784d47d524cfdb09226c55b6d}
+      \strng{authorfullhashraw}{d6f7cf3784d47d524cfdb09226c55b6d}
+      \field{sortinit}{H}
+      \field{sortinithash}{23a3aa7c24e56cfa16945d55545109b5}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Data pipelines with Apache Airflow}
+      \field{year}{2021}
+    \endentry
+    \entry{kimball2013data}{book}{}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=6ec3b140429bc59ad63c593b172f665c}{%
+           family={Kimball},
+           familyi={K\bibinitperiod},
+           given={Ralph},
+           giveni={R\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=257f73b4d408fcd5e8d4a110ef8c8f49}{%
+           family={Ross},
+           familyi={R\bibinitperiod},
+           given={Margy},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {John Wiley \& Sons}%
+      }
+      \strng{namehash}{c18f3b1557ab75000609609691801c5b}
+      \strng{fullhash}{c18f3b1557ab75000609609691801c5b}
+      \strng{fullhashraw}{c18f3b1557ab75000609609691801c5b}
+      \strng{bibnamehash}{c18f3b1557ab75000609609691801c5b}
+      \strng{authorbibnamehash}{c18f3b1557ab75000609609691801c5b}
+      \strng{authornamehash}{c18f3b1557ab75000609609691801c5b}
+      \strng{authorfullhash}{c18f3b1557ab75000609609691801c5b}
+      \strng{authorfullhashraw}{c18f3b1557ab75000609609691801c5b}
+      \field{sortinit}{K}
+      \field{sortinithash}{c02bf6bff1c488450c352b40f5d853ab}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{The data warehouse toolkit: The definitive guide to dimensional modeling}
+      \field{year}{2013}
+    \endentry
+    \entry{ladley2019data}{book}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=cb2f2205ca775100a50d5c1dc05c1dac}{%
+           family={Ladley},
+           familyi={L\bibinitperiod},
+           given={John},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Academic Press}%
+      }
+      \strng{namehash}{cb2f2205ca775100a50d5c1dc05c1dac}
+      \strng{fullhash}{cb2f2205ca775100a50d5c1dc05c1dac}
+      \strng{fullhashraw}{cb2f2205ca775100a50d5c1dc05c1dac}
+      \strng{bibnamehash}{cb2f2205ca775100a50d5c1dc05c1dac}
+      \strng{authorbibnamehash}{cb2f2205ca775100a50d5c1dc05c1dac}
+      \strng{authornamehash}{cb2f2205ca775100a50d5c1dc05c1dac}
+      \strng{authorfullhash}{cb2f2205ca775100a50d5c1dc05c1dac}
+      \strng{authorfullhashraw}{cb2f2205ca775100a50d5c1dc05c1dac}
+      \field{sortinit}{L}
+      \field{sortinithash}{7c47d417cecb1f4bd38d1825c427a61a}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{edition}{2}
+      \field{title}{Data Governance: How to Design, Deploy, and Sustain an Effective Data Governance Program}
+      \field{year}{2019}
+    \endentry
+    \entry{needham2024duckdb}{book}{}{}
+      \name{author}{3}{}{%
+        {{un=0,uniquepart=base,hash=6ec5ddd69ddd6dcb80c48b037fff6b54}{%
+           family={Needham},
+           familyi={N\bibinitperiod},
+           given={Mark},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=c231f87bf5a76037148bc7099ca4fd73}{%
+           family={Hunger},
+           familyi={H\bibinitperiod},
+           given={Michael},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=e9ae7095d402f3b83e2f9a6b9cbd4492}{%
+           family={Simons},
+           familyi={S\bibinitperiod},
+           given={Michael},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{2}{%
+        {Simon}%
+        {Schuster}%
+      }
+      \strng{namehash}{6cd4aa30b52d73a4c082bd346ac90c60}
+      \strng{fullhash}{dbd0541e28f06e2d2a4fc8e62caf35bc}
+      \strng{fullhashraw}{dbd0541e28f06e2d2a4fc8e62caf35bc}
+      \strng{bibnamehash}{dbd0541e28f06e2d2a4fc8e62caf35bc}
+      \strng{authorbibnamehash}{dbd0541e28f06e2d2a4fc8e62caf35bc}
+      \strng{authornamehash}{6cd4aa30b52d73a4c082bd346ac90c60}
+      \strng{authorfullhash}{dbd0541e28f06e2d2a4fc8e62caf35bc}
+      \strng{authorfullhashraw}{dbd0541e28f06e2d2a4fc8e62caf35bc}
+      \field{sortinit}{N}
+      \field{sortinithash}{22369a73d5f88983a108b63f07f37084}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{DuckDB in action}
+      \field{year}{2024}
+    \endentry
+    \entry{tagarro2019desarrollo}{article}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=706dc7061a982bbea1a9fc8f1d6227b0}{%
+           family={Tagarro\bibnamedelima Martí},
+           familyi={T\bibinitperiod\bibinitdelim M\bibinitperiod},
+           given={José\bibnamedelima María},
+           giveni={J\bibinitperiod\bibinitdelim M\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Universitat Oberta de Catalunya (UOC)}%
+      }
+      \strng{namehash}{706dc7061a982bbea1a9fc8f1d6227b0}
+      \strng{fullhash}{706dc7061a982bbea1a9fc8f1d6227b0}
+      \strng{fullhashraw}{706dc7061a982bbea1a9fc8f1d6227b0}
+      \strng{bibnamehash}{706dc7061a982bbea1a9fc8f1d6227b0}
+      \strng{authorbibnamehash}{706dc7061a982bbea1a9fc8f1d6227b0}
+      \strng{authornamehash}{706dc7061a982bbea1a9fc8f1d6227b0}
+      \strng{authorfullhash}{706dc7061a982bbea1a9fc8f1d6227b0}
+      \strng{authorfullhashraw}{706dc7061a982bbea1a9fc8f1d6227b0}
+      \field{sortinit}{T}
+      \field{sortinithash}{9af77f0292593c26bde9a56e688eaee9}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Desarrollo de una solución business intelligence mediante un paradigma de data lake}
+      \field{year}{2019}
+    \endentry
+  \enddatalist
+\endrefsection
 \endinput
 

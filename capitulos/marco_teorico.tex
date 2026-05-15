@@ -5,22 +5,22 @@
 
 \section{Antecedentes}
 
-La transición estratégica hacia un modelo de inteligencia de negocio basado en Data Lake constituye un cambio de paradigma fundamental para superar las limitaciones estructurales de la infraestructura tradicional. Esta arquitectura avanzada permite alcanzar una agilidad empresarial extrema y una escalabilidad horizontal ilimitada, al tiempo que optimiza el Costo Total de Propiedad (TCO, por sus siglas en inglés) al mitigar el gasto en licenciamiento propietario y hardware especializado. La implementación de este tipo de soluciones garantiza la integridad de los activos de información mediante una gestión de datos inmutable y centralizada, abordando de manera directa los problemas críticos de fragmentación operativa y riesgo sistémico derivados de una visión empresarial descoordinada.
+La transición estratégica hacia un modelo de inteligencia de negocio basado en Data Lake constituye un cambio de paradigma fundamental para superar las limitaciones estructurales de la infraestructura tradicional \parencite{tagarro2019desarrollo}. Esta arquitectura avanzada permite alcanzar una agilidad empresarial extrema y una escalabilidad horizontal ilimitada, al tiempo que optimiza el Costo Total de Propiedad (TCO, por sus siglas en inglés) al mitigar el gasto en licenciamiento propietario y hardware especializado. La implementación de este tipo de soluciones garantiza la integridad de los activos de información mediante una gestión de datos inmutable y centralizada, abordando de manera directa los problemas críticos de fragmentación operativa y riesgo sistémico derivados de una visión empresarial descoordinada.
 
 Uno de los principales desafíos que se resuelve mediante esta arquitectura es la eliminación de la dependencia de volcados manuales por parte de administradores de bases de datos, así como la proliferación de silos tecnológicos en hojas de cálculo aisladas. A través de la unificación de los sistemas transaccionales y analíticos, se mitigan las roturas de stock recurrentes en modelos de negocio de proximidad y se supera la incapacidad previa para realizar análisis geográficos y de segmentación local.
 
-Desde una perspectiva técnica, el Business Intelligence (BI) transita de ser una solución de nicho, confinada a informes estáticos, a convertirse en un ecosistema abierto de Big Data que actúa como el sistema nervioso central de las organizaciones modernas. Históricamente, el BI depende de arquitecturas propietarias cerradas que fuerzan ciclos rígidos de procesamiento por lotes. En la actualidad, la competitividad se define por la agilidad en el procesamiento de volúmenes masivos de información, donde la capacidad de transformar datos brutos en decisiones ejecutivas en cuestión de minutos marca la diferencia entre el liderazgo sectorial y la obsolescencia operativa.
+Desde una perspectiva técnica, el Business Intelligence (BI) transita de ser una solución de nicho, confinada a informes estáticos, a convertirse en un ecosistema abierto de Big Data que actúa como el sistema nervioso central de las organizaciones modernas \parencite{tagarro2019desarrollo}. Históricamente, el BI depende de arquitecturas propietarias cerradas que fuerzan ciclos rígidos de procesamiento por lotes. En la actualidad, la competitividad se define por la agilidad en el procesamiento de volúmenes masivos de información, donde la capacidad de transformar datos brutos en decisiones ejecutivas en cuestión de minutos marca la diferencia entre el liderazgo sectorial y la obsolescencia operativa.
 
 Esta evolución se sintetiza en el paso de sistemas monolíticos y costosos ---liderados por proveedores tradicionales--- hacia plataformas basadas en estándares de código abierto. Mientras que las soluciones propietarias imponen procesos de carga restrictivos y licencias por volumen que limitan el crecimiento, las distribuciones modernas ofrecen una escalabilidad horizontal sin precedentes, permitiendo pasar de procesos de extracción lentos hacia un paradigma donde los datos fluyen en tiempo cuasi-real hacia un núcleo de almacenamiento unificado.
 
 
 \section{Modelado Dimensional: La Fundación de la Analítica}
 
-El modelado dimensional, conceptualizado principalmente por Ralph Kimball y Margy Ross en su obra fundamental \textit{The Data Warehouse Toolkit}, se establece como la técnica de diseño de bases de datos de referencia para sistemas de soporte a la decisión. A diferencia del modelado de entidad-relación (ER) utilizado en sistemas transaccionales (OLTP), el cual busca eliminar la redundancia mediante la normalización, el modelado dimensional prioriza la legibilidad y el rendimiento de las consultas analíticas (OLAP).
+El modelado dimensional, conceptualizado principalmente por \textcite{kimball2013data} en su obra fundamental \textit{The Data Warehouse Toolkit}, se establece como la técnica de diseño de bases de datos de referencia para sistemas de soporte a la decisión. A diferencia del modelado de entidad-relación (ER) utilizado en sistemas transaccionales (OLTP), el cual busca eliminar la redundancia mediante la normalización, el modelado dimensional prioriza la legibilidad y el rendimiento de las consultas analíticas (OLAP).
 
 \subsection{El Proceso de Diseño de Cuatro Pasos}
 
-Kimball propone una metodología rigurosa para la construcción de modelos dimensionales:
+\textcite{kimball2013data} proponen una metodología rigurosa para la construcción de modelos dimensionales:
 
 \begin{enumerate}
     \item \textbf{Selección del proceso de negocio:} Se identifica el evento operativo que genera datos (por ejemplo, una transacción de venta o un registro de sensor).
@@ -30,7 +30,7 @@ Kimball propone una metodología rigurosa para la construcción de modelos dimen
 \end{enumerate}
 \subsection{Estructuras del Esquema}
 
-El modelo resultante suele adoptar la forma de un \textbf{Esquema de Estrella}, donde una tabla de hechos central está rodeada por tablas de dimensiones desnormalizadas. El \textbf{Esquema de Copo de Nieve} es una variación donde las dimensiones se normalizan parcialmente, aunque suele evitarse en entornos analíticos puros por la complejidad que añade a las consultas SQL.
+El modelo resultante suele adoptar la forma de un \textbf{Esquema de Estrella}, donde una tabla de hechos central está rodeada por tablas de dimensiones desnormalizadas \parencite{kimball2013data}. El \textbf{Esquema de Copo de Nieve} es una variación donde las dimensiones se normalizan parcialmente, aunque suele evitarse en entornos analíticos puros por la complejidad que añade a las consultas SQL.
 
 \begin{table}[H]
     \caption{Componentes del modelo dimensional.}
@@ -61,7 +61,7 @@ El \textbf{Data Lakehouse} surge para resolver estas deficiencias, combinando la
 
 \subsection{Del Data Warehouse al Data Lake}
 
-La transición del Data Warehouse tradicional al Data Lake no es solo una actualización de software, sino un cambio de paradigma hacia la agilidad empresarial extrema. Mientras el DW exige que el dato se adapte a un molde predefinido antes de guardarse, el Data Lake permite que la empresa trabaje con sus datos en formato nativo, postergando la estructura hasta el momento preciso del consumo.
+La transición del Data Warehouse tradicional al Data Lake no es solo una actualización de software, sino un cambio de paradigma hacia la agilidad empresarial extrema \parencite{tagarro2019desarrollo}. Mientras el DW exige que el dato se adapte a un molde predefinido antes de guardarse, el Data Lake permite que la empresa trabaje con sus datos en formato nativo, postergando la estructura hasta el momento preciso del consumo.
 
 \begin{table}[H]
     \caption{Comparativa entre Data Warehouse Tradicional y Data Lake.}
@@ -103,9 +103,9 @@ Representa el nivel más alto de refinamiento. Los datos se organizan siguiendo 
 
 \section{Ingeniería de Pipelines y Orquestación con Apache Airflow}
 
-Un \textbf{Pipeline de Datos} constituye la infraestructura esencial para mover información desde un sistema de origen hacia un destino, aplicando transformaciones críticas en el proceso. Dada la creciente complejidad de estos flujos, la orquestación se vuelve indispensable.
+Un \textbf{Pipeline de Datos} constituye la infraestructura esencial para mover información desde un sistema de origen hacia un destino, aplicando transformaciones críticas en el proceso \parencite{harenslak2021data}. Dada la creciente complejidad de estos flujos, la orquestación se vuelve indispensable.
 
-Apache Airflow, siguiendo la filosofía ``Workflow as Code'', aborda esta necesidad al permitir la definición de flujos de trabajo mediante código Python, lo que facilita el uso de control de versiones, pruebas unitarias y la colaboración entre ingenieros. La representación lógica de este pipeline se materializa en un \textbf{Grafo Acíclico Dirigido (DAG)}, cuyas propiedades fundamentales son:
+Apache Airflow, siguiendo la filosofía ``Workflow as Code'' \parencite{harenslak2021data}, aborda esta necesidad al permitir la definición de flujos de trabajo mediante código Python, lo que facilita el uso de control de versiones, pruebas unitarias y la colaboración entre ingenieros. La representación lógica de este pipeline se materializa en un \textbf{Grafo Acíclico Dirigido (DAG)}, cuyas propiedades fundamentales son:
 
 \begin{itemize}
     \item \textbf{Dirigido:} Establece un orden claro de ejecución de las tareas.
@@ -116,9 +116,9 @@ Apache Airflow, siguiendo la filosofía ``Workflow as Code'', aborda esta necesi
 
 \section{Tecnologías de Procesamiento Analítico: DuckDB}
 
-DuckDB representa una innovación en el ámbito de las bases de datos analíticas embebidas. Se destaca su capacidad para realizar procesamiento OLAP directamente en el entorno de ejecución del usuario (\textit{in-process}), eliminando la latencia de red de los sistemas cliente-servidor tradicionales.
+DuckDB representa una innovación en el ámbito de las bases de datos analíticas embebidas \parencite{needham2024duckdb}. Se destaca su capacidad para realizar procesamiento OLAP directamente en el entorno de ejecución del usuario (\textit{in-process}), eliminando la latencia de red de los sistemas cliente-servidor tradicionales.
 
-A diferencia de los motores de bases de datos tradicionales que procesan una fila a la vez, DuckDB utiliza \textbf{ejecución vectorizada}, procesando grandes bloques de datos simultáneamente. Esta técnica optimiza el uso de la caché de la CPU y permite un rendimiento superior en consultas complejas sobre grandes volúmenes de datos.
+A diferencia de los motores de bases de datos tradicionales que procesan una fila a la vez, DuckDB utiliza \textbf{ejecución vectorizada}, procesando grandes bloques de datos simultáneamente \parencite{needham2024duckdb}. Esta técnica optimiza el uso de la caché de la CPU y permite un rendimiento superior en consultas complejas sobre grandes volúmenes de datos.
 
 
 \section{Pipelines Declarativos y el Rol de SQLMesh}
@@ -138,7 +138,7 @@ En este contexto, SQLMesh emerge como una solución fundamental que integra conc
 
 \section{Gobierno de Datos: Marco Estratégico}
 
-El gobierno de datos (\textit{Data Governance}) se define como el ejercicio de la toma de decisiones y la autoridad sobre los activos de datos. Sus componentes clave incluyen:
+El gobierno de datos (\textit{Data Governance}) se define como el ejercicio de la toma de decisiones y la autoridad sobre los activos de datos \parencite{ladley2019data}. Sus componentes clave incluyen:
 
 \begin{itemize}
     \item \textbf{Políticas y Estándares:} Reglas sobre cómo se definen y utilizan los datos.
@@ -146,7 +146,7 @@ El gobierno de datos (\textit{Data Governance}) se define como el ejercicio de l
     \item \textbf{Catálogo de Datos:} Herramienta técnica que documenta el linaje, la definición y el uso de los datos en la organización.
 \end{itemize}
 
-Además, la gobernanza se apoya en roles fundamentales:
+Además, según \textcite{ladley2019data}, la gobernanza se apoya en roles fundamentales:
 
 \begin{itemize}
     \item \textbf{Data Owner (Dueño de los Datos):} Tiene la máxima responsabilidad sobre la calidad, seguridad y cumplimiento normativo de un activo específico.

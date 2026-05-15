@@ -3071,6 +3071,21 @@
     <bcf:datasource type="file" datatype="bibtex" glob="false">referencias.bib</bcf:datasource>
   </bcf:bibdata>
   <bcf:section number="0">
+    <bcf:citekey order="1" intorder="1">tagarro2019desarrollo</bcf:citekey>
+    <bcf:citekey order="2" intorder="1">tagarro2019desarrollo</bcf:citekey>
+    <bcf:citekey order="3" intorder="1">kimball2013data</bcf:citekey>
+    <bcf:citekey order="4" intorder="1">kimball2013data</bcf:citekey>
+    <bcf:citekey order="5" intorder="1">kimball2013data</bcf:citekey>
+    <bcf:citekey order="6" intorder="1">kimball2013data</bcf:citekey>
+    <bcf:citekey order="7" intorder="1">kimball2013data</bcf:citekey>
+    <bcf:citekey order="8" intorder="1">tagarro2019desarrollo</bcf:citekey>
+    <bcf:citekey order="9" intorder="1">harenslak2021data</bcf:citekey>
+    <bcf:citekey order="10" intorder="1">harenslak2021data</bcf:citekey>
+    <bcf:citekey order="11" intorder="1">needham2024duckdb</bcf:citekey>
+    <bcf:citekey order="12" intorder="1">needham2024duckdb</bcf:citekey>
+    <bcf:citekey order="13" intorder="1">ladley2019data</bcf:citekey>
+    <bcf:citekey order="14" intorder="1">ladley2019data</bcf:citekey>
+    <bcf:citekey order="15" intorder="1">ladley2019data</bcf:citekey>
   </bcf:section>
   <!-- SORTING TEMPLATES -->
   <bcf:sortingtemplate name="nyt">
