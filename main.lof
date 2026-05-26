@@ -6,38 +6,38 @@
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {7.1}{\ignorespaces Inicio de sesión en la consola de AWS.}}{16}{figure.caption.5}%
-\contentsline {figure}{\numberline {7.2}{\ignorespaces Búsqueda del servicio EC2 en la consola de AWS.}}{16}{figure.caption.6}%
-\contentsline {figure}{\numberline {7.3}{\ignorespaces Opción para lanzar una nueva instancia.}}{17}{figure.caption.7}%
-\contentsline {figure}{\numberline {7.4}{\ignorespaces Asignación de nombre a la instancia EC2.}}{17}{figure.caption.8}%
-\contentsline {figure}{\numberline {7.5}{\ignorespaces Selección de la imagen del sistema operativo Ubuntu.}}{17}{figure.caption.9}%
-\contentsline {figure}{\numberline {7.6}{\ignorespaces Selección de la versión Ubuntu Server 24.04.}}{18}{figure.caption.10}%
-\contentsline {figure}{\numberline {7.7}{\ignorespaces Selección del tipo de instancia optimizada para memoria.}}{18}{figure.caption.11}%
-\contentsline {figure}{\numberline {7.8}{\ignorespaces Creación del par de claves para conexión SSH.}}{19}{figure.caption.12}%
-\contentsline {figure}{\numberline {7.9}{\ignorespaces Edición de las configuraciones de red.}}{20}{figure.caption.13}%
-\contentsline {figure}{\numberline {7.10}{\ignorespaces Configuración avanzada de red (VPC, subred e IP pública).}}{20}{figure.caption.14}%
-\contentsline {figure}{\numberline {7.11}{\ignorespaces Configuración avanzada del volumen de almacenamiento EBS.}}{21}{figure.caption.15}%
-\contentsline {figure}{\numberline {7.12}{\ignorespaces Resumen y lanzamiento de la instancia EC2.}}{22}{figure.caption.16}%
-\contentsline {figure}{\numberline {7.13}{\ignorespaces Pantalla de inicio de sesión de Apache Airflow.}}{27}{figure.caption.17}%
-\contentsline {figure}{\numberline {7.14}{\ignorespaces Menú principal de la consola de administración de Apache Airflow.}}{28}{figure.caption.18}%
-\contentsline {figure}{\numberline {7.15}{\ignorespaces Menú para agregar una nueva conexión en Apache Airflow.}}{29}{figure.caption.19}%
-\contentsline {figure}{\numberline {7.16}{\ignorespaces Vista general de los DAGs disponibles en el sistema.}}{30}{figure.caption.20}%
-\contentsline {figure}{\numberline {7.17}{\ignorespaces Información general y tareas de un DAG específico.}}{30}{figure.caption.21}%
-\contentsline {figure}{\numberline {7.18}{\ignorespaces Historial e información de las instancias de ejecución del DAG.}}{31}{figure.caption.22}%
-\contentsline {figure}{\numberline {7.19}{\ignorespaces Vista de calendario con ejecuciones pasadas y futuras del DAG.}}{32}{figure.caption.23}%
-\contentsline {figure}{\numberline {7.20}{\ignorespaces Configuración de AWS Security Group.}}{43}{figure.caption.45}%
-\contentsline {figure}{\numberline {7.21}{\ignorespaces Configuración de reglas de entrada del Security Group.}}{44}{figure.caption.46}%
-\contentsline {figure}{\numberline {7.22}{\ignorespaces Apertura del administrador de orígenes de datos ODBC.}}{45}{figure.caption.47}%
-\contentsline {figure}{\numberline {7.23}{\ignorespaces Creación de una nueva conexión ODBC.}}{45}{figure.caption.48}%
-\contentsline {figure}{\numberline {7.24}{\ignorespaces Ingreso de credenciales de conexión ODBC.}}{46}{figure.caption.49}%
-\contentsline {figure}{\numberline {7.25}{\ignorespaces Selección de Obtener datos en Power BI Desktop.}}{46}{figure.caption.50}%
-\contentsline {figure}{\numberline {7.26}{\ignorespaces Selección del conector ODBC en el catálogo de orígenes.}}{47}{figure.caption.51}%
-\contentsline {figure}{\numberline {7.27}{\ignorespaces Selección de la conexión ODBC configurada.}}{47}{figure.caption.52}%
-\contentsline {figure}{\numberline {7.28}{\ignorespaces Selección de tablas de la Capa Oro para el reporte.}}{48}{figure.caption.53}%
+\contentsline {figure}{\numberline {7.1}{\ignorespaces Inicio de sesión en la consola de AWS.}}{16}{figure.caption.4}%
+\contentsline {figure}{\numberline {7.2}{\ignorespaces Búsqueda del servicio EC2 en la consola de AWS.}}{16}{figure.caption.5}%
+\contentsline {figure}{\numberline {7.3}{\ignorespaces Opción para lanzar una nueva instancia.}}{17}{figure.caption.6}%
+\contentsline {figure}{\numberline {7.4}{\ignorespaces Asignación de nombre a la instancia EC2.}}{17}{figure.caption.7}%
+\contentsline {figure}{\numberline {7.5}{\ignorespaces Selección de la imagen del sistema operativo Ubuntu.}}{17}{figure.caption.8}%
+\contentsline {figure}{\numberline {7.6}{\ignorespaces Selección de la versión Ubuntu Server 24.04.}}{18}{figure.caption.9}%
+\contentsline {figure}{\numberline {7.7}{\ignorespaces Selección del tipo de instancia optimizada para memoria.}}{18}{figure.caption.10}%
+\contentsline {figure}{\numberline {7.8}{\ignorespaces Creación del par de claves para conexión SSH.}}{19}{figure.caption.11}%
+\contentsline {figure}{\numberline {7.9}{\ignorespaces Edición de las configuraciones de red.}}{20}{figure.caption.12}%
+\contentsline {figure}{\numberline {7.10}{\ignorespaces Configuración avanzada de red (VPC, subred e IP pública).}}{20}{figure.caption.13}%
+\contentsline {figure}{\numberline {7.11}{\ignorespaces Configuración avanzada del volumen de almacenamiento EBS.}}{21}{figure.caption.14}%
+\contentsline {figure}{\numberline {7.12}{\ignorespaces Resumen y lanzamiento de la instancia EC2.}}{22}{figure.caption.15}%
+\contentsline {figure}{\numberline {7.13}{\ignorespaces Pantalla de inicio de sesión de Apache Airflow.}}{27}{figure.caption.16}%
+\contentsline {figure}{\numberline {7.14}{\ignorespaces Menú principal de la consola de administración de Apache Airflow.}}{28}{figure.caption.17}%
+\contentsline {figure}{\numberline {7.15}{\ignorespaces Menú para agregar una nueva conexión en Apache Airflow.}}{29}{figure.caption.18}%
+\contentsline {figure}{\numberline {7.16}{\ignorespaces Vista general de los DAGs disponibles en el sistema.}}{30}{figure.caption.19}%
+\contentsline {figure}{\numberline {7.17}{\ignorespaces Información general y tareas de un DAG específico.}}{30}{figure.caption.20}%
+\contentsline {figure}{\numberline {7.18}{\ignorespaces Historial e información de las instancias de ejecución del DAG.}}{31}{figure.caption.21}%
+\contentsline {figure}{\numberline {7.19}{\ignorespaces Vista de calendario con ejecuciones pasadas y futuras del DAG.}}{32}{figure.caption.22}%
+\contentsline {figure}{\numberline {7.20}{\ignorespaces Configuración de AWS Security Group.}}{43}{figure.caption.44}%
+\contentsline {figure}{\numberline {7.21}{\ignorespaces Configuración de reglas de entrada del Security Group.}}{44}{figure.caption.45}%
+\contentsline {figure}{\numberline {7.22}{\ignorespaces Apertura del administrador de orígenes de datos ODBC.}}{45}{figure.caption.46}%
+\contentsline {figure}{\numberline {7.23}{\ignorespaces Creación de una nueva conexión ODBC.}}{45}{figure.caption.47}%
+\contentsline {figure}{\numberline {7.24}{\ignorespaces Ingreso de credenciales de conexión ODBC.}}{46}{figure.caption.48}%
+\contentsline {figure}{\numberline {7.25}{\ignorespaces Selección de Obtener datos en Power BI Desktop.}}{46}{figure.caption.49}%
+\contentsline {figure}{\numberline {7.26}{\ignorespaces Selección del conector ODBC en el catálogo de orígenes.}}{47}{figure.caption.50}%
+\contentsline {figure}{\numberline {7.27}{\ignorespaces Selección de la conexión ODBC configurada.}}{47}{figure.caption.51}%
+\contentsline {figure}{\numberline {7.28}{\ignorespaces Selección de tablas de la Capa Oro para el reporte.}}{48}{figure.caption.52}%
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {8.1}{\ignorespaces Matriz jerárquica interactiva para consolidación de gastos.}}{50}{figure.caption.54}%
-\contentsline {figure}{\numberline {8.2}{\ignorespaces Panel tabular para validación de transacciones.}}{50}{figure.caption.55}%
-\contentsline {figure}{\numberline {8.3}{\ignorespaces Vista de confrontación contable y validación analítica.}}{51}{figure.caption.56}%
+\contentsline {figure}{\numberline {8.1}{\ignorespaces Matriz jerárquica interactiva para consolidación de gastos.}}{50}{figure.caption.53}%
+\contentsline {figure}{\numberline {8.2}{\ignorespaces Panel tabular para validación de transacciones.}}{50}{figure.caption.54}%
+\contentsline {figure}{\numberline {8.3}{\ignorespaces Vista de confrontación contable y validación analítica.}}{51}{figure.caption.55}%
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }

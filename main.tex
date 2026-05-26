@@ -80,6 +80,9 @@
 \usepackage{appendix}
 \usepackage{pdfpages}
 \usepackage{tocloft}
+\usepackage[htt]{hyphenat}     % Permite cortar palabras en \texttt{}
+
+\sloppy                        % Evita que el texto se salga del margen
 
 % ══════════════════════════════════════════════════════════════
 \begin{document}
@@ -90,7 +93,6 @@
 
 \pagenumbering{roman}
 \input{capitulos/agradecimientos}
-\input{capitulos/resumen}
 
 \tableofcontents
 \clearpage
