@@ -212,6 +212,8 @@ INPUT C:\Users\ANGEL JFLORES ACOSTA\AppData\Local\Programs\MiKTeX\tex\latex\pdfp
 INPUT C:\Users\ANGEL JFLORES ACOSTA\AppData\Local\Programs\MiKTeX\tex\latex\pdfpages\pppdftex.def
 INPUT C:\Users\ANGEL JFLORES ACOSTA\AppData\Local\Programs\MiKTeX\tex\latex\tocloft\tocloft.sty
 INPUT C:\Users\ANGEL JFLORES ACOSTA\AppData\Local\Programs\MiKTeX\tex\latex\tocloft\tocloft.sty
+INPUT C:\Users\ANGEL JFLORES ACOSTA\AppData\Local\Programs\MiKTeX\tex\latex\hyphenat\hyphenat.sty
+INPUT C:\Users\ANGEL JFLORES ACOSTA\AppData\Local\Programs\MiKTeX\tex\latex\hyphenat\hyphenat.sty
 INPUT C:\Users\ANGEL JFLORES ACOSTA\AppData\Local\Programs\MiKTeX\tex\latex\graphics\color.sty
 INPUT .\main.aux
 INPUT .\main.aux
@@ -222,6 +224,8 @@ INPUT C:\Users\ANGEL JFLORES ACOSTA\AppData\Local\Programs\MiKTeX\tex\context\ba
 INPUT C:\Users\ANGEL JFLORES ACOSTA\AppData\Local\Programs\MiKTeX\tex\context\base\mkii\supp-pdf.mkii
 INPUT C:\Users\ANGEL JFLORES ACOSTA\AppData\Local\Programs\MiKTeX\tex\latex\epstopdf-pkg\epstopdf-base.sty
 INPUT C:\Users\ANGEL JFLORES ACOSTA\AppData\Local\Programs\MiKTeX\tex\latex\epstopdf-pkg\epstopdf-base.sty
+INPUT C:\Users\ANGEL JFLORES ACOSTA\AppData\Local\Programs\MiKTeX\tex\latex\grfext\grfext.sty
+INPUT C:\Users\ANGEL JFLORES ACOSTA\AppData\Local\Programs\MiKTeX\tex\latex\grfext\grfext.sty
 INPUT C:\Users\ANGEL JFLORES ACOSTA\AppData\Local\Programs\MiKTeX\tex\latex\00miktex\epstopdf-sys.cfg
 INPUT C:\Users\ANGEL JFLORES ACOSTA\AppData\Local\Programs\MiKTeX\tex\latex\00miktex\epstopdf-sys.cfg
 INPUT C:\Users\ANGEL JFLORES ACOSTA\AppData\Local\Programs\MiKTeX\tex\latex\00miktex\epstopdf-sys.cfg
@@ -253,6 +257,10 @@ INPUT C:\Users\ANGEL JFLORES ACOSTA\AppData\Local\Programs\MiKTeX\tex\latex\pdfl
 INPUT C:\Users\ANGEL JFLORES ACOSTA\AppData\Local\Programs\MiKTeX\tex\latex\pdflscape\pdflscape-nometadata.sty
 INPUT C:\Users\ANGEL JFLORES ACOSTA\AppData\Local\Programs\MiKTeX\tex\latex\graphics\lscape.sty
 INPUT C:\Users\ANGEL JFLORES ACOSTA\AppData\Local\Programs\MiKTeX\tex\latex\graphics\lscape.sty
+INPUT C:\Users\ANGEL JFLORES ACOSTA\AppData\Local\Programs\MiKTeX\fonts\tfm\jknappen\ec\ectt1200.tfm
+INPUT C:\Users\ANGEL JFLORES ACOSTA\AppData\Local\Programs\MiKTeX\fonts\tfm\jknappen\ec\ecit1200.tfm
+INPUT C:\Users\ANGEL JFLORES ACOSTA\AppData\Local\Programs\MiKTeX\fonts\tfm\jknappen\ec\ecst1200.tfm
+INPUT C:\Users\ANGEL JFLORES ACOSTA\AppData\Local\Programs\MiKTeX\fonts\tfm\jknappen\ec\ectc1200.tfm
 INPUT .\capitulos\portada.tex
 INPUT .\capitulos\portada.tex
 INPUT .\capitulos\portada.tex
@@ -427,7 +435,6 @@ INPUT .\figuras\Creación y configuración de instancia EC2 en AWS\Selección de
 INPUT .\figuras\Creación y configuración de instancia EC2 en AWS\Selección de la versión Ubuntu Server 24.04.png
 INPUT .\figuras\Creación y configuración de instancia EC2 en AWS\Selección de la versión Ubuntu Server 24.04.png
 INPUT .\figuras\Creación y configuración de instancia EC2 en AWS\Selección de la versión Ubuntu Server 24.04.png
-INPUT C:\Users\ANGEL JFLORES ACOSTA\AppData\Local\Programs\MiKTeX\fonts\tfm\jknappen\ec\ectt1200.tfm
 INPUT .\figuras\Creación y configuración de instancia EC2 en AWS\Selección del tipo de instancia optimizada para memoria.png
 INPUT .\figuras\Creación y configuración de instancia EC2 en AWS\Selección del tipo de instancia optimizada para memoria.png
 INPUT .\figuras\Creación y configuración de instancia EC2 en AWS\Selección del tipo de instancia optimizada para memoria.png

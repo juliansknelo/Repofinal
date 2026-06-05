@@ -510,7 +510,7 @@ El flujo general se resume de la siguiente manera: SQLMesh lee las tablas crudas
 
 \subsubsection{Ejecución del plan de SQLMesh desde Airflow}
 
-El DAG encargado de iniciar el proceso se denomina \texttt{sqlmesh\_plan}. Dentro de este, un \texttt{BashOperator} activa el entorno virtual de Python, se posiciona en el directorio \texttt{sql/} y ejecuta el siguiente comando:
+El DAG encargado de iniciar el proceso se denomina \texttt{sqlmesh\_plan}. Dentro de este, un \texttt{Bash\-Op\-er\-a\-tor} activa el entorno virtual de Python, se posiciona en el directorio \texttt{sql/} y ejecuta el siguiente comando:
 
 \begin{lstlisting}[language=bash, breaklines=true]
 sqlmesh plan prod --auto-apply

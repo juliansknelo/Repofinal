@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.28 (MiKTeX 25.12) (preloaded format=pdflatex 2026.5.14)  26 MAY 2026 17:25
+This is pdfTeX, Version 3.141592653-2.6-1.40.28 (MiKTeX 25.12) (preloaded format=pdflatex 2026.5.14)  5 JUN 2026 10:54
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -797,6 +797,18 @@ Package tocloft Info: The document has chapter divisions on input line 51.
 \cftbeforetabskip=\skip116
 \cfttabindent=\skip117
 \cfttabnumwidth=\skip118
+) (C:\Users\ANGEL JFLORES ACOSTA\AppData\Local\Programs\MiKTeX\tex/latex/hyphenat\hyphenat.sty
+Package: hyphenat 2009/09/02 v2.3c hyphenation utilities
+
+
+Package hyphenat Warning: *******************************
+(hyphenat)                * You have used the htt option.
+(hyphenat)                * You are likely to get many Font Warning messages.
+(hyphenat)                * These can usually be ignored.
+(hyphenat)                *******************************.
+
+\langwohyphens=\language81
+LaTeX Info: Redefining \_ on input line 43.
 )
 
 Package biblatex Warning: 'babel/polyglossia' detected but 'csquotes' missing.
@@ -812,24 +824,24 @@ Package babel Info: 'spanish' activates 'spanish' shorthands.
 )
 \openout1 = `main.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 85.
-LaTeX Font Info:    ... okay on input line 85.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 85.
-LaTeX Font Info:    ... okay on input line 85.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 85.
-LaTeX Font Info:    ... okay on input line 85.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 85.
-LaTeX Font Info:    ... okay on input line 85.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 85.
-LaTeX Font Info:    ... okay on input line 85.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 85.
-LaTeX Font Info:    ... okay on input line 85.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 85.
-LaTeX Font Info:    ... okay on input line 85.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 85.
-LaTeX Font Info:    ... okay on input line 85.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 85.
-LaTeX Font Info:    ... okay on input line 85.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 88.
+LaTeX Font Info:    ... okay on input line 88.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 88.
+LaTeX Font Info:    ... okay on input line 88.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 88.
+LaTeX Font Info:    ... okay on input line 88.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 88.
+LaTeX Font Info:    ... okay on input line 88.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 88.
+LaTeX Font Info:    ... okay on input line 88.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 88.
+LaTeX Font Info:    ... okay on input line 88.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 88.
+LaTeX Font Info:    ... okay on input line 88.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 88.
+LaTeX Font Info:    ... okay on input line 88.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 88.
+LaTeX Font Info:    ... okay on input line 88.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -865,8 +877,8 @@ LaTeX Font Info:    ... okay on input line 85.
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-LaTeX Info: Redefining \. on input line 85.
-LaTeX Info: Redefining \% on input line 85.
+LaTeX Info: Redefining \. on input line 88.
+LaTeX Info: Redefining \% on input line 88.
 (C:\Users\ANGEL JFLORES ACOSTA\AppData\Local\Programs\MiKTeX\tex/context/base/mkii\supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count496
@@ -882,7 +894,13 @@ LaTeX Info: Redefining \% on input line 85.
 \everyMPtoPDFconversion=\toks37
 ) (C:\Users\ANGEL JFLORES ACOSTA\AppData\Local\Programs\MiKTeX\tex/latex/epstopdf-pkg\epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
+ (C:\Users\ANGEL JFLORES ACOSTA\AppData\Local\Programs\MiKTeX\tex/latex/grfext\grfext.sty
+Package: grfext 2019/12/03 v1.3 Manage graphics extensions (HO)
+)
 Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 485.
+Package grfext Info: Graphics extension search list:
+(grfext)             [.pdf,.png,.jpg,.mps,.jpeg,.jbig2,.jb2,.PDF,.PNG,.JPG,.JPEG,.JBIG2,.JB2,.eps]
+(grfext)             \AppendGraphicsExtensions on input line 504.
  (C:\Users\ANGEL JFLORES ACOSTA\AppData\Local\Programs\MiKTeX\tex/latex/00miktex\epstopdf-sys.cfg
 File: epstopdf-sys.cfg 2021/03/18 v2.0 Configuration of epstopdf for MiKTeX
 ))
@@ -893,7 +911,7 @@ Package caption Info: End \AtBeginDocument code.
  (C:\Users\ANGEL JFLORES ACOSTA\AppData\Local\Programs\MiKTeX\tex/latex/translations/dicts\translations-basic-dictionary-spanish.trsl
 File: translations-basic-dictionary-spanish.trsl (spanish translation file `translations-basic-dictionary')
 )
-Package translations Info: loading dictionary `translations-basic-dictionary' for `spanish'. on input line 85.
+Package translations Info: loading dictionary `translations-basic-dictionary' for `spanish'. on input line 88.
 Package biblatex Info: Trying to load language 'spanish' -> 'spanish-apa'...
 Package biblatex Info: ... file 'spanish-apa.lbx' found.
  (C:\Users\ANGEL JFLORES ACOSTA\AppData\Local\Programs\MiKTeX\tex/latex/biblatex-apa\spanish-apa.lbx
@@ -916,9 +934,9 @@ Package biblatex Info: Automatic encoding selection.
 Package biblatex Info: Trying to load bibliographic data...
 Package biblatex Info: ... file 'main.bbl' found.
  (main.bbl)
-Package biblatex Info: Reference section=0 on input line 85.
-Package biblatex Info: Reference segment=0 on input line 85.
-Package hyperref Info: Link coloring ON on input line 85.
+Package biblatex Info: Reference section=0 on input line 88.
+Package biblatex Info: Reference segment=0 on input line 88.
+Package hyperref Info: Link coloring ON on input line 88.
  (main.out) (main.out)
 \@outlinefile=\write4
 \openout4 = `main.out'.
@@ -932,7 +950,134 @@ Package: pdflscape-nometadata 2022-10-28 v0.13 Display of landscape pages in PDF
 Package: lscape 2020/05/28 v3.02 Landscape Pages (DPC)
 )
 Package pdflscape Info: Auto-detected driver: pdftex on input line 81.
-)) (capitulos/portada.tex
+))
+
+LaTeX Font Warning: Font shape `T1/cmtt/m/scsl' undefined
+(Font)              using `T1/cmtt/m/sc' instead on input line 88.
+
+
+LaTeX Font Warning: Font shape `T1/cmtt/b/n' undefined
+(Font)              using `T1/cmtt/m/n' instead on input line 88.
+
+
+LaTeX Font Warning: Font shape `T1/cmtt/b/it' undefined
+(Font)              using `T1/cmtt/b/n' instead on input line 88.
+
+
+LaTeX Font Warning: Font shape `T1/cmtt/b/sl' undefined
+(Font)              using `T1/cmtt/b/it' instead on input line 88.
+
+
+LaTeX Font Warning: Font shape `T1/cmtt/b/scit' undefined
+(Font)              using `T1/cmtt/b/sc' instead on input line 88.
+
+
+LaTeX Font Warning: Font shape `T1/cmtt/b/sc' undefined
+(Font)              using `T1/cmtt/b/n' instead on input line 88.
+
+LaTeX Font Info:    Font shape `T1/cmtt/bx/n' in size <12> not available
+(Font)              Font shape `T1/cmtt/m/n' tried instead on input line 88.
+LaTeX Font Info:    Font shape `T1/cmtt/bx/it' in size <12> not available
+(Font)              Font shape `T1/cmtt/m/it' tried instead on input line 88.
+
+LaTeX Font Warning: Font shape `T1/cmtt/bx/sl' undefined
+(Font)              using `T1/cmtt/bx/it' instead on input line 88.
+
+
+LaTeX Font Warning: Font shape `T1/cmtt/bx/scit' undefined
+(Font)              using `T1/cmtt/bx/sc' instead on input line 88.
+
+
+LaTeX Font Warning: Font shape `T1/cmtt/bx/sc' undefined
+(Font)              using `T1/cmtt/bx/n' instead on input line 88.
+
+
+LaTeX Font Warning: Font shape `T1/cmtt/sbx/sc' undefined
+(Font)              using `T1/cmtt/bx/sc' instead on input line 88.
+
+
+LaTeX Font Warning: Font shape `T1/cmtt/sbx/n' undefined
+(Font)              using `T1/cmtt/bx/n' instead on input line 88.
+
+
+LaTeX Font Warning: Font shape `T1/cmtt/sbx/it' undefined
+(Font)              using `T1/cmtt/bx/it' instead on input line 88.
+
+
+LaTeX Font Warning: Font shape `T1/cmtt/bx/sl' undefined
+(Font)              using `T1/cmtt/bx/it' instead on input line 88.
+
+
+LaTeX Font Warning: Font shape `T1/cmtt/sbx/it' undefined
+(Font)              using `T1/cmtt/bx/it' instead on input line 88.
+
+
+LaTeX Font Warning: Font shape `T1/cmtt/bx/scit' undefined
+(Font)              using `T1/cmtt/bx/sc' instead on input line 88.
+
+LaTeX Font Info:    Font shape `T1/cmtt/bx/sc' in size <12> not available
+(Font)              Font shape `T1/cmtt/m/n' tried instead on input line 88.
+
+LaTeX Font Warning: Font shape `T1/cmtt/bc/sc' undefined
+(Font)              using `T1/cmtt/c/sc' instead on input line 88.
+
+
+LaTeX Font Warning: Font shape `T1/cmtt/c/n' undefined
+(Font)              using `T1/cmtt/m/n' instead on input line 88.
+
+
+LaTeX Font Warning: Font shape `T1/cmtt/c/it' undefined
+(Font)              using `T1/cmtt/c/n' instead on input line 88.
+
+
+LaTeX Font Warning: Font shape `T1/cmtt/c/sl' undefined
+(Font)              using `T1/cmtt/c/it' instead on input line 88.
+
+
+LaTeX Font Warning: Font shape `T1/cmtt/c/scit' undefined
+(Font)              using `T1/cmtt/c/sc' instead on input line 88.
+
+
+LaTeX Font Warning: Font shape `T1/cmtt/c/sc' undefined
+(Font)              using `T1/cmtt/c/n' instead on input line 88.
+
+
+LaTeX Font Warning: Font shape `T1/cmtt/lc/sc' undefined
+(Font)              using `T1/cmtt/c/sc' instead on input line 88.
+
+
+LaTeX Font Warning: Font shape `T1/cmtt/lc/n' undefined
+(Font)              using `T1/cmtt/c/n' instead on input line 88.
+
+
+LaTeX Font Warning: Font shape `T1/cmtt/lc/it' undefined
+(Font)              using `T1/cmtt/c/it' instead on input line 88.
+
+
+LaTeX Font Warning: Font shape `T1/cmtt/c/sl' undefined
+(Font)              using `T1/cmtt/c/it' instead on input line 88.
+
+
+LaTeX Font Warning: Font shape `T1/cmtt/lc/it' undefined
+(Font)              using `T1/cmtt/c/it' instead on input line 88.
+
+
+LaTeX Font Warning: Font shape `T1/cmtt/c/scit' undefined
+(Font)              using `T1/cmtt/c/sc' instead on input line 88.
+
+
+LaTeX Font Warning: Font shape `T1/cmtt/m/ui' undefined
+(Font)              using `T1/cmtt/m/n' instead on input line 88.
+
+
+LaTeX Font Warning: Font shape `T1/cmtt/bx/ui' undefined
+(Font)              using `T1/cmtt/bx/n' instead on input line 88.
+
+
+LaTeX Font Warning: Font shape `T1/cmtt/m/In' undefined
+(Font)              using `T1/cmtt/m/n' instead on input line 88.
+
+(capitulos/portada.tex
 <figuras/logo_itv.png, id=211, 1.00375pt x 1.00375pt>
 File: figuras/logo_itv.png Graphic file (type png)
 <use figuras/logo_itv.png>
@@ -1160,63 +1305,11 @@ File: figuras/Configuración de entorno Cloud (Linux)/Vista de calendario con ej
 <use figuras/Configuración de entorno Cloud (Linux)/Vista de calendario con ejecuciones pasadas y futuras del DAG.png>
 Package pdftex.def Info: figuras/Configuración de entorno Cloud (Linux)/Vista de calendario con ejecuciones pasadas y futuras del DAG.png  used on input line 326.
 (pdftex.def)             Requested size: 366.24527pt x 356.39539pt.
- [32 <./figuras/Configuración de entorno Cloud (Linux)/Vista de calendario con ejecuciones pasadas y futuras del DAG.png>]
-Overfull \hbox (17.12016pt too wide) in paragraph at lines 339--340
-[]\T1/ptm/m/n/12 A con-ti-nua-ci�n se des-cri-be el pro-ce-so uti-li-zan-do co-mo ejem-plo la in-ges-ta de la ta-bla \T1/cmtt/m/n/12 account_move\T1/ptm/m/n/12 ,
- []
-
-(C:\Users\ANGEL JFLORES ACOSTA\AppData\Local\Programs\MiKTeX\tex/latex/listings\lstlang1.sty
+ [32 <./figuras/Configuración de entorno Cloud (Linux)/Vista de calendario con ejecuciones pasadas y futuras del DAG.png>] (C:\Users\ANGEL JFLORES ACOSTA\AppData\Local\Programs\MiKTeX\tex/latex/listings\lstlang1.sty
 File: lstlang1.sty 2025/11/14 1.11b listings language file
-)
-Overfull \hbox (28.38837pt too wide) in paragraph at lines 368--369
-[]\T1/ptm/m/n/12 La con-sul-ta de ex-trac-ci�n se en-cuen-tra al-ma-ce-na-da en el di-rec-to-rio \T1/cmtt/m/n/12 sql/bronce/account_move.sql\T1/ptm/m/n/12 .
- []
-
-[33] (C:\Users\ANGEL JFLORES ACOSTA\AppData\Local\Programs\MiKTeX\tex/latex/listings\lstlang1.sty
+) [33] (C:\Users\ANGEL JFLORES ACOSTA\AppData\Local\Programs\MiKTeX\tex/latex/listings\lstlang1.sty
 File: lstlang1.sty 2025/11/14 1.11b listings language file
-) [34]
-Overfull \hbox (20.79921pt too wide) in paragraph at lines 407--408
-[]\T1/ptm/m/n/12 Si el mes no con-tie-ne da-tos, se eli-mi-na el ar-chi-vo CSV y se de-vuel-ve un \T1/ptm/m/it/12 pay-load \T1/ptm/m/n/12 con \T1/cmtt/m/n/12 parquet_path:
- []
-
-[35] [36]
-Overfull \hbox (33.62097pt too wide) in paragraph at lines 513--514
-[]\T1/ptm/m/n/12 El DAG en-car-ga-do de ini-ciar el pro-ce-so se de-no-mi-na \T1/cmtt/m/n/12 sqlmesh_plan\T1/ptm/m/n/12 . Den-tro de es-te, un \T1/cmtt/m/n/12 BashOperator
- []
-
-[37] [38] [39]
-Overfull \hbox (18.33455pt too wide) in paragraph at lines 588--589
-[]\T1/ptm/m/n/12 Una vez com-ple-ta-da la ma-te-ria-li-za-ci�n, las ta-blas del es-que-ma \T1/cmtt/m/n/12 plata \T1/ptm/m/n/12 (co-mo \T1/cmtt/m/n/12 plata.account_move\T1/ptm/m/n/12 ,
- []
-
-LaTeX Font Info:    Font shape `T1/cmtt/bx/n' in size <12> not available
-(Font)              Font shape `T1/cmtt/m/n' tried instead on input line 594.
-[40]
-Overfull \hbox (33.32373pt too wide) in paragraph at lines 607--608
-[]\T1/ptm/m/n/12 La gra-nu-la-ri-dad de-cla-ra-da es una fi-la por \T1/cmtt/m/n/12 aml_id\T1/ptm/m/n/12 , que co-rres-pon-de a una l�-nea de \T1/cmtt/m/n/12 account_move_line\T1/ptm/m/n/12 .
- []
-
-
-Overfull \hbox (6.26587pt too wide) in paragraph at lines 616--617
-\T1/ptm/m/n/12 men-te. So-lo se in-clu-yen mo-vi-mien-tos con es-ta-do pu-bli-ca-do (\T1/cmtt/m/n/12 parent_state = 'posted'\T1/ptm/m/n/12 ). 
- []
-
-
-Overfull \hbox (2.06244pt too wide) in paragraph at lines 624--625
-[]\T1/ptm/b/n/12 Clasificaci�n y pi-vo-teo: \T1/ptm/m/n/12 La CTE \T1/cmtt/m/n/12 pivoteada \T1/ptm/m/n/12 se une con la di-men-si�n \T1/cmtt/m/n/12 oro.dim_analytic
- []
-
-[41]
-Overfull \hbox (19.82928pt too wide) in paragraph at lines 629--630
-\T1/cmtt/m/n/12 account_id\T1/ptm/m/n/12 , \T1/cmtt/m/n/12 user_id\T1/ptm/m/n/12 , \T1/cmtt/m/n/12 analytic_account_id\T1/ptm/m/n/12 , \T1/cmtt/m/n/12 former_tag_id\T1/ptm/m/n/12 ), las me-di-das fi-nan-cie-ras (\T1/cmtt/m/n/12 debit\T1/ptm/m/n/12 ,
- []
-
-
-Overfull \hbox (134.89223pt too wide) in paragraph at lines 638--639
-[]\T1/cmtt/m/n/12 oro.dim_analytic\T1/ptm/b/n/12 : \T1/ptm/m/n/12 Se cons-tru-ye des-de \T1/cmtt/m/n/12 plata.account_analytic_account \T1/ptm/m/n/12 y \T1/cmtt/m/n/12 plata.account_analytic_plan\T1/ptm/m/n/12 .
- []
-
-[42]
+) [34] [35] [36] [37] [38] [39] [40] [41] [42]
 <figuras/Configuración de Ec2 para exposición de datos/Configuración de AWS Security Group.png, id=834, 819.8128pt x 314.67563pt>
 File: figuras/Configuración de Ec2 para exposición de datos/Configuración de AWS Security Group.png Graphic file (type png)
 <use figuras/Configuración de Ec2 para exposición de datos/Configuración de AWS Security Group.png>
@@ -1310,6 +1403,10 @@ LaTeX Info: Redefining \% on input line 12.
 LaTeX2e <2025-11-01>
 L3 programming layer <2025-12-24>
  ***********
+
+
+LaTeX Font Warning: Some font shapes were not available, defaults substituted.
+
 Package rerunfilecheck Info: File `main.out' has not changed.
 (rerunfilecheck)             Checksum: 52DA973A8F7A95AD595AE1A0E10A6E41;12481.
 Package logreq Info: Writing requests to 'main.run.xml'.
@@ -1317,15 +1414,15 @@ Package logreq Info: Writing requests to 'main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 30795 strings out of 467871
- 608756 string characters out of 5411080
- 1604555 words of memory out of 5000000
- 58923 multiletter control sequences out of 15000+600000
- 671588 words of font info for 94 fonts, out of 8000000 for 9000
+ 30917 strings out of 467871
+ 611193 string characters out of 5411080
+ 1606164 words of memory out of 5000000
+ 59034 multiletter control sequences out of 15000+600000
+ 672532 words of font info for 97 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 73i,10n,80p,1201b,3149s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 73i,10n,80p,1201b,3141s stack positions out of 10000i,1000n,20000p,200000b,200000s
  <C:\Users\ANGEL JFLORES ACOSTA\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ectt1200.pk><C:/Users/ANGEL JFLORES ACOSTA/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/ANGEL JFLORES ACOSTA/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/ANGEL JFLORES ACOSTA/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmb8a.pfb><C:/Users/ANGEL JFLORES ACOSTA/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmr8a.pfb><C:/Users/ANGEL JFLORES ACOSTA/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmri8a.pfb>
-Output written on main.pdf (66 pages, 2151769 bytes).
+Output written on main.pdf (66 pages, 2151978 bytes).
 PDF statistics:
  1114 PDF objects out of 1200 (max. 8388607)
  369 named destinations out of 1000 (max. 500000)
